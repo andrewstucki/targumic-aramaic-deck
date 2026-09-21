@@ -1,26 +1,25 @@
 #!/usr/bin/env python3
 """Build an Anki deck of Targumic Aramaic vocabulary.
 
-Reads chapter1.txt, chapter2.txt, ... from the project root, one entry a line:
+Reads vocabulary.yaml from the project root; see vocab.py for the format. The
+aramaic field is pointed Hebrew in Tiberian codepoints, which the Onqelos font
+renders as Babylonian supralinear pointing.
 
-    "aramaic | vocalization | definition. pos. notes"
-
-The aramaic field is pointed Hebrew in Tiberian codepoints, which the Onqelos
-font renders as Babylonian supralinear pointing. The card front is that word;
-the back adds the gloss, part of speech and notes.
+Each entry makes two cards: the word asking for its meaning, and the meaning
+asking for the word.
 
 Usage:  python3 scripts/build_deck.py [output.apkg]
 """
 
-import os
-import re
 import shutil
 import sys
 import tempfile
-import unicodedata
 from pathlib import Path
 
 import genanki
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import vocab
 
 # The script lives in scripts/; the vocab and font live one level up.
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,77 +35,6 @@ FONT_MEDIA = "_Onqelos-Regular.ttf"
 # instead of creating duplicates.
 MODEL_ID = 1748392011
 DECK_BASE_ID = 1748392100
-
-POS_WORDS = [
-    "verb",
-    "noun",
-    "adjective",
-    "adj",
-    "preposition",
-    "prep",
-    "adverb",
-    "adv",
-    "pronoun",
-    "pron",
-    "conjunction",
-    "conj",
-    "particle",
-    "interjection",
-    "numeral",
-]
-POS_RE = re.compile(
-    r"(?:^|[.,;]\s*)(" + "|".join(POS_WORDS) + r")\s*[.,;]?\s*", re.IGNORECASE
-)
-POS_EXPANSIONS = {
-    "adj": "adjective",
-    "prep": "preposition",
-    "adv": "adverb",
-    "pron": "pronoun",
-    "conj": "conjunction",
-}
-
-
-def nfc(s):
-    return unicodedata.normalize("NFC", s)
-
-
-def parse_line(line):
-    """-> (aramaics, vocalizations, gloss, pos, notes), or None for blanks.
-
-    A line is "aramaic | vocalization | definition. pos. notes", and either of
-    the first two fields may carry several variants separated by "/".
-    """
-    line = nfc(line.strip())
-    if not line or line.startswith("#"):
-        return None
-    if line.count("|") < 2:
-        raise ValueError(
-            f"expected 'aramaic | vocalization | definition': {line!r}"
-        )
-
-    aramaic, vocab, rest = (part.strip() for part in line.split("|", 2))
-    rest = re.sub(r"\s+", " ", rest).strip()
-
-    # Split the definition into gloss / part-of-speech / trailing notes.
-    match = POS_RE.search(rest)
-    if match:
-        gloss = rest[: match.start()].strip()
-        pos = match.group(1).lower()
-        pos = POS_EXPANSIONS.get(pos, pos)
-        notes = rest[match.end() :].strip()
-    else:
-        gloss, pos, notes = rest, "", ""
-
-    gloss = gloss.strip(" .,;")
-    notes = notes.strip()
-    # "(sometimes ʔabad)" -> "sometimes ʔabad"
-    if notes.startswith("(") and notes.endswith(")") and notes.count("(") == 1:
-        notes = notes[1:-1].strip()
-
-    aramaics = [a.strip() for a in aramaic.split("/") if a.strip()]
-    vocalizations = [v.strip() for v in vocab.split("/") if v.strip()]
-    return aramaics, vocalizations, gloss, pos, notes
-
 
 CSS = """
 @font-face {
@@ -177,6 +105,43 @@ hr#answer {
   color: #5c5a54;
 }
 .night_mode .notes, .nightMode .notes { color: #b8b4ae; }
+
+/* The meaning asked as a question, on the recall card. Smaller than .gloss
+   because it can run to a clause or two, and it is the prompt rather than the
+   reward. */
+.prompt {
+  margin: 26px auto 0;
+  max-width: 26em;
+  font-size: 30px;
+  font-size: clamp(22px, 6vw, 30px);
+  line-height: 1.3;
+}
+
+/* Which chapter's vocabulary this is, opposite the corner the recognition
+   card gives the transliteration. A meaning like "darkness" is answered by a
+   different word in different chapters, so the recall card has to say which. */
+.chapter {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: #a9a49a;
+}
+.night_mode .chapter, .nightMode .chapter { color: #7c7871; }
+
+/* On the recall card the transliteration is part of the answer, so it sits
+   under the word instead of in the corner. */
+.answer-vocalization {
+  margin-top: 10px;
+  font-size: 19px;
+  letter-spacing: .02em;
+  color: #6e6a60;
+  font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Times New Roman", serif;
+}
+.night_mode .answer-vocalization, .nightMode .answer-vocalization {
+  color: #a8a49c;
+}
 """
 
 FRONT = """<div class="aramaic">{{Aramaic}}</div>"""
@@ -191,6 +156,25 @@ BACK = """<div class="vocalization">{{Vocalization}}</div>
 {{#Notes}}<div class="notes">{{Notes}}</div>{{/Notes}}
 """
 
+# The other direction: recall the word from its meaning. The part of speech
+# comes along to narrow it down, but the vocalization and the notes are held
+# back — the vocalization is the answer, and the notes quote forms and idioms
+# that would give it away.
+REVERSE_FRONT = """<div class="chapter">{{Chapter}}</div>
+<div class="prompt">{{Gloss}}</div>
+{{#POS}}<div class="pos">{{POS}}</div>{{/POS}}"""
+
+REVERSE_BACK = """<div class="chapter">{{Chapter}}</div>
+<div class="prompt">{{Gloss}}</div>
+{{#POS}}<div class="pos">{{POS}}</div>{{/POS}}
+
+<hr id="answer">
+
+<div class="aramaic">{{Aramaic}}</div>
+<div class="answer-vocalization">{{Vocalization}}</div>
+{{#Notes}}<div class="notes">{{Notes}}</div>{{/Notes}}
+"""
+
 MODEL = genanki.Model(
     MODEL_ID,
     "Targumic Aramaic (Babylonian pointing)",
@@ -200,36 +184,18 @@ MODEL = genanki.Model(
         {"name": "Gloss"},
         {"name": "POS"},
         {"name": "Notes"},
+        {"name": "Chapter"},
     ],
+    # Order matters: Anki keys a card to its template by position, so the
+    # recognition card stays first and the recall card is appended.
     templates=[
         {"name": "Aramaic -> Gloss", "qfmt": FRONT, "afmt": BACK},
+        {"name": "Gloss -> Aramaic", "qfmt": REVERSE_FRONT,
+         "afmt": REVERSE_BACK},
     ],
     css=CSS,
     sort_field_index=1,  # sort the browser by vocalization
 )
-
-
-CHAPTER_RE = re.compile(r"^chapter(\d+)\.txt$")
-
-
-def chapters():
-    """-> [(number, vocab path)], in chapter order."""
-    found = []
-    for path in ROOT.glob("chapter*.txt"):
-        match = CHAPTER_RE.match(path.name)
-        if match:
-            found.append((int(match.group(1)), path))
-    return sorted(found)
-
-
-def scan_dir(number):
-    """The directory of textbook scans for a chapter, if it is still there.
-
-    Only used to warn about a scan with no entry; the deck itself no longer
-    reads them.
-    """
-    path = ROOT / f"chapter {number}"
-    return path if path.is_dir() else None
 
 
 def main():
@@ -238,47 +204,30 @@ def main():
         raise SystemExit(
             f"{FONT_SRC} is missing; run python3 scripts/build_font.py")
 
-    decks, problems = [], []
+    decks, total = [], 0
 
-    for idx, (number, vocab) in enumerate(chapters()):
+    for idx, (number, entries) in enumerate(vocab.load()):
         deck = genanki.Deck(DECK_BASE_ID + idx,
-                            f"Targumic Aramaic::Chapter {number}")
+                            f"Targumic Aramaic::{vocab.deck_name(number)}")
         # Feeds the note guid, so changing it orphans the review history.
         slug = f"chapter-{number}"
 
-        lines = vocab.read_text(encoding="utf-8").splitlines()
-        covered, count = set(), 0
-
-        for lineno, raw in enumerate(lines, 1):
-            entry = parse_line(raw)
-            if entry is None:
-                continue
-            try:
-                aramaics, vocalizations, gloss, pos, notes = entry
-            except ValueError as exc:
-                raise ValueError(f"{vocab.name}:{lineno}: {exc}") from exc
-            covered.update(nfc(v) for v in vocalizations)
-
+        for entry in entries:
             deck.add_note(
                 genanki.Note(
                     model=MODEL,
-                    fields=["/".join(aramaics), " / ".join(vocalizations),
-                            gloss, pos, notes],
-                    guid=genanki.guid_for(slug, vocalizations[0]),
+                    fields=["/".join(entry["aramaic"]),
+                            " / ".join(entry["vocalization"]),
+                            entry["gloss"], entry["pos"],
+                            vocab.notes_text(entry),
+                            vocab.deck_name(number)],
+                    guid=genanki.guid_for(slug, entry["vocalization"][0]),
                 )
             )
-            count += 1
 
-        # A scan with no entry means a word that never got transcribed.
-        scans = scan_dir(number)
-        if scans:
-            for orphan in sorted(nfc(p.name[:-4]) for p in scans.glob("*.png")):
-                if orphan not in covered:
-                    problems.append(
-                        f"{scans.name}/{orphan}.png has no {vocab.name} entry")
-
-        print(f"{deck.name}: {count} cards")
+        print(f"{deck.name}: {len(entries)} entries")
         decks.append(deck)
+        total += len(entries)
 
     # genanki names media by basename, so the file has to exist under the name
     # @font-face asks for. Staged in a temp dir to leave nothing behind.
@@ -289,10 +238,9 @@ def main():
         package.media_files = [str(staged)]
         package.write_to_file(out_path)
 
-    print(f"\nwrote {out_path}")
-    for p in problems:
-        print(f"  warning: {p}")
-    return 1 if problems else 0
+    cards = total * len(MODEL.templates)
+    print(f"\nwrote {out_path}  ({total} entries, {cards} cards)")
+    return 0
 
 
 if __name__ == "__main__":

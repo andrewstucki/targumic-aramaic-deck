@@ -4,10 +4,34 @@ This project can be used to generate `targumic-aramaic.apkg`, an Anki package
 for the vocabulary found in Lambdin and Huehnergard's *The Aramaic of Targum
 Onqelos*.
 
-To add vocabulary to the deck, add a `chapter*.txt` file with the corresponding
-vocabulary and re-render the package. The front of each card is the Aramaic
-word set in the `Onqelos` font that ships inside the deck. The back adds the
-gloss, part of speech and notes, with the transliteration in the corner.
+To add vocabulary to the deck, add it to `vocabulary.yaml` and re-render the
+package.
+
+Every entry makes two cards, one in each direction:
+
+- **Aramaic → Gloss** shows the word set in the `Onqelos` font that ships
+  inside the deck, and answers with the gloss, part of speech and notes, the
+  transliteration in the corner.
+- **Gloss → Aramaic** shows the meaning, the part of speech and the chapter,
+  and answers with the word. The transliteration is held back to the answer,
+  since it gives the word away, and so are the notes, which quote forms and
+  idioms.
+
+Because the recall card is answered from the meaning alone, a gloss has to be
+unique within its chapter. Three ways to separate two words that would
+otherwise share one:
+
+- If they differ by stem, name the stem: `to look (G)` and `to look (Dt)`.
+- If they are only spellings of one word, make them one entry with two
+  `aramaic` variants, the way `sānǝyā/sānǝʔā` is.
+- Otherwise number them `(I)` and `(II)`, as `on, upon (I)` and
+  `on, upon (II)` are.
+
+Across chapters a gloss may repeat — the chapter in the corner tells them
+apart.
+
+To study one direction only, suspend the other card type in Anki: browse by
+`card:"Gloss -> Aramaic"`, select all and suspend.
 
 Re-importing an updated deck updates the existing cards and keeps their review
 history, since note ids come from the chapter and the first vocalization.
@@ -22,6 +46,7 @@ make
 |---|---|
 | `make` | `Onqelos-Regular.ttf`, then `targumic-aramaic.apkg` |
 | `make proof` | `vocab-proof.pdf` — the vocabulary, a page per chapter (needs `hb-view` on PATH — `brew install harfbuzz`) |
+| `make check` | report an ambiguous gloss, or a spelling that disagrees with its transliteration |
 | `make clean` | remove generated files |
 | `make distclean` | also remove the downloaded base font |
 
@@ -29,19 +54,35 @@ The build scripts driving these targets are in `scripts/`.
 
 ## Adding vocabulary
 
-Each entry for vocabulary follows the following format:
+All of it lives in `vocabulary.yaml`, a list of chapters:
 
+```yaml
+- chapter: 1
+  entries:
+    - aramaic: [גֻוברָא, גַברָא]
+      vocalization: [gubrā, gabrā]
+      gloss: man
+      pos: noun
+      notes: (sometimes gabrā).
+      hebrew: ʔîš
 ```
-aramaic | vocalization | gloss. part-of-speech. optional notes
-```
 
-- `/` separates variants in either of the first two fields (`gubrā/gabrā`). The
-  first vocalization fixes the note id, so do not reorder them.
-- The part of speech is found by keyword (`verb`, `noun`, `prep`, …); anything
-  after it becomes the notes.
-- Blank lines and `#` comments are ignored.
+- Each chapter becomes its own subdeck. `chapter` is a lesson number, or a
+  label for material that is not a numbered lesson (`Appendix - Genesis
+  12-16`); labelled chapters come last. Chapter order fixes the deck ids and
+  the first vocalization of an entry fixes its note id, so reordering either
+  orphans review history.
+- `aramaic` and `vocalization` are parallel lists, so the nth spelling goes
+  with the nth transliteration. A word spelled several ways but pronounced one
+  way gives a single vocalization for all of its spellings.
+- `gloss` is the definition alone; grammatical detail, forms, idioms and
+  derived stems belong in `notes`. It is required, and `pos`, `notes` and
+  `hebrew` may be left out.
+- `hebrew` is the equivalent the textbook glossary gives. It is a field of its
+  own rather than prose so it can be read on its own; the card shows it after
+  the notes.
 
-The first field is Hebrew with ordinary Tiberian pointing, which the font
+`aramaic` is Hebrew with ordinary Tiberian pointing, which the font
 renders as Babylonian supralinear signs. Three conventions:
 
 - Put the vowel on the consonant it follows and leave any mater bare: `yomā` is
@@ -51,7 +92,11 @@ renders as Babylonian supralinear signs. Three conventions:
 - Sheva only where the transliteration has `ǝ` (vocalized); a consonant that
   merely closes a syllable stays bare. `malkā` = מַלכָא, but `malkǝtā` = מַלכְתָא.
 
-`make proof` is the way to check an entry after editing it.
+`make proof` is the way to check an entry after editing it. `make check`
+enforces the rules above: it reports a gloss shared within a chapter, and
+compares every spelling with its transliteration twice over — the vowel marks
+in order, and then the consonants, allowing for matres and for a doubled
+consonant being written once — so a mark left off or a wrong letter is caught.
 
 ## Typing the pointing
 

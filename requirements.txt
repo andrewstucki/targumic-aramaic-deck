@@ -1,4 +1,5 @@
 genanki      # the .apkg writer
+pyyaml       # reads the chapter vocabulary files
 fonttools    # builds the font
 brotli       # fonttools needs it to write woff2
 uharfbuzz    # shapes the coverage sheet

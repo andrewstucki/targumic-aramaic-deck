@@ -1,0 +1,2231 @@
+# Targumic Aramaic vocabulary, by chapter of Lambdin and Huehnergard's
+# The Aramaic of Targum Onqelos. See README.md for the fields.
+
+- chapter: 1
+  entries:
+    - aramaic: [אְבַד]
+      vocalization: [ʔǝbad]
+      gloss: to perish, die
+      pos: verb
+      notes: (sometimes ʔabad).
+      hebrew: ʔbd
+    - aramaic: [אְזַל]
+      vocalization: [ʔǝzal]
+      gloss: to go
+      pos: verb
+      notes: (sometimes ʔazal).
+      hebrew: hlk
+    - aramaic: [נְטַל]
+      vocalization: [nǝṭal]
+      gloss: to raise, lift, take up; to set out, travel
+      pos: verb
+      hebrew: nsʕ
+    - aramaic: [נְפַק]
+      vocalization: [nǝpaq]
+      gloss: to go forth
+      pos: verb
+      notes: nǝpaq min to depart from, leave (a place).
+      hebrew: yṣʔ
+    - aramaic: [עְרַק]
+      vocalization: [ʕǝraq]
+      gloss: to flee
+      pos: verb
+      hebrew: brḥ,nws
+    - aramaic: [אִיתְתָא]
+      vocalization: [ʔittǝtā]
+      gloss: woman, wife
+      pos: noun
+      hebrew: ʔiššā
+    - aramaic: [גֻוברָא, גַברָא]
+      vocalization: [gubrā, gabrā]
+      gloss: man
+      pos: noun
+      hebrew: ʔîš
+    - aramaic: [טֻורָא]
+      vocalization: [ṭurā]
+      gloss: mountain
+      pos: noun
+      hebrew: har
+    - aramaic: [מַלכָא]
+      vocalization: [malkā]
+      gloss: king
+      pos: noun
+      hebrew: mélek
+    - aramaic: [מַלכְתָא]
+      vocalization: [malkǝtā]
+      gloss: queen
+      pos: noun
+      hebrew: malkā
+    - aramaic: [עַמָא]
+      vocalization: [ʕammā]
+      gloss: people, the people; nation
+      pos: noun
+      notes: Verbal agreement with ʕammā may be singular or plural.
+      hebrew: ʕam
+    - aramaic: [קַרתָא]
+      vocalization: [qartā]
+      gloss: city
+      pos: noun
+      hebrew: ʕîr
+    - aramaic: [לְ]
+      vocalization: [lǝ-]
+      gloss: to, for (a person), to, into (a place)
+      pos: preposition
+      hebrew: lǝ-/ʔel
+    - aramaic: [מִין, מִן]
+      vocalization: [min]
+      gloss: "from, out of; also partitive: some of"
+      pos: preposition
+      hebrew: min
+    - aramaic: [לָא]
+      vocalization: [lā]
+      gloss: (negative)
+      pos: adverb
+      hebrew: ʔal
+    - aramaic: [תַמָן]
+      vocalization: [tammān]
+      gloss: there, in that place
+      pos: adverb
+      notes: lǝ-tammān to there, thither; mit-tammān from there, thence.
+      hebrew: šām
+
+- chapter: 2
+  entries:
+    - aramaic: [דְבַר]
+      vocalization: [dǝbar]
+      gloss: to take, to lead (away)
+      pos: verb
+      notes: direct object is (1) a person or animal one takes along from one place to another; or (2) a person one takes as part of one’s group, household, or family.
+      hebrew: lqḥ
+    - aramaic: [כְתַב]
+      vocalization: [kǝtab]
+      gloss: to write
+      pos: verb
+      hebrew: ktb
+    - aramaic: [עְבַר]
+      vocalization: [ʕǝbar]
+      gloss: "to cross (something: yāt or bǝ-); to transgress"
+      pos: verb
+      hebrew: ʕbr
+    - aramaic: [פְלַח]
+      vocalization: [pǝlaḥ]
+      gloss: to serve (as slave, etc.)
+      pos: verb
+      hebrew: ʕbd
+    - aramaic: [קְטַל]
+      vocalization: [qǝṭal]
+      gloss: to kill
+      pos: verb
+      hebrew: hrg/qṭl
+    - aramaic: [אַרעָא]
+      vocalization: [ʔarʕā]
+      gloss: land, country; the earth
+      pos: noun
+      notes: (feminine).
+      hebrew: ʔéreṣ
+    - aramaic: [כַספָא]
+      vocalization: [kaspā]
+      gloss: silver, money
+      pos: noun
+    - aramaic: [נַהרָא]
+      vocalization: [nahrā]
+      gloss: river
+      pos: noun
+      hebrew: nāhār
+    - aramaic: [פִתגָמָא]
+      vocalization: [pitgāmā]
+      gloss: word, thing, affair
+      pos: noun
+      hebrew: dābār
+    - aramaic: [צַפרָא]
+      vocalization: [ṣaprā]
+      gloss: morning
+      pos: noun
+      hebrew: bṓqer
+    - aramaic: [קִניָנָא]
+      vocalization: [qinyānā]
+      gloss: property, possessions
+      pos: noun
+    - aramaic: [רַמשָא]
+      vocalization: [ramšā]
+      gloss: evening
+      pos: noun
+      hebrew: ʕéreb
+    - aramaic: [בְ]
+      vocalization: [bǝ-]
+      gloss: in, within; with (instrumental)
+      pos: preposition
+      hebrew: bǝ-
+    - aramaic: [יָת]
+      vocalization: [yāt]
+      gloss: direct object marker
+      pos: particle
+      hebrew: ʔet-/ʔēt
+    - aramaic: [לְמָא, עַל מָא]
+      vocalization: [lǝmā, ʕal mā]
+      gloss: why?
+      pos: adverb
+      notes: (interrogative).
+      hebrew: lā́mmā
+
+- chapter: 3
+  entries:
+    - aramaic: [יְהַב]
+      vocalization: [yǝhab]
+      gloss: to give; to place, set
+      pos: verb
+      hebrew: ntn
+    - aramaic: [נְחַת]
+      vocalization: [nǝḥat]
+      gloss: to come/go down, descend
+      pos: verb
+      notes: (also nǝḥet; see §5.1).
+      hebrew: yrd
+    - aramaic: [נְפַל]
+      vocalization: [nǝpal]
+      gloss: to fall
+      pos: verb
+      hebrew: npl
+    - aramaic: [פְרַס]
+      vocalization: [pǝras]
+      gloss: to pitch (a tent)
+      pos: verb
+      hebrew: nṭh
+    - aramaic: [בֵיתָא]
+      vocalization: [betā]
+      gloss: house
+      pos: noun
+      notes: (masculine).
+      hebrew: báyit
+    - aramaic: [לַחמָא]
+      vocalization: [laḥmā]
+      gloss: bread, food
+      pos: noun
+      hebrew: léḥem
+    - aramaic: [מַיָא]
+      vocalization: [mayyā]
+      gloss: water
+      pos: noun
+      notes: (plural).
+      hebrew: máyim
+    - aramaic: [מֵישְרָא]
+      vocalization: [mešǝrā]
+      gloss: plain, valley
+      pos: noun
+      hebrew: mîšôr
+    - aramaic: [מַשכְנָא]
+      vocalization: [maškǝnā]
+      gloss: tent, habitation
+      pos: noun
+      hebrew: ʔṓhel/miškān
+    - aramaic: [לְוָת]
+      vocalization: [lǝwāt]
+      gloss: to, unto, into the presence of (a person)
+      pos: preposition
+      hebrew: ʔel/lipnê
+    - aramaic: [עַד]
+      vocalization: [ʕad]
+      gloss: up to, as far as, until
+      pos: preposition
+      hebrew: ʕad ʕôlām
+    - aramaic: [עַל]
+      vocalization: [ʕal]
+      gloss: on, down onto; against; about, concerning, in regard to
+      pos: preposition
+      hebrew: bwʔ
+    - aramaic: [מֵעַל]
+      vocalization: [me-ʕal]
+      gloss: from upon
+      pos: preposition
+      hebrew: mēʕal
+    - aramaic: [מִלְוָת]
+      vocalization: [mil-lǝwāt]
+      gloss: from the presence of
+      pos: preposition
+      hebrew: mil-lipnê
+
+- chapter: 4
+  entries:
+    - aramaic: [אְכַל]
+      vocalization: [ʔǝkal]
+      gloss: to eat
+      pos: verb
+      hebrew: ʔkl
+    - aramaic: [גְזַר]
+      vocalization: [gǝzar]
+      gloss: to cut; to circumcise
+      pos: verb
+      notes: gǝzar qǝyām ʕim to make a covenant with.
+      hebrew: gzr/krt
+    - aramaic: [מְסַר]
+      vocalization: [mǝsar]
+      gloss: "to hand over (to, into the hand of: bǝ-yad, lǝ-, or qǝdām)"
+      pos: verb
+    - aramaic: [נְטַר]
+      vocalization: [nǝṭar]
+      gloss: to guard, preserve, keep, observe
+      pos: verb
+      hebrew: nṣr
+    - aramaic: [רְדַף]
+      vocalization: [rǝdap]
+      gloss: to pursue (obj. with bātar)
+      pos: verb
+      hebrew: rdp
+    - aramaic: [רְהַט]
+      vocalization: [rǝhaṭ]
+      gloss: to run
+      pos: verb
+      notes: (also rǝheṭ; see lesson 5).
+      hebrew: rwṣ
+    - aramaic: [שְבַק]
+      vocalization: [šǝbaq]
+      gloss: "to leave, abandon, forsake; with lǝ-: to forgive"
+      pos: verb
+      hebrew: ʕzb
+    - aramaic: [הֵיכְלָא]
+      vocalization: [hekǝlā]
+      gloss: palace, temple
+      pos: noun
+      hebrew: hêkāl
+    - aramaic: [עֻולֵימָא]
+      vocalization: [ʕulemā]
+      gloss: boy, lad; servant, attendant
+      pos: noun
+      hebrew: náʕar/ʕélem
+    - aramaic: [עֻולֵימְתָא]
+      vocalization: [ʕulemǝtā]
+      gloss: girl, maiden
+      pos: noun
+      hebrew: naʕărā/ʕalmā
+    - aramaic: [קְיָמָא]
+      vocalization: [qǝyāmā]
+      gloss: treaty, covenant
+      pos: noun
+      notes: also qiyāmā; gǝzar qǝyām ʕim to make a covenant with.
+      hebrew: bǝrît
+    - aramaic: [בְגֹו]
+      vocalization: [bǝ-go]
+      gloss: in, within, in the midst of
+      pos: preposition
+      notes: (with suffix bǝ-gawwi, etc.).
+      hebrew: bǝ-tôk
+    - aramaic: [מִגֹו]
+      vocalization: [mig-go]
+      gloss: from within, from the midst of
+      pos: preposition
+      notes: (with suffix mig-gawwi, etc.).
+      hebrew: mit-tôk
+    - aramaic: [בְיַד]
+      vocalization: [bǝ-yad]
+      gloss: into the hand/power of
+      pos: preposition
+    - aramaic: [בָתַר]
+      vocalization: [bātar]
+      gloss: after, behind (both spatial and temporal meanings)
+      pos: preposition
+      notes: pronominal suffixes with bātar are given in §7.2.
+      hebrew: ʔaḥărê
+    - aramaic: [כְ]
+      vocalization: [kǝ-]
+      gloss: like, as, according to
+      pos: preposition
+      notes: kǝ- does not take pronominal suffixes.
+      hebrew: kǝ-
+    - aramaic: [עִם]
+      vocalization: [ʕim]
+      gloss: with, together with
+      pos: preposition
+      notes: (with suffix ʕimmi, etc.).
+      hebrew: ʕim/ʔet-/ʔēt
+    - aramaic: [קְדָם]
+      vocalization: [qǝdām]
+      gloss: before, in the presence of
+      pos: preposition
+      notes: min qǝdām from before, from the presence of; pronominal suffixes with qǝdām are given in §7.2.
+      hebrew: lipnê
+
+- chapter: 5
+  entries:
+    - aramaic: [דְחֵיל]
+      vocalization: [dǝḥel]
+      gloss: to be afraid, fear (object usually with min or min qǝdām)
+      pos: verb
+      hebrew: yrʔ
+    - aramaic: [יְתֵיב]
+      vocalization: [yǝteb]
+      gloss: to sit, dwell, remain, settle
+      pos: verb
+      hebrew: yšb
+    - aramaic: [נְסֵיב, נְסַב]
+      vocalization: [nǝseb, nǝsab]
+      gloss: to take
+      pos: verb
+      notes: (the most general verb of ‘taking’; includes all the meanings noted for dǝbar as well).
+      hebrew: lqḥ
+    - aramaic: [סְגֵיד]
+      vocalization: [sǝged]
+      gloss: to bow down
+      pos: verb
+      hebrew: hištaḥăwā
+    - aramaic: [סְלֵיק]
+      vocalization: [sǝleq]
+      gloss: to go up, ascend (intrans.)
+      pos: verb
+      hebrew: ʕlh
+    - aramaic: [קְרֵיב]
+      vocalization: [qǝreb]
+      gloss: "to approach, draw near (to: lǝ-, lǝwāt); to be on the point of (+ infinitive)"
+      pos: verb
+      notes: qǝreb bǝ- to come into contact with, touch.
+      hebrew: qrb
+    - aramaic: [תְקֵיף]
+      vocalization: [tǝqep]
+      gloss: to grow strong, be strong; to be severe; to become rich, wealthy
+      pos: verb
+      notes: tǝqep lǝ-N N became angry (e.g., tǝqep lǝ-malkā the king became angry; tǝqep li I became angry).
+      hebrew: kbd/ḥzq
+    - aramaic: [דָרֹומָא]
+      vocalization: [dāromā]
+      gloss: the south
+      pos: noun
+      notes: mid-dāromā lǝ- on the south of.
+      hebrew: dārôm
+    - aramaic: [כַפנָא]
+      vocalization: [kapnā]
+      gloss: famine, hunger
+      pos: noun
+      hebrew: rāʕāb
+    - aramaic: [מַדבְרָא]
+      vocalization: [madbǝrā]
+      gloss: desert, steppe, wilderness
+      pos: noun
+    - aramaic: [מַדנְחָא]
+      vocalization: [madnǝḥā]
+      gloss: the east
+      pos: noun
+      notes: also madinḥā; lǝ-madnǝḥā east(ward); mim-madnǝḥā on the east; mim-madnaḥ (or madnǝḥā) lǝ- on/to the east of.
+      hebrew: mizrāḥ
+    - aramaic: [מַערְבָא]
+      vocalization: [maʕrǝbā]
+      gloss: the west
+      pos: noun
+      notes: also maʕarḇā; mim-maʕrǝbā on the west.
+      hebrew: maʕărāb
+    - aramaic: [מִצרַיִם]
+      vocalization: [Miṣráyim]
+      gloss: Egypt
+      pos: noun
+      hebrew: Miṣráyim
+    - aramaic: [צִיפֻונָא]
+      vocalization: [ṣippunā]
+      gloss: the north
+      pos: noun
+      hebrew: ṣāpōn
+
+- chapter: 6
+  entries:
+    - aramaic: [רְחֵים]
+      vocalization: [rǝḥem]
+      gloss: to love
+      pos: verb
+      hebrew: ʔhb
+    - aramaic: [אַמתָא]
+      vocalization: [ʔamṯā]
+      gloss: female servant, slave
+      pos: noun
+      hebrew: ʔāmā
+    - aramaic: [אַתָנָא, אְתָנָא]
+      vocalization: [ʔattānā, ʔǝtānā]
+      gloss: female donkey
+      pos: noun
+      hebrew: ʔātōn
+    - aramaic: [בְעִירָא]
+      vocalization: [bǝʕirā]
+      gloss: cattle
+      pos: noun
+      hebrew: bāqār/bǝʕîr
+    - aramaic: [בַעלָא]
+      vocalization: [baʕlā]
+      gloss: husband
+      pos: noun
+      hebrew: báʕal
+    - aramaic: [בְרָא]
+      vocalization: [bǝrā]
+      gloss: son
+      pos: noun
+      hebrew: bĕn
+    - aramaic: [בְרַתָא]
+      vocalization: [bǝrattā]
+      gloss: daughter
+      pos: noun
+      hebrew: bat
+    - aramaic: [גִינְתָא]
+      vocalization: [ginnǝtā]
+      gloss: garden
+      pos: noun
+      hebrew: gan(nā)
+    - aramaic: [גַמלָא]
+      vocalization: [gamlā]
+      gloss: camel
+      pos: noun
+      hebrew: gāmāl
+    - aramaic: [חְמָרָא]
+      vocalization: [ḥǝmārā]
+      gloss: male donkey
+      pos: noun
+      hebrew: ḥămôr
+    - aramaic: [חַקלָא]
+      vocalization: [ḥaqlā]
+      gloss: field
+      pos: noun
+      hebrew: śāde
+    - aramaic: [חַרבָא]
+      vocalization: [ḥarbā]
+      gloss: sword
+      pos: noun
+      notes: (feminine).
+      hebrew: ḥéreb
+    - aramaic: [עַבדָא]
+      vocalization: [ʕabdā]
+      gloss: male servant, slave; attendant
+      pos: noun
+      hebrew: ʕébed
+    - aramaic: [עָנָא]
+      vocalization: [ʕānā]
+      gloss: flock(s) (sheep and goats)
+      pos: noun
+      notes: feminine; sometimes construed as feminine plural.
+      hebrew: ṣō(ʔ)n
+    - aramaic: [רֻוגזָא]
+      vocalization: [rugzā]
+      gloss: anger, wrath
+      pos: noun
+      notes: tǝqep rugzeh bǝ- he became angry at/with.
+      hebrew: rṓgez
+    - aramaic: [תֹורָא]
+      vocalization: [torā]
+      gloss: bull, ox
+      pos: noun
+      hebrew: šôr/ʔélep
+    - aramaic: [תֹורְתָא]
+      vocalization: [torǝtā]
+      gloss: cow
+      pos: noun
+      hebrew: pārā?
+
+- chapter: 7
+  entries:
+    - aramaic: [קְדָם]
+      vocalization: [qǝdām]
+      gloss: before, in the presence of
+      pos: preposition
+      notes: (with a suffix, the base is qǝdām-).
+      hebrew: lipnê
+    - aramaic: [תְחֹות]
+      vocalization: [tǝḥot]
+      gloss: under, beneath
+      pos: preposition
+      notes: with a suffix, the base is tǝḥot- (but 3rd fem. sg. is tǝḥot-ah).
+      hebrew: táḥat
+    - aramaic: [בֵין]
+      vocalization: [ben]
+      gloss: between
+      pos: preposition
+      notes: with a suffix, the base is ben- (but 1st pers. sg. is ben-a, sometimes ben-i).
+      hebrew: bên
+    - aramaic: [עַל]
+      vocalization: [ʕal]
+      gloss: on, upon (I)
+      pos: preposition
+      notes: with a suffix, the base is ʕǝl- (but 3rd fem. sg. is ʕǝl-ah).
+      hebrew: bwʔ
+    - aramaic: [עִילָוֵי]
+      vocalization: [ʕillāwe]
+      gloss: on, upon (II)
+      pos: preposition
+      notes: with a suffix, the base is ʕillāw-; a synonym of ʕal, used especially in the compound me-ʕillāwe (= me-ʕal) when pronominal suffixes are required.
+    - aramaic: [אְחַד]
+      vocalization: [ʔǝḥad]
+      gloss: to seize, grasp, lay hold of; to close (a door)
+      pos: verb
+      hebrew: ʔḥz
+    - aramaic: [אְמַר]
+      vocalization: [ʔǝmar]
+      gloss: to say
+      pos: verb
+      hebrew: ʔmr
+    - aramaic: [יְדַע]
+      vocalization: [yǝdaʕ]
+      gloss: to know
+      pos: verb
+      hebrew: ydʕ
+    - aramaic: [יְרֵית]
+      vocalization: [yǝret]
+      gloss: to inherit
+      pos: verb
+      hebrew: yrš
+    - aramaic: [נְצַב]
+      vocalization: [nǝṣab]
+      gloss: to plant
+      pos: verb
+      hebrew: nṭʕ
+    - aramaic: [עְבַד]
+      vocalization: [ʕǝbad]
+      gloss: to do, act; to make, fashion
+      pos: verb
+      hebrew: ʕśh
+    - aramaic: [פְתַח]
+      vocalization: [pǝtaḥ]
+      gloss: to open
+      pos: verb
+      hebrew: ptḥ
+    - aramaic: [אִילָנָא]
+      vocalization: [ʔilānā]
+      gloss: tree
+      pos: noun
+      hebrew: ʕēṣ
+    - aramaic: [דַשָא]
+      vocalization: [daššā]
+      gloss: door, doorleaf
+      pos: noun
+      hebrew: délet
+    - aramaic: [יֹומָא]
+      vocalization: [yomā]
+      gloss: day
+      pos: noun
+      hebrew: yôm
+    - aramaic: [לֵילְיָא]
+      vocalization: [lelǝyā]
+      gloss: night
+      pos: noun
+      hebrew: laylā
+    - aramaic: [תַרעָא]
+      vocalization: [tarʕā]
+      gloss: gate (of a city), doorway (of a house or tent)
+      pos: noun
+      hebrew: šáʕar
+    - aramaic: [אְרֵי]
+      vocalization: [ʔǝre]
+      gloss: (the fact) that; when, since, because
+      pos: conjunction
+      notes: corresponds to Hebrew kî.
+      hebrew: kî
+    - aramaic: [כֹל]
+      vocalization: [kol]
+      gloss: all of, the whole of
+      pos: noun
+      notes: "also written with a qametz in imitation of Tiberian. Before an emphatic singular noun used definitely: kol mešǝrā the whole plain; kol qartā the whole city; kol ʔarʕā the whole earth, all the land; kol qinyāneh all of his property. With a suffix the base is kull-: kulleh ‘all of it (m)’."
+      hebrew: kōl/kol-
+    - aramaic: [מָא]
+      vocalization: [mā]
+      gloss: what?
+      pos: pronoun
+      notes: (interrogative).
+      hebrew: mā
+    - aramaic: [מַן]
+      vocalization: [man]
+      gloss: who?
+      pos: pronoun
+      notes: (interrogative).
+      hebrew: mî
+
+- chapter: 8
+  entries:
+    - aramaic: [זְבַן]
+      vocalization: [zǝban]
+      gloss: to buy, purchase
+      pos: verb
+    - aramaic: [נְפֵיש]
+      vocalization: [nǝpeš]
+      gloss: to become numerous, widespread
+      pos: verb
+    - aramaic: [שְכֵיב]
+      vocalization: [šǝkeb]
+      gloss: to lie down
+      pos: verb
+      hebrew: škb
+    - aramaic: [שְלַח]
+      vocalization: [šǝlaḥ]
+      gloss: to send, to send a message/messenger
+      pos: verb
+      hebrew: šlḥ
+    - aramaic: [שְמַע]
+      vocalization: [šǝmaʕ]
+      gloss: to hear
+      pos: verb
+      hebrew: šmʕ
+    - aramaic: [אַתרָא]
+      vocalization: [ʔatrā]
+      gloss: place, site, location
+      pos: noun
+      notes: pl. -ayyā.
+    - aramaic: [דַהבָא]
+      vocalization: [dahbā]
+      gloss: gold
+      pos: noun
+    - aramaic: [מָנָא]
+      vocalization: [mānā]
+      gloss: vessel, utensil
+      pos: noun
+      notes: also spelled with middle aleph; pl. -ayyā.
+    - aramaic: [נְבִיָא]
+      vocalization: [nǝbiyā]
+      gloss: prophet
+      pos: noun
+      notes: pl. -ayyā.
+      hebrew: nābîʔ
+    - aramaic: [קָלָא]
+      vocalization: [qālā]
+      gloss: voice, sound
+      pos: noun
+      notes: pl. -ayyā.
+      hebrew: qôl
+    - aramaic: [תְחֹות]
+      vocalization: [tǝḥot]
+      gloss: under, beneath
+      pos: preposition
+      notes: with pl. suffixes; see §7.2.
+      hebrew: táḥat
+    - aramaic: [אָן]
+      vocalization: [ʔān]
+      gloss: where?
+      pos: adverb
+      notes: (interrogative).
+      hebrew: ʔān
+    - aramaic: [לְאָן]
+      vocalization: [lǝ-ʔān]
+      gloss: whither?
+      pos: adverb
+      notes: interrogative.
+    - aramaic: [מְנָן]
+      vocalization: [mǝnān]
+      gloss: whence?
+      pos: adverb
+      notes: interrogative.
+
+- chapter: 9
+  entries:
+    - aramaic: [אְסַר]
+      vocalization: [ʔǝsar]
+      gloss: to bind, take captive
+      pos: verb
+      hebrew: ʔsr
+    - aramaic: [דְחֵיק, דְחַק]
+      vocalization: [dǝḥeq, dǝḥaq]
+      gloss: to press, urge; to oppress (yāt, bǝ-, lǝ-)
+      pos: verb
+      hebrew: dḥq twice
+    - aramaic: [הְפַך]
+      vocalization: [hǝpak]
+      gloss: "to overthrow; to convert, change (x into y: yāt x lǝ-y)"
+      pos: verb
+      hebrew: hpk
+    - aramaic: [טְמַר]
+      vocalization: [ṭǝmar]
+      gloss: to hide, conceal
+      pos: verb
+      hebrew: ṭmr
+    - aramaic: [תְבַר]
+      vocalization: [tǝbar]
+      gloss: to break, break down; to subdue
+      pos: verb
+      hebrew: šbr
+    - aramaic: [אַפַיָא]
+      vocalization: [ʔappayyā]
+      gloss: face, surface
+      pos: noun
+      notes: plural; most frequent in prep. phrases, esp. ʕal ʔappe (with pl. suffixes, §7.2) on the face/surface of; right up against, over against.
+      hebrew: pānîm
+    - aramaic: [בָרָא]
+      vocalization: [bārā]
+      gloss: the outside (of a place)
+      pos: noun
+      notes: "used mainly in fixed prepositional and adverbial expressions: lǝ-bārā to the outside; mib-bārā on the outside (of: lǝ-); lǝ-mib-bārā to the outside (of: lǝ-); bār min except, except for, other than."
+      hebrew: ḥûṣ
+    - aramaic: [יְדָא]
+      vocalization: [yǝdā]
+      gloss: hand
+      pos: noun
+      notes: "cstr. yad; pl. -ayyā; feminine; sing. with suffix: yǝdi, yǝdāk, yǝdeh, etc., but yadkon; note forms with preceding w, b, etc.: w-idā, b-idā, w-idayyā, b-idayyā, etc.; with prep. min: either miy-yǝdā or m-idā. bǝ-yad (or b-idā dǝ-) into the hand/power/control of; through, by means of; nǝseb b-ideh he picked up."
+      hebrew: yād
+    - aramaic: [יוי, יי]
+      vocalization: [Ywy, Yy]
+      gloss: the divine name
+      pos: noun
+      notes: the usual writing; presumably read ʔǝdonāy as in Hebrew.
+    - aramaic: [כַרמָא]
+      vocalization: [karmā]
+      gloss: vineyard
+      pos: noun
+      hebrew: kérem
+    - aramaic: [מַדבְחָא]
+      vocalization: [madbǝḥā]
+      gloss: altar
+      pos: noun
+      notes: cstr. madbaḥ; pl. -ayyā.
+      hebrew: mizbēaḥ
+    - aramaic: [מַלכֻותָא]
+      vocalization: [malḵutā]
+      gloss: kingdom, reign, rule
+      pos: noun
+      notes: cstr. malḵut; pl. malḵǝwātā.
+      hebrew: malḵût,mamlākā
+    - aramaic: [קְרָבָא]
+      vocalization: [qǝrābā]
+      gloss: battle, war
+      pos: noun
+      notes: pl. -ayyā; ʕǝbad qǝrābā ʕim to wage war against.
+      hebrew: milḥāmā
+    - aramaic: [שְמָא]
+      vocalization: [šǝmā]
+      gloss: name
+      pos: noun
+      notes: cstr. šom or šem; pl. šǝmāhātā.
+      hebrew: šēm
+
+- chapter: 10
+  entries:
+    - aramaic: [אְתָא]
+      vocalization: [ʔǝtā]
+      gloss: to come
+      pos: verb
+      hebrew: bwʔ/ʔth
+    - aramaic: [בְנָא]
+      vocalization: [bǝnā]
+      gloss: to build
+      pos: verb
+      hebrew: bnh
+    - aramaic: [הְוָה]
+      vocalization: [hǝwāh]
+      gloss: to be
+      pos: verb
+      notes: "with lǝ-, to become: Hǝwāh Šāʔul lǝ-malkā Saul became king; note also Hǝwāh leh qinyānā He had property."
+      hebrew: hyh
+    - aramaic: [חְדִי]
+      vocalization: [ḥǝdi]
+      gloss: to rejoice (ʕal over)
+      pos: verb
+      hebrew: śmḥ/ḥdh
+    - aramaic: [חְזָא]
+      vocalization: [ḥǝzā]
+      gloss: to see
+      pos: verb
+      hebrew: rʔh/ḥzh
+    - aramaic: [מְנָא]
+      vocalization: [mǝnā]
+      gloss: to count
+      pos: verb
+      hebrew: mnh
+    - aramaic: [קְנָא]
+      vocalization: [qǝnā]
+      gloss: to acquire, purchase
+      pos: verb
+      hebrew: qnh
+    - aramaic: [קְרָא]
+      vocalization: [qǝrā]
+      gloss: to call, summon (lǝ-); to name
+      pos: verb
+      notes: "to name x y: yāt šom/šem x y; e.g., qǝrā yāt šom bǝreh Yiṣḥāq he named his son Isaac."
+      hebrew: qrʔ
+    - aramaic: [רְעָא]
+      vocalization: [rǝʕā]
+      gloss: to pasture, tend
+      pos: verb
+      hebrew: rʕh
+    - aramaic: [שְתִי]
+      vocalization: [šǝti]
+      gloss: to drink
+      pos: verb
+      hebrew: šth
+    - aramaic: [יִצחָק]
+      vocalization: [Yiṣḥāq]
+      gloss: Isaac
+      pos: noun
+
+- chapter: 11
+  entries:
+    - aramaic: [דָן]
+      vocalization: [dān]
+      gloss: to judge
+      pos: verb
+      hebrew: dyn
+    - aramaic: [דָר]
+      vocalization: [dār]
+      gloss: to sojourn
+      pos: verb
+      hebrew: gwr
+    - aramaic: [מִית]
+      vocalization: [mit]
+      gloss: to die
+      pos: verb
+      hebrew: mwt
+    - aramaic: [סִיב, סֵיב]
+      vocalization: [sib, seb]
+      gloss: to grow old
+      pos: verb
+      hebrew: zqn/śêbā
+    - aramaic: [עַל, עָל]
+      vocalization: [ʕal, ʕāl]
+      gloss: "to enter (a place: lǝ-)"
+      pos: verb
+      hebrew: bwʔ
+    - aramaic: [קָם]
+      vocalization: [qām]
+      gloss: to arise, stand, stop
+      pos: verb
+      hebrew: qwm
+    - aramaic: [שְרָא]
+      vocalization: [šǝrā]
+      gloss: to come to a stop, set up camp, settle down
+      pos: verb
+    - aramaic: [תָב]
+      vocalization: [tāb]
+      gloss: to return, go/come back
+      pos: verb
+      hebrew: šwb
+    - aramaic: [אִימָא]
+      vocalization: [ʔimmā]
+      gloss: mother
+      pos: noun
+      notes: pl. ʔimmāhātā; feminine; ʔimmā rather than ʔimmi for “my mother”.
+      hebrew: ʔēm
+    - aramaic: [בֵירָא]
+      vocalization: [berā]
+      gloss: well, pit
+      pos: noun
+      notes: (pl. -ayyā; feminine).
+      hebrew: bǝʔēr
+    - aramaic: [כֹוכְבָא]
+      vocalization: [kokǝbā]
+      gloss: star
+      pos: noun
+      notes: (pl. -ayyā).
+      hebrew: kôkāb
+    - aramaic: [מִלְתָא]
+      vocalization: [millǝtā]
+      gloss: word
+      pos: noun
+      notes: (pl. millayyā; feminine).
+      hebrew: dābār
+    - aramaic: [שְמַיָא]
+      vocalization: [šǝmayyā]
+      gloss: heaven, the sky
+      pos: noun
+      notes: (masculine plural).
+      hebrew: šǝmā́yim
+    - aramaic: [בֵין]
+      vocalization: [ben]
+      gloss: between
+      pos: preposition
+      notes: with pl. suffixes, see §7.2; ben x u-ben y, or ben x lǝ-y, between x and y.
+      hebrew: bên
+    - aramaic: [בִסטַר]
+      vocalization: [bi-sṭar]
+      gloss: beside, near
+      pos: preposition
+      notes: with suffixes bǝ-siṭreh, etc.
+      hebrew: ʔḗṣel/bǝ-ṣad
+    - aramaic: [בָתַר דְ]
+      vocalization: [bātar dǝ-]
+      gloss: after
+      pos: conjunction
+      hebrew: ʔaḥărê ʔăšer
+    - aramaic: [כַד]
+      vocalization: [kad]
+      gloss: when
+      pos: conjunction
+      hebrew: kaʔăšer/kî/bǝ-
+
+- chapter: 12
+  entries:
+    - aramaic: [יְכֵיל]
+      vocalization: [yǝkel]
+      gloss: to be able
+      pos: verb
+      notes: infin. mikkal or mekal; see §12.2.
+      hebrew: yākōl
+    - aramaic: [מְנַע]
+      vocalization: [mǝnaʕ]
+      gloss: to prevent, hinder
+      pos: verb
+      notes: see §12.2.
+      hebrew: mnʕ
+    - aramaic: [מֵיכְלָא]
+      vocalization: [mekǝlā]
+      gloss: food
+      pos: noun
+      notes: infin. of ʔǝkal used as a noun.
+    - aramaic: [מֵימְרָא]
+      vocalization: [memǝrā]
+      gloss: word, utterance
+      pos: noun
+      notes: infin. of ʔǝmar used as a noun; cstr. memar; memǝrā da-Yy the Word of the Lord, the most frequent circumlocution for God; lǝ-memar = Hebrew lēʔmōr, introducing a direct quotation.
+    - aramaic: [הָכָא]
+      vocalization: [hākā]
+      gloss: here
+      pos: adverb
+      notes: hālǝkā hither, to this place; mik-kā from here, hence.
+      hebrew: pōh
+    - aramaic: [כַחדָא]
+      vocalization: [kaḥdā]
+      gloss: together, as one
+      pos: adverb
+    - aramaic: [לַחדָא]
+      vocalization: [laḥdā]
+      gloss: very much, greatly
+      pos: adverb
+      hebrew: mǝʔōd
+    - aramaic: [כְנַעַן]
+      vocalization: [Kǝnáʕan]
+      gloss: Canaan
+      pos: noun
+      hebrew: Kǝnáʕan
+
+- chapter: 13
+  entries:
+    - aramaic: [בָרֵיך]
+      vocalization: [bārek]
+      gloss: to bless
+      pos: verb
+      notes: D-stem.
+      hebrew: bērēk
+    - aramaic: [זַבֵין]
+      vocalization: [zabben]
+      gloss: to sell
+      pos: verb
+      notes: D-stem.
+      hebrew: mkr
+    - aramaic: [חַבֵיל]
+      vocalization: [ḥabbel]
+      gloss: to destroy
+      pos: verb
+      notes: D-stem.
+      hebrew: šḥt D/ḥbl D
+    - aramaic: [מַלֵיל]
+      vocalization: [mallel]
+      gloss: "to speak (with: ʕim)"
+      pos: verb
+      notes: D-stem.
+      hebrew: dibbēr
+    - aramaic: [צַלִי]
+      vocalization: [ṣalli]
+      gloss: to pray
+      pos: verb
+      notes: D-stem.
+      hebrew: hitpallēl
+    - aramaic: [קַבֵיל]
+      vocalization: [qabbel]
+      gloss: to receive, accept
+      pos: verb
+      notes: D-stem; qabbel lǝ-memar X to heed, obey X (lit., to accept the word of X); qabbel ṣǝlotā to hear a prayer; qabbel min to obey.
+      hebrew: lqḥ/qbl D late
+    - aramaic: [קָרֵיב]
+      vocalization: [qāreb]
+      gloss: to bring, present, offer
+      pos: verb
+      notes: D-stem.
+      hebrew: qrb C
+    - aramaic: [שַבַח]
+      vocalization: [šabbaḥ]
+      gloss: to praise
+      pos: verb
+      notes: D-stem.
+      hebrew: hillēl
+    - aramaic: [שַוִי]
+      vocalization: [šawwi]
+      gloss: to put, place, set, set up, make
+      pos: verb
+      notes: D-stem.
+      hebrew: śym/šwh D late
+    - aramaic: [שָרִי]
+      vocalization: [šāri]
+      gloss: to begin (+ infin. or participle)
+      pos: verb
+      notes: D-stem.
+      hebrew: ḥll C
+    - aramaic: [תָרֵיך]
+      vocalization: [tārek]
+      gloss: to drive out, expel
+      pos: verb
+      notes: D-stem.
+      hebrew: grš
+    - aramaic: [בִרכְתָא]
+      vocalization: [birḵǝtā]
+      gloss: blessing
+      pos: noun
+      notes: pl. birḵātā.
+      hebrew: bǝrākā
+    - aramaic: [צְלֹותָא]
+      vocalization: [ṣǝlotā]
+      gloss: prayer
+      pos: noun
+      notes: see Paradigm A.3, end.
+      hebrew: tǝpillā
+    - aramaic: [קֻורבָנָא]
+      vocalization: [qurbānā]
+      gloss: offering
+      pos: noun
+      notes: pl. -ayyā.
+      hebrew: minḥā/qorbān
+    - aramaic: [לְקַדָמֻות]
+      vocalization: [lǝ-qaddāmut]
+      gloss: (out) to meet
+      pos: preposition
+      notes: D infin.
+      hebrew: liqra(ʔ)t
+    - aramaic: [מִסְטַר]
+      vocalization: [mis-sǝṭar]
+      gloss: from beside
+      pos: preposition
+      notes: with suffixes mis-siṭreh, etc.
+
+- chapter: 14
+  entries:
+    - aramaic: [אַחזִי]
+      vocalization: [ʔaḥzi]
+      gloss: to show, cause to see
+      pos: verb
+      notes: C-stem.
+      hebrew: rʔh C
+    - aramaic: [אַחסֵין]
+      vocalization: [ʔaḥsen]
+      gloss: "to take possession of (usually: the land); to bequeath, hand on"
+      pos: verb
+      notes: "C-stem; X to Y: yāt X lǝ-Y or yāt Y yāt X."
+      hebrew: yrš
+    - aramaic: [אַלוִי]
+      vocalization: [ʔalwi]
+      gloss: to accompany
+      pos: verb
+      notes: C-stem.
+    - aramaic: [אַעבַר]
+      vocalization: [ʔaʕbar]
+      gloss: to lead/take across
+      pos: verb
+      notes: C-stem.
+      hebrew: ʕbr C
+    - aramaic: [אַפלַח]
+      vocalization: [ʔaplaḥ]
+      gloss: to make (someone) work, reduce to servitude
+      pos: verb
+      notes: C-stem.
+      hebrew: ʕbd C
+    - aramaic: [אַפרֵיש]
+      vocalization: [ʔapreš]
+      gloss: to divide, separate
+      pos: verb
+      notes: C-stem.
+      hebrew: bdl C
+    - aramaic: [אַקדֵים]
+      vocalization: [ʔaqdem]
+      gloss: to do something early or first
+      pos: verb
+      notes: "C-stem; usually with bǝ-ṣaprā and followed by a second coordinate verb: wǝ-ʔaqdem bǝ-ṣaprā u-npaq and he went forth early in the morning; the verb alone may mean ‘to go early’."
+      hebrew: škm C
+    - aramaic: [אַשכַח]
+      vocalization: [ʔaškaḥ]
+      gloss: to find, come upon
+      pos: verb
+      notes: C-stem.
+      hebrew: mṣʔ
+    - aramaic: [אַשמַע]
+      vocalization: [ʔašmaʕ]
+      gloss: to cause to hear/obey, to announce, proclaim
+      pos: verb
+      notes: C-stem.
+      hebrew: šmʕ C
+    - aramaic: [אַשקִי]
+      vocalization: [ʔašqi]
+      gloss: to cause to drink; to water (e.g., animals)
+      pos: verb
+      notes: C-stem.
+      hebrew: šqh C
+    - aramaic: [טְעָא]
+      vocalization: [ṭǝʕā]
+      gloss: to wander, go astray
+      pos: verb
+      notes: G-stem; ʔaṭʕi C to lead astray.
+      hebrew: tʕh
+    - aramaic: [אַחסָנְתָא]
+      vocalization: [ʔaḥsānǝtā]
+      gloss: possession, inheritance
+      pos: noun
+    - aramaic: [חַמרָא]
+      vocalization: [ḥamrā]
+      gloss: wine
+      pos: noun
+      notes: cstr. ḥǝmar.
+      hebrew: yáyin/ḥémer
+    - aramaic: [חְשֹוכָא]
+      vocalization: [ḥǝšokā]
+      gloss: darkness
+      pos: noun
+      hebrew: ḥṓšek
+    - aramaic: [יְמָמָא]
+      vocalization: [yǝmāmā]
+      gloss: daylight
+      pos: noun
+    - aramaic: [נְהֹורָא]
+      vocalization: [nǝhorā]
+      gloss: light
+      pos: noun
+      hebrew: ʔôr/(nēr/nîr)
+
+- chapter: 15
+  entries:
+    - aramaic: [אֹוחִי]
+      vocalization: [ʔoḥi]
+      gloss: "to hurry, go hurriedly; to hurry (to do: lǝ- + infinitive)"
+      pos: verb
+      notes: C-stem.
+      hebrew: mhr D
+    - aramaic: [אֹותֵיב]
+      vocalization: [ʔoteb]
+      gloss: to cause to dwell, settle
+      pos: verb
+      notes: C-stem.
+      hebrew: yšb C
+    - aramaic: [אַחֵית, אְחֵית]
+      vocalization: [ʔaḥet, ʔǝḥet]
+      gloss: to bring/lead/send/take down
+      pos: verb
+      notes: C-stem.
+      hebrew: yrd C
+    - aramaic: [אַיתִי, אֵיתִי]
+      vocalization: [ʔayṯi, ʔeti]
+      gloss: to cause to come, to bring
+      pos: verb
+      notes: C-stem.
+      hebrew: bwʔ C
+    - aramaic: [אְמֵית, אַמֵית]
+      vocalization: [ʔǝmet, ʔamet]
+      gloss: to cause to die, put to death
+      pos: verb
+      notes: C-stem.
+      hebrew: mwt C
+    - aramaic: [אַסֵיק]
+      vocalization: [ʔasseq]
+      gloss: to bring/lead/send/take up
+      pos: verb
+      notes: C-stem.
+      hebrew: ʕlh C
+    - aramaic: [אַעֵיל, אְעֵיל]
+      vocalization: [ʔaʕel, ʔǝʕel]
+      gloss: to cause to enter; to bring/lead/send/take in
+      pos: verb
+      notes: C-stem.
+      hebrew: bwʔ C
+    - aramaic: [אַפֵיק]
+      vocalization: [ʔappeq]
+      gloss: to bring/lead/send/take forth; to produce
+      pos: verb
+      notes: C-stem.
+      hebrew: yṣʔ C
+    - aramaic: [אְקֵים, אַקֵים]
+      vocalization: [ʔǝqem, ʔaqem]
+      gloss: to cause to stand, station; to set up, establish
+      pos: verb
+      notes: C-stem.
+      hebrew: qwm C/kwn C
+    - aramaic: [אְתֵיב, אַתֵיב]
+      vocalization: [ʔǝteb, ʔateb]
+      gloss: "to bring/lead/send/take back; to answer (a person: yāt)"
+      pos: verb
+      notes: C-stem.
+      hebrew: šwb C/ʕnh
+    - aramaic: [הֹודַע, אֹודַע]
+      vocalization: [hodaʕ, ʔodaʕ]
+      gloss: "to cause to know, inform (someone: yāt) of/about (something: yāt)"
+      pos: verb
+      notes: C-stem.
+      hebrew: ydʕ C
+    - aramaic: [אִזגַדָא]
+      vocalization: [ʔizgaddā]
+      gloss: (ordinary) messenger
+      pos: noun
+      notes: pl. -ayyā.
+    - aramaic: [מַכתָשָא]
+      vocalization: [maktāšā]
+      gloss: plague, affliction
+      pos: noun
+      notes: cstr. maktāš; pl. -ayyā.
+      hebrew: négaʕ
+    - aramaic: [מַלאְכָא]
+      vocalization: [malʔǝkā]
+      gloss: angel, divine messenger
+      pos: noun
+      notes: pl. -ayyā.
+      hebrew: malʔāk
+
+- chapter: 16
+  entries:
+    - aramaic: [יְלֵיד]
+      vocalization: [yǝled]
+      gloss: to bear (a child)
+      pos: verb
+      notes: G-stem; infin. melad; ʔoled C to beget.
+      hebrew: yld
+    - aramaic: [לֵילְיָא]
+      vocalization: [lelǝyā]
+      gloss: night
+      pos: noun
+      notes: pl. abs. lelāwān; see the Vocabulary of lesson 7.
+      hebrew: laylā
+    - aramaic: [שַתָא]
+      vocalization: [šattā]
+      gloss: year
+      pos: noun
+      notes: f.; abs. šǝnā; pl. abs. šǝnin; emph. šǝnayyā.
+      hebrew: šānā
+
+- chapter: 17
+  entries:
+    - aramaic: [עֵינָא]
+      vocalization: [ʕenā]
+      gloss: eye; well, spring
+      pos: noun
+      notes: f.; pl. ʕenayyā; bǝ-ʕene in the eyes of, in the opinion of.
+      hebrew: ʕáyin
+    - aramaic: [בִיש]
+      vocalization: [biš]
+      gloss: bad, evil, wicked
+      pos: adjective
+      notes: bǝʔeš G to be/become/seem bad.
+      hebrew: raʕ
+    - aramaic: [זְעֵיר]
+      vocalization: [zǝʕer]
+      gloss: small
+      pos: adjective
+      hebrew: ṣāʕîr/qāṭōn
+    - aramaic: [חְדַת]
+      vocalization: [ḥǝdat]
+      gloss: new
+      pos: adjective
+      notes: f. abs. ḥadṯā; emph. m. ḥadṯā, f. ḥǝdattā.
+      hebrew: ḥādāš
+    - aramaic: [חַיָב]
+      vocalization: [ḥayyāb]
+      gloss: wicked, evil, guilty of crime
+      pos: adjective
+      hebrew: ḥaṭṭāʔ
+    - aramaic: [חַכִים]
+      vocalization: [ḥakkim]
+      gloss: wise, clever
+      pos: adjective
+      hebrew: ḥākām
+    - aramaic: [טָב]
+      vocalization: [ṭāb]
+      gloss: good, just, pleasant
+      pos: adjective
+      hebrew: ṭôb
+    - aramaic: [סַגִי]
+      vocalization: [saggi]
+      gloss: many, much, numerous
+      pos: adjective
+      notes: "a final aleph reappears when any ending is added: ms emph. saggiʔā, mp abs. saggiʔin; sǝgi G (conjugated like ḥǝdi) to be/become numerous."
+      hebrew: rab(b)
+    - aramaic: [עַתִיר]
+      vocalization: [ʕattir]
+      gloss: rich
+      pos: adjective
+      notes: ʕǝtar G to be/become rich.
+      hebrew: ʕāšîr
+    - aramaic: [רַב]
+      vocalization: [rab]
+      gloss: great, big, important
+      pos: adjective
+      notes: sing. abs. f. rabbā; emph. m. rabbā, f. rabbǝtā; pl. emph. m. rabrǝbayyā, f. rabrǝbātā; abs. m. rabrǝbin, f. rabrǝbān; as a noun rabbā (pl. rabrǝbayyā) leader, prince, high official.
+      hebrew: gādōl
+    - aramaic: [שַפִיר]
+      vocalization: [šappir]
+      gloss: beautiful, handsome, excellent
+      pos: adjective
+      notes: šǝpar G to be/become good.
+      hebrew: yāpe/ṭôb
+    - aramaic: [אִית]
+      vocalization: [ʔit]
+      gloss: (there) is, are
+      pos: particle
+      notes: with suffix ʔitóhi he is, etc.
+      hebrew: yēš
+    - aramaic: [לֵית]
+      vocalization: [let]
+      gloss: (there) is/are not
+      pos: particle
+      notes: with suffix lāyǝtóhi he is not, etc.
+      hebrew: ʔên
+
+- chapter: 18
+  entries:
+    - aramaic: [חְיָא]
+      vocalization: [ḥǝyā]
+      gloss: to live, be alive
+      pos: verb
+      notes: G-stem; ḥay (f. ḥayyā; adj.) alive, living.
+      hebrew: ḥyh
+    - aramaic: [פַקֵיד]
+      vocalization: [paqqed]
+      gloss: to command
+      pos: verb
+      notes: D-stem; usually followed by a direct command using the imperative, §19.1; it may also be used in the sense ‘to put someone (yāt) in charge of (ʕal)’.
+      hebrew: pqd/ṣwh D
+    - aramaic: [אֹורחָא]
+      vocalization: [ʔorḥā]
+      gloss: way, road; conduct, behavior
+      pos: noun
+      notes: occasionally ʔurḥā; f.; cstr./abs. ʔóraḥ; pl. abs. ʔorḥān.
+    - aramaic: [אֹורָיתָא]
+      vocalization: [ʔorāytā]
+      gloss: the Torah
+      pos: noun
+      hebrew: tôrā
+    - aramaic: [כַלְתָא]
+      vocalization: [kallǝtā]
+      gloss: daughter-in-law
+      pos: noun
+      hebrew: kallā
+    - aramaic: [נַפשָא]
+      vocalization: [napšā]
+      gloss: soul, person
+      pos: noun
+      notes: abs./cstr. nǝpaš; f.; pl. napšātā.
+      hebrew: népeš
+    - aramaic: [רָעְיָא]
+      vocalization: [rāʕǝyā]
+      gloss: shepherd, herdsman
+      pos: noun
+      notes: cstr. rāʕe; pl. rāʕǝwātā; contrast the participle rāʕe (pl. rāʕan).
+      hebrew: rōʕe
+    - aramaic: [כְנַעְנָאָה]
+      vocalization: [Kǝnaʕǝnāʔā]
+      gloss: Canaanite
+      pos: noun
+      notes: pl. Kǝnaʕǝnāʔe the Canaanites.
+      hebrew: Kǝnaʕănî
+    - aramaic: [מִצרָאָה]
+      vocalization: [Miṣrāʔā]
+      gloss: Egyptian
+      pos: noun
+      notes: pl. Miṣrāʔe the Egyptians.
+      hebrew: Miṣrî(m)
+    - aramaic: [פְלִשתָאָה]
+      vocalization: [Pǝlištāʔā]
+      gloss: Philistine
+      pos: noun
+      notes: pl. Pǝlištāʔe the Philistines.
+      hebrew: Pǝlištî(m)
+    - aramaic: [בְכֵין]
+      vocalization: [bǝken]
+      gloss: at that time, in those days
+      pos: adverb
+    - aramaic: [הָא]
+      vocalization: [hā]
+      gloss: now (then)
+      pos: particle
+      notes: a presentation particle, corresponding to Hebrew hinnēh.
+      hebrew: hinnē
+    - aramaic: [כְמָא]
+      vocalization: [kǝmā]
+      gloss: according as, as
+      pos: conjunction
+      notes: used with dǝ-.
+    - aramaic: [תָקֵין]
+      vocalization: [tāqen]
+      gloss: good, proper, correct, in good order
+      pos: adjective
+      notes: f. tāqǝnā.
+      hebrew: ṭôb/tqn
+    - aramaic: [תַקִיף]
+      vocalization: [taqqip]
+      gloss: strong, powerful, severe
+      pos: adjective
+      notes: "f. taqqipā; there is considerable confusion between taqqip (adjective), tāqep (participle), and tǝqep (stative verb), all spelled the same. The feminine and plural forms are distinct, however: taqqipā, tāqǝpā, tǝqépat. The same confusion prevails with tāqen above. Blend forms such as taqqep and taqqen also occur, but are incorrect."
+      hebrew: ḥāzāq
+
+- chapter: 19
+  entries:
+    - aramaic: [אְנָשָא]
+      vocalization: [ʔǝnāšā]
+      gloss: man, men
+      pos: noun
+      notes: cstr./abs. ʔǝnāš; pl. -ayyā, cstr. -e; the singular form may be used as a collective term.
+      hebrew: ʔĕnôš
+    - aramaic: [מַצֻותָא]
+      vocalization: [maṣṣutā]
+      gloss: quarrel, strife
+      pos: noun
+      notes: f.; abs. maṣṣu, cstr. maṣṣut.
+      hebrew: maṣṣā/maṣṣût
+    - aramaic: [אְחָתָא]
+      vocalization: [ʔǝḥātā]
+      gloss: sister
+      pos: noun
+      notes: cstr./abs. ʔǝḥāt; ‘my sister’ may appear as ʔǝḥāti or ʔǝḥāt; pl. ʔaḥ(ḥ)ǝwātā.
+      hebrew: ʔāḥôt
+    - aramaic: [בְדִיל]
+      vocalization: [bǝdil]
+      gloss: because of, for the sake of
+      pos: preposition
+      notes: suffixes as on lǝwāt, §4.1; bǝdil dǝ- (conj.) so that, in order that, with the Imperfect.
+      hebrew: baʕăbûr
+    - aramaic: [דִילמָא]
+      vocalization: [dilmā]
+      gloss: lest, so that not
+      pos: conjunction
+      notes: with the Imperfect.
+      hebrew: pen
+
+- chapter: 20
+  entries:
+    - aramaic: [אְשַד]
+      vocalization: [ʔǝšad]
+      gloss: to pour out, shed, deposit
+      pos: verb
+      notes: imperf. yešod.
+    - aramaic: [דְמָא]
+      vocalization: [dǝmā]
+      gloss: blood
+      pos: noun
+      notes: abs./cstr. dam.
+      hebrew: dām
+    - aramaic: [כְעַן]
+      vocalization: [kǝʕan]
+      gloss: now, so now, now then
+      pos: adverb
+      hebrew: ʕattā
+
+- chapter: 21
+  entries:
+    - aramaic: [אִם]
+      vocalization: [ʔim]
+      gloss: if
+      pos: conjunction
+      hebrew: ʔim
+
+- chapter: 22
+  entries:
+    - aramaic: [חַוִי]
+      vocalization: [ḥawwi]
+      gloss: "to tell, relate, inform (someone: lǝ-)"
+      pos: verb
+      notes: D-stem.
+      hebrew: ngd C
+    - aramaic: [עָלְמָא]
+      vocalization: [ʕālǝmā]
+      gloss: world, eternity
+      pos: noun
+      notes: abs./cstr. ʕālam; ʕad ʕālǝmā forever.
+      hebrew: ʕôlām
+    - aramaic: [אַף]
+      vocalization: [ʔap]
+      gloss: also, likewise, even
+      pos: adverb
+      hebrew: ʔap
+
+- chapter: 23
+  entries:
+    - aramaic: [זַרעִיתָא]
+      vocalization: [zarʕitā]
+      gloss: descendant, family
+      pos: noun
+      notes: f.; abs. zarʕi, cstr. zarʕit, pl. abs. zarʕǝyātā; see Paradigm A.3.
+      hebrew: mišpāḥā
+    - aramaic: [רֵישָא]
+      vocalization: [rešā]
+      gloss: top, head, beginning
+      pos: noun
+      hebrew: rōʔš
+    - aramaic: [אִתבָרַך]
+      vocalization: [ʔitbārak]
+      gloss: to be blessed
+      pos: verb
+      notes: Dt-stem.
+    - aramaic: [גְלָא]
+      vocalization: [gǝlā]
+      gloss: to reveal
+      pos: verb
+      notes: G-stem; ʔitgǝli Gt to reveal oneself, appear.
+      hebrew: pqḥ
+    - aramaic: [אִדְבַר]
+      vocalization: [ʔiddǝbar]
+      gloss: to be taken
+      pos: verb
+      notes: Gt-stem.
+    - aramaic: [אִתַחזִי]
+      vocalization: [ʔittaḥzi]
+      gloss: to appear
+      pos: verb
+      notes: Ct-stem.
+    - aramaic: [אִתֹותַב]
+      vocalization: [ʔittotab]
+      gloss: to settle (intrans.)
+      pos: verb
+      notes: Ct-stem; root ytb.
+    - aramaic: [כְנַש]
+      vocalization: [kǝnaš]
+      gloss: to gather, assemble (trans.)
+      pos: verb
+      notes: G-stem; imperf. yiknoš; ʔitkǝneš Gt to be gathered (intrans.); ʔitkannaš Dt to gather (intrans.).
+    - aramaic: [אִתמְנִי]
+      vocalization: [ʔitmǝni]
+      gloss: to be counted
+      pos: verb
+      notes: Gt-stem.
+    - aramaic: [אִסתַלַק]
+      vocalization: [ʔistallaq]
+      gloss: to go up
+      pos: verb
+      notes: Dt-stem.
+    - aramaic: [אִתפָרַש]
+      vocalization: [ʔitpāraš]
+      gloss: to be(come) divided, to separate (intrans.)
+      pos: verb
+      notes: Dt-stem.
+
+- chapter: Appendix - Genesis 12-16
+  entries:
+    - aramaic: [יַלָדֻותָא]
+      vocalization: [yallādutā]
+      gloss: place of birth
+      pos: noun
+      notes: Gen. 12:1.
+    - aramaic: [רְבָא]
+      vocalization: [rǝbā]
+      gloss: to grow, increase, become great
+      pos: verb
+      notes: G-stem; Gen. 12:2.
+    - aramaic: [רַבִי]
+      vocalization: [rabbi]
+      gloss: to make great, increase, raise, rear
+      pos: verb
+      notes: D-stem; Gen. 12:2.
+    - aramaic: [לָטֵיט]
+      vocalization: [lāṭeṭ]
+      gloss: to curse (pālel)
+      pos: verb
+      notes: a pālel verb, a pseudo-conjugation answering to the Hebrew pōlēl; Gen. 12:3.
+    - aramaic: [לָט]
+      vocalization: [lāṭ]
+      gloss: to curse (G)
+      pos: verb
+      notes: G-stem; Gen. 12:3.
+    - aramaic: [חִיזוָא]
+      vocalization: [ḥizwā]
+      gloss: sight, vision, appearance
+      pos: noun
+      notes: Gen. 12:11.
+    - aramaic: [קַיֵים]
+      vocalization: [qayyem]
+      gloss: to confirm, establish
+      pos: verb
+      notes: D-stem; Gen. 12:12.
+    - aramaic: [אִתקַיַם]
+      vocalization: [ʔitqayyam]
+      gloss: to be allowed to live, kept alive
+      pos: verb
+      notes: Dt-stem; Gen. 12:13.
+    - aramaic: [פַרעֹה]
+      vocalization: [parʕoh]
+      gloss: pharaoh
+      pos: noun
+      notes: Gen. 12:15.
+    - aramaic: [עַל עֵיסַק]
+      vocalization: [ʕal ʕésaq]
+      gloss: because of, on account of
+      pos: preposition
+      notes: Gen. 12:17.
+    - aramaic: [מַטְלָנָא]
+      vocalization: [maṭṭǝlānā]
+      gloss: journey
+      pos: noun
+      notes: Gen. 13:3.
+    - aramaic: [קַדמֵיתָא]
+      vocalization: [qadmetā]
+      gloss: former time or occasion
+      pos: noun
+      notes: Gen. 13:3.
+    - aramaic: [בְקַדמֵיתָא]
+      vocalization: [bǝ-qadmetā]
+      gloss: previously
+      pos: adverb
+      notes: Gen. 13:3.
+    - aramaic: [סֹובַר]
+      vocalization: [sobar]
+      gloss: to bear, support
+      pos: verb
+      notes: Gen. 13:6.
+    - aramaic: [פְרִיזָאָה]
+      vocalization: [Pǝrizzāʔā]
+      gloss: Perizzite
+      pos: noun
+      notes: Gen. 13:7.
+    - aramaic: [זְקַף]
+      vocalization: [zǝqap]
+      gloss: to raise, lift up (G)
+      pos: verb
+      notes: G-stem; Gen. 13:10.
+    - aramaic: [מָטֵי]
+      vocalization: [māṭe]
+      gloss: as far as
+      pos: preposition
+      notes: Gen. 13:10.
+    - aramaic: [בְחַר]
+      vocalization: [bǝḥar]
+      gloss: to choose
+      pos: verb
+      notes: G-stem; Gen. 13:11.
+    - aramaic: [מָמֹונָא]
+      vocalization: [māmonā]
+      gloss: wealth, money
+      pos: noun
+      notes: Gen. 13:13.
+    - aramaic: [גִיויְתָא, גְוִיתָא]
+      vocalization: [giwyǝtā, gǝwitā]
+      gloss: body
+      pos: noun
+      notes: Gen. 13:13.
+    - aramaic: [עַפרָא]
+      vocalization: [ʕaprā]
+      gloss: dust
+      pos: noun
+      notes: Gen. 13:16.
+    - aramaic: [אִפשָר]
+      vocalization: [ʔipšār]
+      gloss: possibility
+      pos: noun
+      notes: Gen. 13:16.
+    - aramaic: [הַלֵיך]
+      vocalization: [hallek]
+      gloss: to walk, go
+      pos: verb
+      notes: D-stem; Gen. 13:17.
+    - aramaic: [אֻורכָא]
+      vocalization: [ʔurkā]
+      gloss: length
+      pos: noun
+      notes: Gen. 13:17.
+    - aramaic: [פֻותיָא]
+      vocalization: [putyā]
+      gloss: width
+      pos: noun
+      notes: Gen. 13:17.
+    - aramaic: [יַמָא]
+      vocalization: [yammā]
+      gloss: sea
+      pos: noun
+      notes: Gen. 14:3.
+    - aramaic: [מִלחָא]
+      vocalization: [milḥā]
+      gloss: salt
+      pos: noun
+      notes: Gen. 14:3.
+    - aramaic: [מְרַד]
+      vocalization: [mǝrad]
+      gloss: to rebel
+      pos: verb
+      notes: G-stem; Gen. 14:4.
+    - aramaic: [מְחָא]
+      vocalization: [mǝḥā]
+      gloss: to strike, smite
+      pos: verb
+      notes: G-stem; Gen. 14:5.
+    - aramaic: [גִיבָרָא]
+      vocalization: [gibbārā]
+      gloss: warrior
+      pos: noun
+      notes: Gen. 14:5.
+    - aramaic: [אֵימְתָנָא]
+      vocalization: [ʔemǝtānā]
+      gloss: fearsome
+      pos: adjective
+      notes: Gen. 14:5.
+    - aramaic: [סְמַך]
+      vocalization: [sǝmak]
+      gloss: to lean upon
+      pos: verb
+      notes: G-stem; Gen. 14:6.
+    - aramaic: [סְמִיך עַל]
+      vocalization: [sǝmik ʕal]
+      gloss: bordering on
+      pos: preposition
+      notes: Gen. 14:6.
+    - aramaic: [דִינָא]
+      vocalization: [dinā]
+      gloss: legal case, decision, judgment
+      pos: noun
+      notes: Gen. 14:7.
+    - aramaic: [סַדַר]
+      vocalization: [saddar]
+      gloss: to arrange, position, set up
+      pos: verb
+      notes: D-stem; Gen. 14:8.
+    - aramaic: [סַדַר קְרָבָא]
+      vocalization: [saddar qǝrābā]
+      gloss: to join battle
+      pos: verb
+      notes: Gen. 14:8.
+    - aramaic: [אִשתְאַר]
+      vocalization: [ʔištǝʔar]
+      gloss: to be left, survive, remain over
+      pos: verb
+      notes: Gt-stem; Gen. 14:10.
+    - aramaic: [שְבָא]
+      vocalization: [šǝbā]
+      gloss: to seize, capture
+      pos: verb
+      notes: G-stem; Gen. 14:11.
+    - aramaic: [שֵיזֵיב]
+      vocalization: [šezeb]
+      gloss: to save
+      pos: verb
+      notes: Gen. 14:13.
+    - aramaic: [מְשֵיזַב]
+      vocalization: [mǝšezab]
+      gloss: survivor, fugitive
+      pos: adjective
+      notes: Gen. 14:13.
+    - aramaic: [עִברָאָה]
+      vocalization: [ʕibrāʔā]
+      gloss: Hebrew
+      pos: noun
+      notes: Gen. 14:13.
+    - aramaic: [אְנָש קְיָמָא]
+      vocalization: [ʔǝnāš qǝyāmā]
+      gloss: ally/allies
+      pos: noun
+      notes: Gen. 14:13.
+    - aramaic: [זָרֵיז]
+      vocalization: [zārez]
+      gloss: to rouse, muster
+      pos: verb
+      notes: D-stem; Gen. 14:14.
+    - aramaic: [פְלַג]
+      vocalization: [pǝlag]
+      gloss: to separate
+      pos: verb
+      notes: G-stem; Gen. 14:15.
+    - aramaic: [פַלֵיג]
+      vocalization: [palleg]
+      gloss: to divide
+      pos: verb
+      notes: D-stem; Gen. 14:15.
+    - aramaic: [פְנָא]
+      vocalization: [pǝnā]
+      gloss: to turn
+      pos: verb
+      notes: G-stem; Gen. 14:17.
+    - aramaic: [פַנִי]
+      vocalization: [panni]
+      gloss: to clear, remove; to level
+      pos: verb
+      notes: D-stem; Gen. 14:17.
+    - aramaic: [מְפַנַא]
+      vocalization: [mǝpanna]
+      gloss: clear, levelled
+      pos: adjective
+      notes: Gen. 14:17.
+    - aramaic: [רֵיסָא]
+      vocalization: [resā]
+      gloss: race(-course)
+      pos: noun
+      notes: Gen. 14:17.
+    - aramaic: [שַמֵיש]
+      vocalization: [šammeš]
+      gloss: to minister, wait upon
+      pos: verb
+      notes: D-stem; Gen. 14:18.
+    - aramaic: [עִילַי]
+      vocalization: [ʕillay]
+      gloss: high(est)
+      pos: adjective
+      notes: Gen. 14:18.
+    - aramaic: [סָנְיָא, סָנְאָה]
+      vocalization: [sānǝyā, sānǝʔā]
+      gloss: enemy
+      pos: noun
+      notes: the second spelling is archaic or Hebraizing; a participle of sǝnā
+        G ‘to hate’; Gen. 14:20.
+    - aramaic: [סְנָא]
+      vocalization: [sǝnā]
+      gloss: to hate
+      pos: verb
+      notes: G-stem; Gen. 14:20.
+    - aramaic: [כֹולָא]
+      vocalization: [kollā]
+      gloss: everything, the whole
+      pos: noun
+      notes: Gen. 14:20.
+    - aramaic: [אְרֵים]
+      vocalization: [ʔǝrem]
+      gloss: to raise, lift up (C)
+      pos: verb
+      notes: C-stem; Gen. 14:22.
+    - aramaic: [חֻוטָא]
+      vocalization: [ḥuṭā]
+      gloss: thread
+      pos: noun
+      notes: Gen. 14:23.
+    - aramaic: [מְסָנָא]
+      vocalization: [mǝsānā]
+      gloss: shoe
+      pos: noun
+      notes: Gen. 14:23.
+    - aramaic: [עַרקְתָא]
+      vocalization: [ʕarqǝtā]
+      gloss: strap
+      pos: noun
+      notes: Gen. 14:23.
+    - aramaic: [עַרקַת מְסָנָא]
+      vocalization: [ʕarqat mǝsānā]
+      gloss: shoe-lace
+      pos: noun
+      notes: Gen. 14:23.
+    - aramaic: [עַתַר]
+      vocalization: [ʕattar]
+      gloss: to make rich
+      pos: verb
+      notes: D-stem; Gen. 14:23.
+    - aramaic: [חֻולָקָא]
+      vocalization: [ḥullāqā]
+      gloss: portion, share
+      pos: noun
+      notes: Gen. 14:24.
+    - aramaic: [נְבֻואָה]
+      vocalization: [nǝbuʔā]
+      gloss: prophecy, inspiration, vision
+      pos: noun
+      notes: Gen. 15:1.
+    - aramaic: [תֻוקפָא]
+      vocalization: [tuqpā]
+      gloss: strength
+      pos: noun
+      notes: Gen. 15:1.
+    - aramaic: [אַגרָא]
+      vocalization: [ʔagrā]
+      gloss: reward; pay(ment)
+      pos: noun
+      notes: Gen. 15:1.
+    - aramaic: [דְלָא]
+      vocalization: [dǝ-lā]
+      gloss: without
+      pos: noun
+      notes: Gen. 15:2.
+    - aramaic: [וַלדָא]
+      vocalization: [waldā]
+      gloss: child, offspring
+      pos: noun
+      notes: Gen. 15:2.
+    - aramaic: [פַרנָסָא]
+      vocalization: [parnāsā]
+      gloss: administration
+      pos: noun
+      notes: Gen. 15:2.
+    - aramaic: [אְלָהֵין, אִילָהֵין]
+      vocalization: [ʔǝlāhen, ʔillāhen]
+      gloss: but (rather), however, on the contrary
+      pos: conjunction
+      notes: Gen. 15:4.
+    - aramaic: [סְכָא]
+      vocalization: [sǝkā]
+      gloss: to look (G)
+      pos: verb
+      notes: G-stem; Gen. 15:5.
+    - aramaic: [אִסתַכִי]
+      vocalization: [ʔistakki]
+      gloss: to look (Dt)
+      pos: verb
+      notes: Dt-stem; Gen. 15:5.
+    - aramaic: [כְדֵין]
+      vocalization: [kǝ-den]
+      gloss: thus, like this
+      pos: adverb
+      notes: Gen. 15:5.
+    - aramaic: [הֵימֵין]
+      vocalization: [hemen]
+      gloss: to believe
+      pos: verb
+      notes: C-stem; Gen. 15:6.
+    - aramaic: [חְשַב, חְשֵיב]
+      vocalization: [ḥǝšab, ḥǝšeb]
+      gloss: to think, plan; to reckon, consider, regard
+      pos: verb
+      notes: G-stem; Gen. 15:6.
+    - aramaic: [זָכֻותָא]
+      vocalization: [zākutā]
+      gloss: merit, favor, justice
+      pos: noun
+      notes: Gen. 15:6.
+    - aramaic: [כַסדָאָה]
+      vocalization: [Kasdāʔā]
+      gloss: Chaldaean
+      pos: noun
+      notes: Gen. 15:7.
+    - aramaic: [עִגלָא]
+      vocalization: [ʕiglā]
+      gloss: calf
+      pos: noun
+      notes: Gen. 15:9.
+    - aramaic: [עִזָא]
+      vocalization: [ʕizzā]
+      gloss: female goat
+      pos: noun
+      notes: Gen. 15:9.
+    - aramaic: [דִכרָא]
+      vocalization: [dikrā]
+      gloss: male; ram
+      pos: noun
+      notes: Gen. 15:9.
+    - aramaic: [שַפנִינָא]
+      vocalization: [šapninā]
+      gloss: turtle-dove
+      pos: noun
+      notes: Gen. 15:9.
+    - aramaic: [שְוֵי]
+      vocalization: [šǝwe]
+      gloss: half; equal portion
+      pos: noun
+      notes: Gen. 15:10.
+    - aramaic: [פַלגָא, פִלגָא]
+      vocalization: [palgā, pilgā]
+      gloss: piece
+      pos: noun
+      notes: Gen. 15:10.
+    - aramaic: [חַברָא]
+      vocalization: [ḥabrā]
+      gloss: companion, counterpart
+      pos: noun
+      notes: Gen. 15:10.
+    - aramaic: [עֹופָא]
+      vocalization: [ʕopā]
+      gloss: fowl, bird
+      pos: noun
+      notes: Gen. 15:10.
+    - aramaic: [שִמשָא]
+      vocalization: [šimšā]
+      gloss: sun
+      pos: noun
+      notes: Gen. 15:12.
+    - aramaic: [קַבלָא]
+      vocalization: [qablā]
+      gloss: darkness
+      pos: noun
+      notes: Gen. 15:12.
+    - aramaic: [דַיָרָא]
+      vocalization: [dayyārā]
+      gloss: sojourner, dweller
+      pos: noun
+      notes: Gen. 15:13.
+    - aramaic: [עַנִי]
+      vocalization: [ʕanni]
+      gloss: to oppress
+      pos: verb
+      notes: D-stem; Gen. 15:13.
+    - aramaic: [כֵין]
+      vocalization: [ken]
+      gloss: thus
+      pos: adverb
+      notes: Gen. 15:14.
+    - aramaic: [בָתַר כֵין]
+      vocalization: [bātar ken]
+      gloss: afterwards
+      pos: adverb
+      notes: Gen. 15:14.
+    - aramaic: [עַל כֵין]
+      vocalization: [ʕal ken]
+      gloss: therefore
+      pos: adverb
+      notes: Gen. 15:14.
+    - aramaic: [קְבַר]
+      vocalization: [qǝbar]
+      gloss: to bury
+      pos: verb
+      notes: G-stem; Gen. 15:15.
+    - aramaic: [דָרָא]
+      vocalization: [dārā]
+      gloss: generation
+      pos: noun
+      notes: Gen. 15:16.
+    - aramaic: [שְלִים]
+      vocalization: [šǝlim]
+      gloss: complete, whole, finished
+      pos: adjective
+      notes: Gen. 15:16.
+    - aramaic: [שְלֵים]
+      vocalization: [šǝlem]
+      gloss: to be finished, completed, whole; to come to an end
+      pos: verb
+      notes: G-stem; Gen. 15:16.
+    - aramaic: [חֹובָא]
+      vocalization: [ḥobā]
+      gloss: guilt, debt
+      pos: noun
+      notes: Gen. 15:16.
+    - aramaic: [תַנֻורָא]
+      vocalization: [tannurā]
+      gloss: furnace, brazier
+      pos: noun
+      notes: Gen. 15:17.
+    - aramaic: [תְנָנָא, תַנְנָא, תָנְנָא]
+      vocalization: [tǝnānā, tannǝnā, tānǝnā]
+      gloss: smoke
+      pos: noun
+      notes: Gen. 15:17.
+    - aramaic: [בָעֹורָא]
+      vocalization: [bāʕorā]
+      gloss: torch
+      pos: noun
+      notes: Gen. 15:17.
+    - aramaic: [אִישָתָא]
+      vocalization: [ʔiššātā]
+      gloss: fire
+      pos: noun
+      notes: Gen. 15:17.
+    - aramaic: [עְדָא]
+      vocalization: [ʕǝdā]
+      gloss: to pass (by, over, through)
+      pos: verb
+      notes: G-stem; Gen. 15:17.
+    - aramaic: [נַחלָא]
+      vocalization: [naḥlā]
+      gloss: wadi, stream
+      pos: noun
+      notes: Gen. 15:18.
+    - aramaic: [פְרָת]
+      vocalization: [Pǝrāt]
+      gloss: Euphrates
+      pos: noun
+      notes: Gen. 15:18.
+    - aramaic: [קַדמֹונַי]
+      vocalization: [qadmonay]
+      gloss: ancient
+      pos: adjective
+      notes: Gen. 15:19.
+    - aramaic: [מָא אִם]
+      vocalization: [mā ʔim]
+      gloss: perhaps; how? when?
+      pos: adverb
+      notes: Gen. 16:2.
+    - aramaic: [אִתבְנִי]
+      vocalization: [ʔitbǝni]
+      gloss: to be built (up); to acquire offspring
+      pos: verb
+      notes: Gt-stem; Gen. 16:2.
+    - aramaic: [סֹופָא]
+      vocalization: [sopā]
+      gloss: end
+      pos: noun
+      notes: mis-sop ‘at the end of, after’; Gen. 16:3.
+    - aramaic: [עַדִי]
+      vocalization: [ʕaddi]
+      gloss: to become pregnant; to remove
+      pos: verb
+      notes: D-stem; Gen. 16:4.
+    - aramaic: [קַל, קָל]
+      vocalization: [qal, qāl]
+      gloss: become small, unimportant, of little esteem
+      pos: verb
+      notes: G-stem; Gen. 16:4.
+    - aramaic: [רִיבֹונְתָא]
+      vocalization: [ribbonǝtā]
+      gloss: lady, mistress
+      pos: noun
+      notes: Gen. 16:4.
+    - aramaic: [אַסגִי]
+      vocalization: [ʔasgi]
+      gloss: to increase
+      pos: verb
+      notes: C-stem; Gen. 16:10.
+    - aramaic: [סַגיָא]
+      vocalization: [sagyā]
+      gloss: multitude, large amount
+      pos: noun
+      notes: Gen. 16:10.
+    - aramaic: [מָרֹודָא]
+      vocalization: [mārodā]
+      gloss: rebel; wild ass
+      pos: noun
+      notes: Gen. 16:12.
+    - aramaic: [עָרֹודָא]
+      vocalization: [ʕārodā]
+      gloss: wild ass
+      pos: noun
+      notes: Gen. 16:12.
+    - aramaic: [צְרִיך]
+      vocalization: [ṣǝrik]
+      gloss: needed, necesary; needing, needy
+      pos: adjective
+      notes: Gen. 16:12.
+    - aramaic: [אִתמַלַל]
+      vocalization: [ʔitmallal]
+      gloss: to converse
+      pos: verb
+      notes: Dt-stem; Gen. 16:13.
+    - aramaic: [קַיָם]
+      vocalization: [qayyām]
+      gloss: living, existing, enduring
+      pos: adjective
+      notes: Gen. 16:14.
+    - aramaic: [בֵית שִיקיָא]
+      vocalization: [bet šiqyā]
+      gloss: an irrigated (or well-watered) area
+      pos: noun
+      notes: Gen. 13:10.
+    - aramaic: [לֵית אִפשָר]
+      vocalization: [let ʔipšār]
+      gloss: it is not possible
+      notes: "‘to do’: dǝ- with the imperfect, or lǝ- with the infinitive; Gen. 13:16."
+    - aramaic: [בֵית רֵיסָא]
+      vocalization: [bet resā]
+      gloss: race-course, arena
+      pos: noun
+      notes: Gen. 14:17.
+    - aramaic: [אֹוטֵיב]
+      vocalization: [ʔoṭeb]
+      gloss: to be well
+      pos: verb
+      notes: "C-stem; impersonal: ʔoṭeb lǝ-X ‘it was well with X, X prospered’; Gen. 12:13."
+    - aramaic: [שַעְבֵיד, שַעבֵיד]
+      vocalization: [šaʕǝbed, šaʕbed]
+      gloss: to subject
+      pos: verb
+      notes: "a šaphel verb, conjugated like the D, and written šaʕ(ǝ)bed; here: ‘to convert’; Gen. 12:5."
+    - aramaic: [לִקבֵיל]
+      vocalization: [li-qbel]
+      gloss: against
+      pos: preposition
+      notes: Gen. 14:9.
+    - aramaic: [חֵימָרָא]
+      vocalization: [ḥemārā]
+      gloss: bitumen, pitch
+      pos: noun
+      notes: Gen. 14:10.
+    - aramaic: [שְרֵי]
+      vocalization: [šǝre]
+      gloss: encamped
+      pos: adjective
+      notes: passive participle; Gen. 14:13.
+    - aramaic: [אִתפְלֵיג, אִתפַלַג]
+      vocalization: [ʔitpǝleg, ʔitpallag]
+      gloss: to split up (intrans.) against
+      pos: verb
+      notes: Gt/Dt, with ʕal; Gen. 14:15.
+    - aramaic: [יֹונָא, יֹונָה]
+      vocalization: [yonā]
+      gloss: dove, pigeon
+      pos: noun
+      notes: m.; the final -h of the second spelling is archaic or a Hebraism; Gen. 15:9.
+    - aramaic: [שִנתָא]
+      vocalization: [šinṯā]
+      gloss: sleep
+      pos: noun
+      notes: f.; Gen. 15:12.
+    - aramaic: [אֵימְתָא]
+      vocalization: [ʔemǝtā]
+      gloss: fear
+      pos: noun
+      notes: Gen. 15:12.
+    - aramaic: [סֵיבֻותָא, שֵיבֻותָא]
+      vocalization: [sebutā, śebutā]
+      gloss: old age
+      pos: noun
+      notes: f.; the second spelling has ś for s, an archaism or Hebraism; Gen. 15:15.

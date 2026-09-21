@@ -2,6 +2,7 @@
 #
 #   make           the font and the deck
 #   make proof     the vocabulary as a PDF to read or check
+#   make check     verify the glosses and the spellings
 #   make clean     drop everything generated (keeps .venv and the base font)
 
 # Dependencies install into a local .venv, created on demand. Override
@@ -16,14 +17,14 @@ endif
 FONT  := Onqelos-Regular.ttf
 DECK  := targumic-aramaic.apkg
 PROOF := vocab-proof.pdf
-VOCAB := $(wildcard chapter*.txt)
+VOCAB := vocabulary.yaml
 
 # Written by scripts/build_font.py alongside the .ttf.
 FONT_ARTIFACTS := $(FONT) Onqelos-Regular.woff2 onqelos.fea onqelos-sheet.svg
 # Downloaded by it on the first build.
 BASE_ARTIFACTS := SILEOT.ttf EzraSIL-Licenses.txt
 
-.PHONY: all font deck proof venv clean distclean help
+.PHONY: all font deck proof check venv clean distclean help
 
 all: font deck
 
@@ -46,13 +47,17 @@ deck: $(DECK)
 
 # The deck sets its cards in the font and ships it inside the .apkg, so the
 # font has to exist first.
-$(DECK): scripts/build_deck.py $(FONT) $(VOCAB) $(DEPS)
+$(DECK): scripts/build_deck.py scripts/vocab.py $(FONT) $(VOCAB) $(DEPS)
 	$(PYTHON) scripts/build_deck.py
 
 proof: $(PROOF)
 
-$(PROOF): scripts/proof_sheet.py $(FONT) $(VOCAB) $(DEPS)
+$(PROOF): scripts/proof_sheet.py scripts/vocab.py $(FONT) $(VOCAB) $(DEPS)
 	$(PYTHON) scripts/proof_sheet.py
+
+# Reports an ambiguous gloss or a wrong mark or letter; non-zero if it finds one.
+check: $(VOCAB) $(DEPS)
+	$(PYTHON) scripts/check_pointing.py
 
 clean:
 	rm -f $(DECK) $(PROOF) $(FONT_ARTIFACTS)
@@ -67,6 +72,7 @@ help:
 	@echo 'make font      $(FONT) (+ woff2, fea, coverage svg)'
 	@echo 'make deck      $(DECK)'
 	@echo 'make proof     $(PROOF)'
+	@echo 'make check     verify the glosses and the spellings'
 	@echo 'make venv      just the .venv, from requirements.txt'
 	@echo 'make clean     remove generated files'
 	@echo 'make distclean also remove the downloaded base font'
