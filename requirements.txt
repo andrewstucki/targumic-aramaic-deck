@@ -1,0 +1,5 @@
+genanki      # the .apkg writer
+fonttools    # builds the font
+brotli       # fonttools needs it to write woff2
+uharfbuzz    # shapes the coverage sheet
+pillow       # draws the coverage sheet and the vocabulary PDF

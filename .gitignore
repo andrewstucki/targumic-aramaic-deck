@@ -1,0 +1,10 @@
+*.apkg
+__pycache__
+.DS_Store
+.venv/
+Onqelos-Regular.*
+onqelos.fea
+onqelos-sheet.svg
+SILEOT.ttf
+EzraSIL-Licenses.txt
+vocab-proof.pdf
