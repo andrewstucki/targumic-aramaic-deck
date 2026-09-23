@@ -1,0 +1,3338 @@
+# Verb paradigms, Appendix B of Lambdin and Huehnergard's The Aramaic of
+# Targum Onqelos. Same fields as nouns.yaml; see README.md.
+#
+# One paradigm per column and section of the table, every cell of it, so an
+# alternation inside a column shows rather than being factored away: the
+# theme vowel reduces before an ending that begins with a vowel — e to i in
+# the stative and the Pael, o to u in the Peal imperative, and to sheva
+# through the imperfect.
+#
+# A shape marks its morpheme boundaries with hyphens: the prefix, then the
+# base with C for each root consonant, then the person ending.
+#
+# The verb tables print no transliteration, so each example carries the
+# pointed Aramaic and a transliteration derived from it. A doubled consonant
+# is spelled once in this system. It is restored where the vowels require
+# it: a short, unaccented vowel in a syllable that would otherwise be open
+# would have reduced to sheva, so if it has not, the next consonant closes
+# the syllable. Where the accent is what protects the vowel instead, as in
+# kǝtabat, nothing is doubled.
+
+- paradigm: G (Peal) perfect, sound verb
+  reference: B.1
+  pattern: qǝtal
+  lemma: kǝtab, G perfect
+  notes: The basic stem.
+  cells:
+    - slot: 3ms
+      shape: CǝCaC
+      example: כְתַב kǝtab
+    - slot: 3fs
+      shape: CǝCaC-at
+      example: כְתַבַת kǝtábat
+    - slot: 2ms, 2fs
+      shape: CǝCaC-t
+      example: כְתַבת kǝtabt
+    - slot: 2ms, longer variant
+      shape: CǝCaC-tā
+      example: כְתַבתָא kǝtábtā
+    - slot: 1cs
+      shape: CǝCaC-it
+      example: כְתַבִית kǝtábit
+    - slot: 3mp
+      shape: CǝCaC-u
+      example: כְתַבֻו kǝtábu
+    - slot: 3fp
+      shape: CǝCaC-ā
+      example: כְתַבָא kǝtábā
+    - slot: 2mp
+      shape: CǝCaC-tun
+      example: כְתַבתֻון kǝtabtun
+    - slot: 2fp
+      shape: CǝCaC-tin
+      example: כְתַבתִין kǝtabtin
+    - slot: 1cp
+      shape: CǝCaC-nā
+      example: כְתַבנָא kǝtábnā
+
+- paradigm: G (Peal) imperfect, sound verb
+  reference: B.1
+  pattern: qǝtal
+  lemma: kǝtab, G imperfect
+  notes: The basic stem. The theme vowel is not the same throughout — CCoC, CCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yi-CCoC
+      example: יִכתֹוב yiktob
+    - slot: 3fs, 2ms
+      shape: ti-CCoC
+      example: תִכתֹוב tiktob
+    - slot: 2fs
+      shape: ti-CCǝC-in
+      example: תִכתְבִין tiktǝbin
+    - slot: 1cs
+      shape: ʔi-CCoC
+      example: אִכתֹוב ʔiktob
+    - slot: 3mp
+      shape: yi-CCǝC-un
+      example: יִכתְבֻון yiktǝbun
+    - slot: 3fp
+      shape: yi-CCǝC-ān
+      example: יִכתְבָן yiktǝbān
+    - slot: 2mp
+      shape: ti-CCǝC-un
+      example: תִכתְבֻון tiktǝbun
+    - slot: 2fp
+      shape: ti-CCǝC-ān
+      example: תִכתְבָן tiktǝbān
+    - slot: 1cp
+      shape: ni-CCoC
+      example: נִכתֹוב niktob
+
+- paradigm: G (Peal) imperative, sound verb
+  reference: B.1
+  pattern: qǝtal
+  lemma: kǝtab, G imperative
+  notes: The basic stem. The theme vowel is not the same throughout — CǝCoC, CǝCuC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: ms
+      shape: CǝCoC
+      example: כְתֹוב kǝtob
+    - slot: fs
+      shape: CǝCuC-i
+      example: כְתֻובִי kǝtúbi
+    - slot: mp
+      shape: CǝCuC-u
+      example: כְתֻובֻו kǝtúbu
+    - slot: fp
+      shape: CǝCuC-ā
+      example: כְתֻובָא kǝtúbā
+
+- paradigm: G (Peal) non-finite, sound verb
+  reference: B.1
+  pattern: qǝtal
+  lemma: kǝtab, G non-finite
+  notes: The basic stem. The theme vowel is not the same throughout — CāCeC, CāCǝC, CǝCiC, CCaC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: active participle ms
+      shape: CāCeC
+      example: כָתֵיב kāteb
+    - slot: active participle mp
+      shape: CāCǝC-in
+      example: כָתְבִין kātǝbin
+    - slot: passive participle ms
+      shape: CǝCiC
+      example: כְתִיב kǝtib
+    - slot: infinitive
+      shape: mi-CCaC
+      example: מִכתַב miktab
+
+- paradigm: G stative (Peal) perfect, sound verb
+  reference: B.1
+  pattern: qǝtel
+  lemma: qǝreb, G stative perfect
+  notes: A Peal with e in the perfect and a in the imperfect; it has no participles. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: CǝCeC
+      example: קְרֵיב qǝreb
+    - slot: 3fs
+      shape: CǝCeC-at
+      example: קְרֵיבַת qǝrébat
+    - slot: 2ms, 2fs
+      shape: CǝCeC-t
+      example: קְרֵיבת qǝrebt
+    - slot: 2ms, longer variant
+      shape: CǝCeC-tā
+      example: קְרֵיבתָא qǝrébtā
+    - slot: 1cs
+      shape: CǝCeC-it
+      example: קְרֵיבִית qǝrébit
+    - slot: 3mp
+      shape: CǝCiC-u
+      example: קְרִיבֻו qǝríbu
+    - slot: 3fp
+      shape: CǝCiC-ā
+      example: קְרִיבָא qǝríbā
+    - slot: 2mp
+      shape: CǝCeC-tun
+      example: קְרֵיבתֻון qǝrebtun
+    - slot: 2fp
+      shape: CǝCeC-tin
+      example: קְרֵיבתִין qǝrebtin
+    - slot: 1cp
+      shape: CǝCeC-nā
+      example: קְרֵיבנָא qǝrébnā
+
+- paradigm: G stative (Peal) imperfect, sound verb
+  reference: B.1
+  pattern: qǝtel
+  lemma: qǝreb, G stative imperfect
+  notes: A Peal with e in the perfect and a in the imperfect; it has no participles. The theme vowel is not the same throughout — CCaC, CCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yi-CCaC
+      example: יִקרַב yiqrab
+    - slot: 3fs, 2ms
+      shape: ti-CCaC
+      example: תִקרַב tiqrab
+    - slot: 2fs
+      shape: ti-CCǝC-in
+      example: תִקרְבִין tiqrǝbin
+    - slot: 1cs
+      shape: ʔi-CCaC
+      example: אִקרַב ʔiqrab
+    - slot: 3mp
+      shape: yi-CCǝC-un
+      example: יִקרְבֻון yiqrǝbun
+    - slot: 3fp
+      shape: yi-CCǝC-ān
+      example: יִקרְבָן yiqrǝbān
+    - slot: 2mp
+      shape: ti-CCǝC-un
+      example: תִקרְבֻון tiqrǝbun
+    - slot: 2fp
+      shape: ti-CCǝC-ān
+      example: תִקרְבָן tiqrǝbān
+    - slot: 1cp
+      shape: ni-CCaC
+      example: נִקרַב niqrab
+
+- paradigm: G stative (Peal) imperative, sound verb
+  reference: B.1
+  pattern: qǝtel
+  lemma: qǝreb, G stative imperative
+  notes: A Peal with e in the perfect and a in the imperfect; it has no participles.
+  cells:
+    - slot: ms
+      shape: CǝCaC
+      example: קְרַב qǝrab
+    - slot: fs
+      shape: CǝCaC-i
+      example: קְרַבִי qǝrábi
+    - slot: mp
+      shape: CǝCaC-u
+      example: קְרַבֻו qǝrábu
+    - slot: fp
+      shape: CǝCaC-ā
+      example: קְרַבָא qǝrábā
+
+- paradigm: G stative (Peal) non-finite, sound verb
+  reference: B.1
+  pattern: qǝtel
+  lemma: qǝreb, G stative non-finite
+  notes: A Peal with e in the perfect and a in the imperfect; it has no participles.
+  cells:
+    - slot: infinitive
+      shape: mi-CCaC
+      example: מִקרַב miqrab
+
+- paradigm: D (Pael) perfect, sound verb
+  reference: B.1
+  pattern: qattil
+  lemma: katteb, D perfect
+  notes: "The second radical is doubled throughout, which this script does not mark: the a before it is short and unaccented and would otherwise stand open, so it would have reduced to sheva. That it has not means the syllable is closed, and the name Pael says the same. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: CaCCeC
+      example: כַתֵיב katteb
+    - slot: 3fs
+      shape: CaCCeC-at
+      example: כַתֵיבַת kattébat
+    - slot: 2ms, 2fs
+      shape: CaCCeC-t
+      example: כַתֵיבת kattebt
+    - slot: 2ms, longer variant
+      shape: CaCCeC-tā
+      example: כַתֵיבתָא kattébtā
+    - slot: 1cs
+      shape: CaCCeC-it
+      example: כַתֵיבִית kattébit
+    - slot: 3mp
+      shape: CaCCiC-u
+      example: כַתִיבֻו kattíbu
+    - slot: 3fp
+      shape: CaCCiC-ā
+      example: כַתִיבָא kattíbā
+    - slot: 2mp
+      shape: CaCCeC-tun
+      example: כַתֵיבתֻון kattebtun
+    - slot: 2fp
+      shape: CaCCeC-tin
+      example: כַתֵיבתִין kattebtin
+    - slot: 1cp
+      shape: CaCCeC-nā
+      example: כַתֵיבנָא kattébnā
+
+- paradigm: D (Pael) imperfect, sound verb
+  reference: B.1
+  pattern: qattil
+  lemma: katteb, D imperfect
+  notes: "The second radical is doubled throughout, which this script does not mark: the a before it is short and unaccented and would otherwise stand open, so it would have reduced to sheva. That it has not means the syllable is closed, and the name Pael says the same. The theme vowel is not the same throughout — CaCCeC, CaCCǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yǝ-CaCCeC
+      example: יְכַתֵיב yǝkatteb
+    - slot: 3fs, 2ms
+      shape: tǝ-CaCCeC
+      example: תְכַתֵיב tǝkatteb
+    - slot: 2fs
+      shape: tǝ-CaCCǝC-in
+      example: תְכַתְבִין tǝkattǝbin
+    - slot: 1cs
+      shape: ʔǝ-CaCCeC
+      example: אְכַתֵיב ʔǝkatteb
+    - slot: 3mp
+      shape: yǝ-CaCCǝC-un
+      example: יְכַתְבֻון yǝkattǝbun
+    - slot: 3fp
+      shape: yǝ-CaCCǝC-ān
+      example: יְכַתְבָן yǝkattǝbān
+    - slot: 2mp
+      shape: tǝ-CaCCǝC-un
+      example: תְכַתְבֻון tǝkattǝbun
+    - slot: 2fp
+      shape: tǝ-CaCCǝC-ān
+      example: תְכַתְבָן tǝkattǝbān
+    - slot: 1cp
+      shape: nǝ-CaCCeC
+      example: נְכַתֵיב nǝkatteb
+
+- paradigm: D (Pael) imperative, sound verb
+  reference: B.1
+  pattern: qattil
+  lemma: katteb, D imperative
+  notes: "The second radical is doubled throughout, which this script does not mark: the a before it is short and unaccented and would otherwise stand open, so it would have reduced to sheva. That it has not means the syllable is closed, and the name Pael says the same. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: ms
+      shape: CaCCeC
+      example: כַתֵיב katteb
+    - slot: fs
+      shape: CaCCiC-i
+      example: כַתִיבִי kattíbi
+    - slot: mp
+      shape: CaCCiC-u
+      example: כַתִיבֻו kattíbu
+    - slot: fp
+      shape: CaCCiC-ā
+      example: כַתִיבָא kattíbā
+
+- paradigm: D (Pael) non-finite, sound verb
+  reference: B.1
+  pattern: qattil
+  lemma: katteb, D non-finite
+  notes: "The second radical is doubled throughout, which this script does not mark: the a before it is short and unaccented and would otherwise stand open, so it would have reduced to sheva. That it has not means the syllable is closed, and the name Pael says the same. The theme vowel is not the same throughout — CaCCeC, CaCCǝC, CaCCaC, CuCCaC, CaCCāC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: active participle ms
+      shape: mǝ-CaCCeC
+      example: מְכַתֵיב mǝkatteb
+    - slot: active participle mp
+      shape: mǝ-CaCCǝC-in
+      example: מְכַתְבִין mǝkattǝbin
+    - slot: passive participle ms
+      shape: mǝ-CaCCaC
+      example: מְכַתַב mǝkattab
+    - slot: passive participle ms, variant
+      shape: mǝ-CuCCaC
+      example: מְכֻותַב mǝkuttab
+    - slot: infinitive
+      shape: CaCCāC-ā
+      example: כַתָבָא kattābā
+
+- paradigm: C (Aphel) perfect, sound verb
+  reference: B.1
+  pattern: ʔaqtil
+  lemma: ʔakteb, C perfect
+  notes: "A prefixed ʔa-, ya-, ma-. Nothing is doubled: the a already stands in a closed syllable. The theme vowel is not the same throughout — CCeC, CCiC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ʔa-CCeC
+      example: אַכתֵיב ʔakteb
+    - slot: 3fs
+      shape: ʔa-CCeC-at
+      example: אַכתֵיבַת ʔaktébat
+    - slot: 2ms, 2fs
+      shape: ʔa-CCeC-t
+      example: אַכתֵיבת ʔaktebt
+    - slot: 2ms, longer variant
+      shape: ʔa-CCeC-tā
+      example: אַכתֵיבתָא ʔaktébtā
+    - slot: 1cs
+      shape: ʔa-CCeC-it
+      example: אַכתֵיבִית ʔaktébit
+    - slot: 3mp
+      shape: ʔa-CCiC-u
+      example: אַכתִיבֻו ʔaktíbu
+    - slot: 3fp
+      shape: ʔa-CCiC-ā
+      example: אַכתִיבָא ʔaktíbā
+    - slot: 2mp
+      shape: ʔa-CCeC-tun
+      example: אַכתֵיבתֻון ʔaktebtun
+    - slot: 2fp
+      shape: ʔa-CCeC-tin
+      example: אַכתֵיבתִין ʔaktebtin
+    - slot: 1cp
+      shape: ʔa-CCeC-nā
+      example: אַכתֵיבנָא ʔaktébnā
+
+- paradigm: C (Aphel) imperfect, sound verb
+  reference: B.1
+  pattern: ʔaqtil
+  lemma: ʔakteb, C imperfect
+  notes: "A prefixed ʔa-, ya-, ma-. Nothing is doubled: the a already stands in a closed syllable. The theme vowel is not the same throughout — CCeC, CCǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ya-CCeC
+      example: יַכתֵיב yakteb
+    - slot: 3fs, 2ms
+      shape: ta-CCeC
+      example: תַכתֵיב takteb
+    - slot: 2fs
+      shape: ta-CCǝC-in
+      example: תַכתְבִין taktǝbin
+    - slot: 1cs
+      shape: ʔa-CCeC
+      example: אַכתֵיב ʔakteb
+    - slot: 3mp
+      shape: ya-CCǝC-un
+      example: יַכתְבֻון yaktǝbun
+    - slot: 3fp
+      shape: ya-CCǝC-ān
+      example: יַכתְבָן yaktǝbān
+    - slot: 2mp
+      shape: ta-CCǝC-un
+      example: תַכתְבֻון taktǝbun
+    - slot: 2fp
+      shape: ta-CCǝC-ān
+      example: תַכתְבָן taktǝbān
+    - slot: 1cp
+      shape: na-CCeC
+      example: נַכתֵיב nakteb
+
+- paradigm: C (Aphel) imperative, sound verb
+  reference: B.1
+  pattern: ʔaqtil
+  lemma: ʔakteb, C imperative
+  notes: "A prefixed ʔa-, ya-, ma-. Nothing is doubled: the a already stands in a closed syllable. The theme vowel is not the same throughout — CCeC, CCiC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: ms
+      shape: ʔa-CCeC
+      example: אַכתֵיב ʔakteb
+    - slot: fs
+      shape: ʔa-CCiC-i
+      example: אַכתִיבִי ʔaktíbi
+    - slot: mp
+      shape: ʔa-CCiC-u
+      example: אַכתִיבֻו ʔaktíbu
+    - slot: fp
+      shape: ʔa-CCiC-ā
+      example: אַכתִיבָא ʔaktíbā
+
+- paradigm: C (Aphel) non-finite, sound verb
+  reference: B.1
+  pattern: ʔaqtil
+  lemma: ʔakteb, C non-finite
+  notes: "A prefixed ʔa-, ya-, ma-. Nothing is doubled: the a already stands in a closed syllable. The theme vowel is not the same throughout — CCeC, CCǝC, CCaC, CCāC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: active participle ms
+      shape: ma-CCeC
+      example: מַכתֵיב makteb
+    - slot: active participle mp
+      shape: ma-CCǝC-in
+      example: מַכתְבִין maktǝbin
+    - slot: passive participle ms
+      shape: ma-CCaC
+      example: מַכתַב maktab
+    - slot: passive participle ms, variant
+      shape: mu-CCaC
+      example: מֻוכתַב muktab
+    - slot: infinitive
+      shape: ʔa-CCāC-ā
+      example: אַכתָבָא ʔaktābā
+
+- paradigm: Gt (Ithpeel) perfect, sound verb
+  reference: B.1
+  pattern: ʔitqǝtil
+  lemma: ʔitkǝteb, Gt perfect
+  notes: The Peal with a prefixed ʔit-, yit-, mit-; it has no passive participle. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CǝCeC
+      example: אִתכְתֵיב ʔitkǝteb
+    - slot: 3fs
+      shape: ʔit-CǝCeC-at
+      example: אִתכְתֵיבַת ʔitkǝtébat
+    - slot: 2ms, 2fs
+      shape: ʔit-CǝCeC-t
+      example: אִתכְתֵיבת ʔitkǝtebt
+    - slot: 2ms, longer variant
+      shape: ʔit-CǝCeC-tā
+      example: אִתכְתֵיבתָא ʔitkǝtébtā
+    - slot: 1cs
+      shape: ʔit-CǝCeC-it
+      example: אִתכְתֵיבִית ʔitkǝtébit
+    - slot: 3mp
+      shape: ʔit-CǝCiC-u
+      example: אִתכְתִיבֻו ʔitkǝtíbu
+    - slot: 3fp
+      shape: ʔit-CǝCiC-ā
+      example: אִתכְתִיבָא ʔitkǝtíbā
+    - slot: 2mp
+      shape: ʔit-CǝCeC-tun
+      example: אִתכְתֵיבתֻון ʔitkǝtebtun
+    - slot: 2fp
+      shape: ʔit-CǝCeC-tin
+      example: אִתכְתֵיבתִין ʔitkǝtebtin
+    - slot: 1cp
+      shape: ʔit-CǝCeC-nā
+      example: אִתכְתֵיבנָא ʔitkǝtébnā
+
+- paradigm: Gt (Ithpeel) imperfect, sound verb
+  reference: B.1
+  pattern: ʔitqǝtil
+  lemma: ʔitkǝteb, Gt imperfect
+  notes: The Peal with a prefixed ʔit-, yit-, mit-; it has no passive participle. The theme vowel is not the same throughout — CǝCeC, CaCC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CǝCeC
+      example: יִתכְתֵיב yitkǝteb
+    - slot: 3fs, 2ms
+      shape: tit-CǝCeC
+      example: תִתכְתֵיב titkǝteb
+    - slot: 2fs
+      shape: tit-CaCC-in
+      example: תִתכַתבִין titkatbin
+    - slot: 1cs
+      shape: ʔit-CǝCeC
+      example: אִתכְתֵיב ʔitkǝteb
+    - slot: 3mp
+      shape: yit-CaCC-un
+      example: יִתכַתבֻון yitkatbun
+    - slot: 3fp
+      shape: yit-CaCC-ān
+      example: יִתכַתבָן yitkatbān
+    - slot: 2mp
+      shape: tit-CaCC-un
+      example: תִתכַתבֻון titkatbun
+    - slot: 2fp
+      shape: tit-CaCC-ān
+      example: תִתכַתבָן titkatbān
+    - slot: 1cp
+      shape: nit-CǝCeC
+      example: נִתכְתֵיב nitkǝteb
+
+- paradigm: Gt (Ithpeel) imperative, sound verb
+  reference: B.1
+  pattern: ʔitqǝtil
+  lemma: ʔitkǝteb, Gt imperative
+  notes: The Peal with a prefixed ʔit-, yit-, mit-; it has no passive participle. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔit-CǝCeC
+      example: אִתכְתֵיב ʔitkǝteb
+    - slot: fs
+      shape: ʔit-CǝCiC-i
+      example: אִתכְתִיבִי ʔitkǝtíbi
+    - slot: mp
+      shape: ʔit-CǝCiC-u
+      example: אִתכְתִיבֻו ʔitkǝtíbu
+    - slot: fp
+      shape: ʔit-CǝCiC-ā
+      example: אִתכְתִיבָא ʔitkǝtíbā
+
+- paradigm: Gt (Ithpeel) non-finite, sound verb
+  reference: B.1
+  pattern: ʔitqǝtil
+  lemma: ʔitkǝteb, Gt non-finite
+  notes: The Peal with a prefixed ʔit-, yit-, mit-; it has no passive participle. The theme vowel is not the same throughout — CǝCeC, CaCC, CǝCāC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: active participle ms
+      shape: mit-CǝCeC
+      example: מִתכְתֵיב mitkǝteb
+    - slot: active participle mp
+      shape: mit-CaCC-in
+      example: מִתכַתבִין mitkatbin
+    - slot: infinitive
+      shape: ʔit-CǝCāC-ā
+      example: אִתכְתָבָא ʔitkǝtābā
+
+- paradigm: Dt (Ithpaal) perfect, sound verb
+  reference: B.1
+  pattern: ʔitqattal
+  lemma: ʔitkattab, Dt perfect
+  notes: The Pael with ʔit-, so the second radical is doubled here too.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CaCCaC
+      example: אִתכַתַב ʔitkattab
+    - slot: 3fs
+      shape: ʔit-CaCCaC-at
+      example: אִתכַתַבַת ʔitkattábat
+    - slot: 2ms, 2fs
+      shape: ʔit-CaCCaC-t
+      example: אִתכַתַבת ʔitkattabt
+    - slot: 2ms, longer variant
+      shape: ʔit-CaCCaC-tā
+      example: אִתכַתַבתָא ʔitkattábtā
+    - slot: 1cs
+      shape: ʔit-CaCCaC-it
+      example: אִתכַתַבִית ʔitkattábit
+    - slot: 3mp
+      shape: ʔit-CaCCaC-u
+      example: אִתכַתַבֻו ʔitkattábu
+    - slot: 3fp
+      shape: ʔit-CaCCaC-ā
+      example: אִתכַתַבָא ʔitkattábā
+    - slot: 2mp
+      shape: ʔit-CaCCaC-tun
+      example: אִתכַתַבתֻון ʔitkattabtun
+    - slot: 2fp
+      shape: ʔit-CaCCaC-tin
+      example: אִתכַתַבתִין ʔitkattabtin
+    - slot: 1cp
+      shape: ʔit-CaCCaC-nā
+      example: אִתכַתַבנָא ʔitkattábnā
+
+- paradigm: Dt (Ithpaal) imperfect, sound verb
+  reference: B.1
+  pattern: ʔitqattal
+  lemma: ʔitkattab, Dt imperfect
+  notes: The Pael with ʔit-, so the second radical is doubled here too. The theme vowel is not the same throughout — CaCCaC, CaCCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CaCCaC
+      example: יִתכַתַב yitkattab
+    - slot: 3fs, 2ms
+      shape: tit-CaCCaC
+      example: תִתכַתַב titkattab
+    - slot: 2fs
+      shape: tit-CaCCǝC-in
+      example: תִתכַתְבִין titkattǝbin
+    - slot: 1cs
+      shape: ʔit-CaCCaC
+      example: אִתכַתַב ʔitkattab
+    - slot: 3mp
+      shape: yit-CaCCǝC-un
+      example: יִתכַתְבֻון yitkattǝbun
+    - slot: 3fp
+      shape: yit-CaCCǝC-ān
+      example: יִתכַתְבָן yitkattǝbān
+    - slot: 2mp
+      shape: tit-CaCCǝC-un
+      example: תִתכַתְבֻון titkattǝbun
+    - slot: 2fp
+      shape: tit-CaCCǝC-ān
+      example: תִתכַתְבָן titkattǝbān
+    - slot: 1cp
+      shape: nit-CaCCaC
+      example: נִתכַתַב nitkattab
+
+- paradigm: Dt (Ithpaal) imperative, sound verb
+  reference: B.1
+  pattern: ʔitqattal
+  lemma: ʔitkattab, Dt imperative
+  notes: The Pael with ʔit-, so the second radical is doubled here too.
+  cells:
+    - slot: ms
+      shape: ʔit-CaCCaC
+      example: אִתכַתַב ʔitkattab
+    - slot: fs
+      shape: ʔit-CaCCaC-i
+      example: אִתכַתַבִי ʔitkattábi
+    - slot: mp
+      shape: ʔit-CaCCaC-u
+      example: אִתכַתַבֻו ʔitkattábu
+    - slot: fp
+      shape: ʔit-CaCCaC-ā
+      example: אִתכַתַבָא ʔitkattábā
+
+- paradigm: Dt (Ithpaal) non-finite, sound verb
+  reference: B.1
+  pattern: ʔitqattal
+  lemma: ʔitkattab, Dt non-finite
+  notes: The Pael with ʔit-, so the second radical is doubled here too. The theme vowel is not the same throughout — CaCCaC, CaCCǝC, CaCCāC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: active participle ms
+      shape: mit-CaCCaC
+      example: מִתכַתַב mitkattab
+    - slot: active participle mp
+      shape: mit-CaCCǝC-in
+      example: מִתכַתְבִין mitkattǝbin
+    - slot: infinitive
+      shape: ʔit-CaCCāC-ā
+      example: אִתכַתָבָא ʔitkattābā
+
+- paradigm: Ct (Ittaphal) perfect, sound verb
+  reference: B.1
+  pattern: ʔittaqtal
+  lemma: ʔittaktab, Ct perfect
+  notes: The Aphel with ʔit-, and the t of the prefix is doubled. The vowels do not show it here — the a already stands closed — so that rests on the name Ittaphal, ʔittaqtal.
+  cells:
+    - slot: 3ms
+      shape: ʔitta-CCaC
+      example: אִתַכתַב ʔittaktab
+    - slot: 3fs
+      shape: ʔitta-CCaC-at
+      example: אִתַכתַבַת ʔittaktábat
+    - slot: 2ms, 2fs
+      shape: ʔitta-CCaC-t
+      example: אִתַכתַבת ʔittaktabt
+    - slot: 2ms, longer variant
+      shape: ʔitta-CCaC-tā
+      example: אִתַכתַבתָא ʔittaktábtā
+    - slot: 1cs
+      shape: ʔitta-CCaC-it
+      example: אִתַכתַבִית ʔittaktábit
+    - slot: 3mp
+      shape: ʔitta-CCaC-u
+      example: אִתַכתַבֻו ʔittaktábu
+    - slot: 3fp
+      shape: ʔitta-CCaC-ā
+      example: אִתַכתַבָא ʔittaktábā
+    - slot: 2mp
+      shape: ʔitta-CCaC-tun
+      example: אִתַכתַבתֻון ʔittaktabtun
+    - slot: 2fp
+      shape: ʔitta-CCaC-tin
+      example: אִתַכתַבתִין ʔittaktabtin
+    - slot: 1cp
+      shape: ʔitta-CCaC-nā
+      example: אִתַכתַבנָא ʔittaktábnā
+
+- paradigm: Ct (Ittaphal) imperfect, sound verb
+  reference: B.1
+  pattern: ʔittaqtal
+  lemma: ʔittaktab, Ct imperfect
+  notes: The Aphel with ʔit-, and the t of the prefix is doubled. The vowels do not show it here — the a already stands closed — so that rests on the name Ittaphal, ʔittaqtal. The theme vowel is not the same throughout — CCaC, CCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yitta-CCaC
+      example: יִתַכתַב yittaktab
+    - slot: 3fs, 2ms
+      shape: titta-CCaC
+      example: תִתַכתַב tittaktab
+    - slot: 2fs
+      shape: titta-CCǝC-in
+      example: תִתַכתְבִין tittaktǝbin
+    - slot: 1cs
+      shape: ʔitta-CCaC
+      example: אִתַכתַב ʔittaktab
+    - slot: 3mp
+      shape: yitta-CCǝC-un
+      example: יִתַכתְבֻון yittaktǝbun
+    - slot: 3fp
+      shape: yitta-CCǝC-ān
+      example: יִתַכתְבָן yittaktǝbān
+    - slot: 2mp
+      shape: titta-CCǝC-un
+      example: תִתַכתְבֻון tittaktǝbun
+    - slot: 2fp
+      shape: titta-CCǝC-ān
+      example: תִתַכתְבָן tittaktǝbān
+    - slot: 1cp
+      shape: nitta-CCaC
+      example: נִתַכתַב nittaktab
+
+- paradigm: Ct (Ittaphal) imperative, sound verb
+  reference: B.1
+  pattern: ʔittaqtal
+  lemma: ʔittaktab, Ct imperative
+  notes: The Aphel with ʔit-, and the t of the prefix is doubled. The vowels do not show it here — the a already stands closed — so that rests on the name Ittaphal, ʔittaqtal.
+  cells:
+    - slot: ms
+      shape: ʔitta-CCaC
+      example: אִתַכתַב ʔittaktab
+    - slot: fs
+      shape: ʔitta-CCaC-i
+      example: אִתַכתַבִי ʔittaktábi
+    - slot: mp
+      shape: ʔitta-CCaC-u
+      example: אִתַכתַבֻו ʔittaktábu
+    - slot: fp
+      shape: ʔitta-CCaC-ā
+      example: אִתַכתַבָא ʔittaktábā
+
+- paradigm: Ct (Ittaphal) non-finite, sound verb
+  reference: B.1
+  pattern: ʔittaqtal
+  lemma: ʔittaktab, Ct non-finite
+  notes: The Aphel with ʔit-, and the t of the prefix is doubled. The vowels do not show it here — the a already stands closed — so that rests on the name Ittaphal, ʔittaqtal. The theme vowel is not the same throughout — CCaC, CCǝC, CCāC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: active participle ms
+      shape: mitta-CCaC
+      example: מִתַכתַב mittaktab
+    - slot: active participle mp
+      shape: mitta-CCǝC-in
+      example: מִתַכתְבִין mittaktǝbin
+    - slot: infinitive
+      shape: ʔitta-CCāC-ā
+      example: אִתַכתָבָא ʔittaktābā
+
+- paradigm: G (Peal) perfect, verbs I-ʔ
+  reference: B.2
+  pattern: qǝtal
+  lemma: ʔǝkal, G perfect (I-ʔ)
+  notes: "The ʔ holds as a radical in the perfect, the imperative and the participles, but the prefix vowel swallows it in the imperfect and the infinitive: yi- plus ʔkul gives yekul, mi- plus ʔkal gives mekal, with one C fewer than the sound verb. Root ʔkl."
+  cells:
+    - slot: 3ms
+      shape: CǝCaC
+      example: אְכַל ʔǝkal
+    - slot: 3mp
+      shape: CǝCaC-u
+      example: אְכַלֻו ʔǝkálu
+
+- paradigm: G (Peal) imperfect, verbs I-ʔ
+  reference: B.2
+  pattern: qǝtal
+  lemma: ʔǝkal, G imperfect (I-ʔ)
+  notes: "The ʔ holds as a radical in the perfect, the imperative and the participles, but the prefix vowel swallows it in the imperfect and the infinitive: yi- plus ʔkul gives yekul, mi- plus ʔkal gives mekal, with one C fewer than the sound verb. Root ʔkl. The theme vowel is not the same throughout — CuC, CǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ye-CuC
+      example: יֵיכֻול yekul
+    - slot: 3mp
+      shape: ye-CǝC-un
+      example: יֵיכְלֻון yekǝlun
+
+- paradigm: G (Peal) imperative, verbs I-ʔ
+  reference: B.2
+  pattern: qǝtal
+  lemma: ʔǝkal, G imperative (I-ʔ)
+  notes: "The ʔ holds as a radical in the perfect, the imperative and the participles, but the prefix vowel swallows it in the imperfect and the infinitive: yi- plus ʔkul gives yekul, mi- plus ʔkal gives mekal, with one C fewer than the sound verb. Root ʔkl."
+  cells:
+    - slot: ms
+      shape: CeCuC
+      example: אֵכֻול ʔekul
+    - slot: mp
+      shape: CeCuC-u
+      example: אֵכֻולֻו ʔekúlu
+
+- paradigm: G (Peal) non-finite, verbs I-ʔ
+  reference: B.2
+  pattern: qǝtal
+  lemma: ʔǝkal, G non-finite (I-ʔ)
+  notes: "The ʔ holds as a radical in the perfect, the imperative and the participles, but the prefix vowel swallows it in the imperfect and the infinitive: yi- plus ʔkul gives yekul, mi- plus ʔkal gives mekal, with one C fewer than the sound verb. Root ʔkl."
+  cells:
+    - slot: active participle ms
+      shape: CāCeC
+      example: אָכֵיל ʔākel
+    - slot: active participle mp
+      shape: CāCǝC-in
+      example: אָכְלִין ʔākǝlin
+    - slot: passive participle ms
+      shape: CǝCiC
+      example: אְכִיל ʔǝkil
+    - slot: infinitive
+      shape: me-CaC
+      example: מֵיכַל mekal
+
+- paradigm: D (Pael) perfect, verbs I-ʔ
+  reference: B.2
+  pattern: qattil
+  lemma: ʔabbed, D perfect (I-ʔ)
+  notes: The Pael is regular here — the ʔ is not at a syllable boundary that would lose it. The second radical is doubled, as the unreduced a before it shows. Root ʔbd. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: CaCCeC
+      example: אַבֵיד ʔabbed
+    - slot: 3mp
+      shape: CaCCiC-u
+      example: אַבִידֻו ʔabbídu
+
+- paradigm: D (Pael) imperfect, verbs I-ʔ
+  reference: B.2
+  pattern: qattil
+  lemma: ʔabbed, D imperfect (I-ʔ)
+  notes: The Pael is regular here — the ʔ is not at a syllable boundary that would lose it. The second radical is doubled, as the unreduced a before it shows. Root ʔbd. The theme vowel is not the same throughout — CaCCeC, CaCCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yǝ-CaCCeC
+      example: יְאַבֵיד yǝʔabbed
+    - slot: 3mp
+      shape: yǝ-CaCCǝC-un
+      example: יְאַבְדֻון yǝʔabbǝdun
+
+- paradigm: D (Pael) imperative, verbs I-ʔ
+  reference: B.2
+  pattern: qattil
+  lemma: ʔabbed, D imperative (I-ʔ)
+  notes: The Pael is regular here — the ʔ is not at a syllable boundary that would lose it. The second radical is doubled, as the unreduced a before it shows. Root ʔbd. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: ms
+      shape: CaCCeC
+      example: אַבֵיד ʔabbed
+    - slot: mp
+      shape: CaCCiC-u
+      example: אַבִידֻו ʔabbídu
+
+- paradigm: D (Pael) non-finite, verbs I-ʔ
+  reference: B.2
+  pattern: qattil
+  lemma: ʔabbed, D non-finite (I-ʔ)
+  notes: The Pael is regular here — the ʔ is not at a syllable boundary that would lose it. The second radical is doubled, as the unreduced a before it shows. Root ʔbd.
+  cells:
+    - slot: active participle ms
+      shape: mǝ-CaCCeC
+      example: מְאַבֵיד mǝʔabbed
+    - slot: active participle mp
+      shape: mǝ-CaCCǝC-in
+      example: מְאַבְדִין mǝʔabbǝdin
+    - slot: passive participle ms
+      shape: mǝ-CaCCaC
+      example: מְאַבַד mǝʔabbad
+    - slot: passive participle ms, variant
+      shape: mǝ-CuCaC
+      example: מְאֻובַד mǝʔubad
+    - slot: infinitive
+      shape: CaCCāC-ā
+      example: אַבָדָא ʔabbādā
+
+- paradigm: C (Aphel) perfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔaqtil
+  lemma: ʔokel, C perfect (I-ʔ)
+  notes: "The prefix vowel and the ʔ contract to ō throughout: ʔa- plus ʔkel gives ʔokel, so the Aphel reads ʔo-, yo-, mo- and has one C fewer than the sound verb's ʔa-CCeC. Root ʔkl. The theme vowel is not the same throughout — CeC, CiC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ʔo-CeC
+      example: אֹוכֵיל ʔokel
+    - slot: 3mp
+      shape: ʔo-CiC-u
+      example: אֹוכִילֻו ʔokílu
+
+- paradigm: C (Aphel) imperfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔaqtil
+  lemma: ʔokel, C imperfect (I-ʔ)
+  notes: "The prefix vowel and the ʔ contract to ō throughout: ʔa- plus ʔkel gives ʔokel, so the Aphel reads ʔo-, yo-, mo- and has one C fewer than the sound verb's ʔa-CCeC. Root ʔkl. The theme vowel is not the same throughout — CeC, CǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yo-CeC
+      example: יֹוכֵיל yokel
+    - slot: 3mp
+      shape: yo-CǝC-un
+      example: יֹוכְלֻון yokǝlun
+
+- paradigm: C (Aphel) imperative, verbs I-ʔ
+  reference: B.2
+  pattern: ʔaqtil
+  lemma: ʔokel, C imperative (I-ʔ)
+  notes: "The prefix vowel and the ʔ contract to ō throughout: ʔa- plus ʔkel gives ʔokel, so the Aphel reads ʔo-, yo-, mo- and has one C fewer than the sound verb's ʔa-CCeC. Root ʔkl. The theme vowel is not the same throughout — CeC, CiC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: ms
+      shape: ʔo-CeC
+      example: אֹוכֵיל ʔokel
+    - slot: mp
+      shape: ʔo-CiC-u
+      example: אֹוכִילֻו ʔokílu
+
+- paradigm: C (Aphel) non-finite, verbs I-ʔ
+  reference: B.2
+  pattern: ʔaqtil
+  lemma: ʔokel, C non-finite (I-ʔ)
+  notes: "The prefix vowel and the ʔ contract to ō throughout: ʔa- plus ʔkel gives ʔokel, so the Aphel reads ʔo-, yo-, mo- and has one C fewer than the sound verb's ʔa-CCeC. Root ʔkl."
+  cells:
+    - slot: active participle ms
+      shape: mo-CeC
+      example: מֹוכֵיל mokel
+    - slot: active participle mp
+      shape: mo-CǝC-in
+      example: מֹוכְלִין mokǝlin
+    - slot: passive participle ms
+      shape: mo-CaC
+      example: מֹוכַל mokal
+    - slot: passive participle ms, variant
+      shape: mu-CaC
+      example: מֻוכַל mukal
+    - slot: infinitive
+      shape: ʔo-CāC-ā
+      example: אֹוכָלָא ʔokālā
+
+- paradigm: Gt (Ithpeel) perfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqǝtil
+  lemma: ʔitʔǝkel, Gt perfect (I-ʔ)
+  notes: The ʔit- prefix keeps the ʔ safe, so this column matches the sound verb closely. Root ʔkl. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CǝCeC
+      example: אִתאְכֵיל ʔitʔǝkel
+    - slot: 3mp
+      shape: ʔit-CǝCiC-u
+      example: אִתאְכִילֻו ʔitʔǝkílu
+
+- paradigm: Gt (Ithpeel) imperfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqǝtil
+  lemma: ʔitʔǝkel, Gt imperfect (I-ʔ)
+  notes: The ʔit- prefix keeps the ʔ safe, so this column matches the sound verb closely. Root ʔkl. The theme vowel is not the same throughout — CǝCeC, CaCC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CǝCeC
+      example: יִתאְכֵיל yitʔǝkel
+    - slot: 3mp
+      shape: yit-CaCC-un
+      example: יִתאַכלֻון yitʔaklun
+
+- paradigm: Gt (Ithpeel) imperative, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqǝtil
+  lemma: ʔitʔǝkel, Gt imperative (I-ʔ)
+  notes: The ʔit- prefix keeps the ʔ safe, so this column matches the sound verb closely. Root ʔkl. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔit-CǝCeC
+      example: אִתאְכֵיל ʔitʔǝkel
+    - slot: mp
+      shape: ʔit-CǝCiC-u
+      example: אִתאְכִילֻו ʔitʔǝkílu
+
+- paradigm: Gt (Ithpeel) non-finite, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqǝtil
+  lemma: ʔitʔǝkel, Gt non-finite (I-ʔ)
+  notes: The ʔit- prefix keeps the ʔ safe, so this column matches the sound verb closely. Root ʔkl.
+  cells:
+    - slot: active participle ms
+      shape: mit-CǝCeC
+      example: מִתאְכֵיל mitʔǝkel
+    - slot: active participle mp
+      shape: mit-CaCC-in
+      example: מִתאַכלִין mitʔaklin
+    - slot: infinitive
+      shape: ʔit-CǝCāC-ā
+      example: אִתאְכָלָא ʔitʔǝkālā
+
+- paradigm: Dt (Ithpaal) perfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqattal
+  lemma: ʔitʔabbal, Dt perfect (I-ʔ)
+  notes: Like the Ithpaal of a sound verb, with the second radical doubled. Root ʔbl.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CaCCaC
+      example: אִתאַבַל ʔitʔabbal
+    - slot: 3mp
+      shape: ʔit-CaCCaC-u
+      example: אִתאַבַלֻו ʔitʔabbálu
+
+- paradigm: Dt (Ithpaal) imperfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqattal
+  lemma: ʔitʔabbal, Dt imperfect (I-ʔ)
+  notes: Like the Ithpaal of a sound verb, with the second radical doubled. Root ʔbl. The theme vowel is not the same throughout — CaCCaC, CaCCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CaCCaC
+      example: יִתאַבַל yitʔabbal
+    - slot: 3mp
+      shape: yit-CaCCǝC-un
+      example: יִתאַבְלֻון yitʔabbǝlun
+
+- paradigm: Dt (Ithpaal) imperative, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqattal
+  lemma: ʔitʔabbal, Dt imperative (I-ʔ)
+  notes: Like the Ithpaal of a sound verb, with the second radical doubled. Root ʔbl.
+  cells:
+    - slot: ms
+      shape: ʔit-CaCCaC
+      example: אִתאַבַל ʔitʔabbal
+    - slot: mp
+      shape: ʔit-CaCCaC-u
+      example: אִתאַבַלֻו ʔitʔabbálu
+
+- paradigm: Dt (Ithpaal) non-finite, verbs I-ʔ
+  reference: B.2
+  pattern: ʔitqattal
+  lemma: ʔitʔabbal, Dt non-finite (I-ʔ)
+  notes: Like the Ithpaal of a sound verb, with the second radical doubled. Root ʔbl.
+  cells:
+    - slot: active participle ms
+      shape: mit-CaCCaC
+      example: מִתאַבַל mitʔabbal
+    - slot: active participle mp
+      shape: mit-CaCCǝC-in
+      example: מִתאַבְלִין mitʔabbǝlin
+    - slot: infinitive
+      shape: ʔit-CaCCāC-ā
+      example: אִתאַבָלָא ʔitʔabbālā
+
+- paradigm: Ct (Ittaphal) perfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔittaqtal
+  lemma: ʔitteti, Ct perfect (I-ʔ)
+  notes: The Ittaphal here is of ʔty, weak in the first radical and the third at once, and the paradigm gives only these two forms. The prefix t is doubled — the i before it would otherwise have reduced to sheva — and the third radical has become the final vowel. Root ʔty.
+  cells:
+    - slot: 3ms
+      shape: ʔitte-C-i
+      example: אִתֵיתִי ʔitteti
+
+- paradigm: Ct (Ittaphal) imperfect, verbs I-ʔ
+  reference: B.2
+  pattern: ʔittaqtal
+  lemma: ʔitteti, Ct imperfect (I-ʔ)
+  notes: The Ittaphal here is of ʔty, weak in the first radical and the third at once, and the paradigm gives only these two forms. The prefix t is doubled — the i before it would otherwise have reduced to sheva — and the third radical has become the final vowel. Root ʔty.
+  cells:
+    - slot: 3ms
+      shape: yitte-C-e
+      example: יִתֵיתֵי yittete
+
+- paradigm: G (Peal) perfect, verbs I-n
+  reference: B.3
+  pattern: qǝtal
+  lemma: nǝpaq, G perfect (I-n)
+  notes: "The n assimilates to the second radical wherever a prefix closes on it, doubling it though the script writes a single letter: yi- plus npoq gives yippoq. The imperative drops the n outright, leaving two radicals, and the infinitive lengthens its vowel instead of doubling. In the perfect and the participles the n holds. Root npq."
+  cells:
+    - slot: 3ms
+      shape: CǝCaC
+      example: נְפַק nǝpaq
+    - slot: 3mp
+      shape: CǝCaC-u
+      example: נְפַקֻו nǝpáqu
+
+- paradigm: G (Peal) imperfect, verbs I-n
+  reference: B.3
+  pattern: qǝtal
+  lemma: nǝpaq, G imperfect (I-n)
+  notes: "The n assimilates to the second radical wherever a prefix closes on it, doubling it though the script writes a single letter: yi- plus npoq gives yippoq. The imperative drops the n outright, leaving two radicals, and the infinitive lengthens its vowel instead of doubling. In the perfect and the participles the n holds. Root npq. The theme vowel is not the same throughout — CCoC, CCǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yi-CCoC
+      example: יִפֹוק yippoq
+    - slot: 3mp
+      shape: yi-CCǝC-un
+      example: יִפְקֻון yippǝqun
+
+- paradigm: G (Peal) imperative, verbs I-n
+  reference: B.3
+  pattern: qǝtal
+  lemma: nǝpaq, G imperative (I-n)
+  notes: "The n assimilates to the second radical wherever a prefix closes on it, doubling it though the script writes a single letter: yi- plus npoq gives yippoq. The imperative drops the n outright, leaving two radicals, and the infinitive lengthens its vowel instead of doubling. In the perfect and the participles the n holds. Root npq. The theme vowel is not the same throughout — CoC, CuC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: ms
+      shape: CoC
+      example: פֹוק poq
+    - slot: mp
+      shape: CuC-u
+      example: פֻוקֻו púqu
+
+- paradigm: G (Peal) non-finite, verbs I-n
+  reference: B.3
+  pattern: qǝtal
+  lemma: nǝpaq, G non-finite (I-n)
+  notes: "The n assimilates to the second radical wherever a prefix closes on it, doubling it though the script writes a single letter: yi- plus npoq gives yippoq. The imperative drops the n outright, leaving two radicals, and the infinitive lengthens its vowel instead of doubling. In the perfect and the participles the n holds. Root npq."
+  cells:
+    - slot: active participle ms
+      shape: CāCeC
+      example: נָפֵיק nāpeq
+    - slot: active participle mp
+      shape: CāCǝC-in
+      example: נָפְקִין nāpǝqin
+    - slot: passive participle ms
+      shape: CǝCiC
+      example: נְפִיק nǝpiq
+    - slot: infinitive
+      shape: mi-CCaC
+      example: מִיפַק mippaq
+
+- paradigm: G stative (Peal) perfect, verbs I-n
+  reference: B.3
+  pattern: qǝtel
+  lemma: nǝseb, G stative perfect (I-n)
+  notes: "As in the Peal: the n assimilates in the imperfect (yissab), is dropped in the imperative (sab), and holds in the perfect and the participles. Root nsb. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: CǝCeC
+      example: נְסֵיב nǝseb
+    - slot: 3mp
+      shape: CǝCiC-u
+      example: נְסִיבֻו nǝsíbu
+
+- paradigm: G stative (Peal) imperfect, verbs I-n
+  reference: B.3
+  pattern: qǝtel
+  lemma: nǝseb, G stative imperfect (I-n)
+  notes: "As in the Peal: the n assimilates in the imperfect (yissab), is dropped in the imperative (sab), and holds in the perfect and the participles. Root nsb. The theme vowel is not the same throughout — CCaC, CCǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yi-CCaC
+      example: יִסַב yissab
+    - slot: 3mp
+      shape: yi-CCǝC-un
+      example: יִסְבֻון yissǝbun
+
+- paradigm: G stative (Peal) imperative, verbs I-n
+  reference: B.3
+  pattern: qǝtel
+  lemma: nǝseb, G stative imperative (I-n)
+  notes: "As in the Peal: the n assimilates in the imperfect (yissab), is dropped in the imperative (sab), and holds in the perfect and the participles. Root nsb."
+  cells:
+    - slot: ms
+      shape: CaC
+      example: סַב sab
+    - slot: mp
+      shape: CaC-u
+      example: סַבֻו sábu
+
+- paradigm: G stative (Peal) non-finite, verbs I-n
+  reference: B.3
+  pattern: qǝtel
+  lemma: nǝseb, G stative non-finite (I-n)
+  notes: "As in the Peal: the n assimilates in the imperfect (yissab), is dropped in the imperative (sab), and holds in the perfect and the participles. Root nsb."
+  cells:
+    - slot: active participle ms
+      shape: CāCeC
+      example: נָסֵיב nāseb
+    - slot: active participle mp
+      shape: CāCǝC-in
+      example: נָסְבִין nāsǝbin
+    - slot: infinitive
+      shape: mi-CaC
+      example: מִיסַב misab
+
+- paradigm: D (Pael) perfect, verbs I-n
+  reference: B.3
+  pattern: qattil
+  lemma: naḥḥem, D perfect (I-n)
+  notes: A regular Pael — the n is not at a boundary that could lose it — with the second radical doubled as the unreduced a before it shows. Root nḥm. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: CaCCeC
+      example: נַחֵים naḥḥem
+    - slot: 3mp
+      shape: CaCCiC-u
+      example: נַחִימֻו naḥḥímu
+
+- paradigm: D (Pael) imperfect, verbs I-n
+  reference: B.3
+  pattern: qattil
+  lemma: naḥḥem, D imperfect (I-n)
+  notes: A regular Pael — the n is not at a boundary that could lose it — with the second radical doubled as the unreduced a before it shows. Root nḥm. The theme vowel is not the same throughout — CaCCeC, CaCCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yǝ-CaCCeC
+      example: יְנַחֵים yǝnaḥḥem
+    - slot: 3mp
+      shape: yǝ-CaCCǝC-un
+      example: יְנַחְמֻון yǝnaḥḥǝmun
+
+- paradigm: D (Pael) imperative, verbs I-n
+  reference: B.3
+  pattern: qattil
+  lemma: naḥḥem, D imperative (I-n)
+  notes: A regular Pael — the n is not at a boundary that could lose it — with the second radical doubled as the unreduced a before it shows. Root nḥm. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: ms
+      shape: CaCCeC
+      example: נַחֵים naḥḥem
+    - slot: mp
+      shape: CaCCiC-u
+      example: נַחִימֻו naḥḥímu
+
+- paradigm: D (Pael) non-finite, verbs I-n
+  reference: B.3
+  pattern: qattil
+  lemma: naḥḥem, D non-finite (I-n)
+  notes: A regular Pael — the n is not at a boundary that could lose it — with the second radical doubled as the unreduced a before it shows. Root nḥm.
+  cells:
+    - slot: active participle ms
+      shape: mǝ-CaCCeC
+      example: מְנַחֵים mǝnaḥḥem
+    - slot: active participle mp
+      shape: mǝ-CaCCǝC-in
+      example: מְנַחְמִין mǝnaḥḥǝmin
+    - slot: passive participle ms
+      shape: mǝ-CaCCaC
+      example: מְנַחַם mǝnaḥḥam
+    - slot: passive participle ms, variant
+      shape: mǝ-CuCaC
+      example: מְנֻוחַם mǝnuḥam
+    - slot: infinitive
+      shape: CaCCāC-ā
+      example: נַחָמָא naḥḥāmā
+
+- paradigm: C (Aphel) perfect, verbs I-n
+  reference: B.3
+  pattern: ʔaqtil
+  lemma: ʔappeq, C perfect (I-n)
+  notes: The n assimilates into the second radical, so this column reads exactly like a sound verb's Aphel, ʔa-CCeC. The first C is the doubled second radical, not the first. Root npq. The theme vowel is not the same throughout — CCeC, CCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔa-CCeC
+      example: אַפֵיק ʔappeq
+    - slot: 3mp
+      shape: ʔa-CCiC-u
+      example: אַפִיקֻו ʔappíqu
+
+- paradigm: C (Aphel) imperfect, verbs I-n
+  reference: B.3
+  pattern: ʔaqtil
+  lemma: ʔappeq, C imperfect (I-n)
+  notes: The n assimilates into the second radical, so this column reads exactly like a sound verb's Aphel, ʔa-CCeC. The first C is the doubled second radical, not the first. Root npq. The theme vowel is not the same throughout — CCeC, CCǝC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ya-CCeC
+      example: יַפֵיק yappeq
+    - slot: 3mp
+      shape: ya-CCǝC-un
+      example: יַפְקֻון yappǝqun
+
+- paradigm: C (Aphel) imperative, verbs I-n
+  reference: B.3
+  pattern: ʔaqtil
+  lemma: ʔappeq, C imperative (I-n)
+  notes: The n assimilates into the second radical, so this column reads exactly like a sound verb's Aphel, ʔa-CCeC. The first C is the doubled second radical, not the first. Root npq. The theme vowel is not the same throughout — CCeC, CCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔa-CCeC
+      example: אַפֵיק ʔappeq
+    - slot: mp
+      shape: ʔa-CCiC-u
+      example: אַפִיקֻו ʔappíqu
+
+- paradigm: C (Aphel) non-finite, verbs I-n
+  reference: B.3
+  pattern: ʔaqtil
+  lemma: ʔappeq, C non-finite (I-n)
+  notes: The n assimilates into the second radical, so this column reads exactly like a sound verb's Aphel, ʔa-CCeC. The first C is the doubled second radical, not the first. Root npq.
+  cells:
+    - slot: active participle ms
+      shape: ma-CCeC
+      example: מַפֵיק mappeq
+    - slot: active participle mp
+      shape: ma-CCǝC-in
+      example: מַפְקִין mappǝqin
+    - slot: passive participle ms
+      shape: ma-CCaC
+      example: מַפַק mappaq
+    - slot: passive participle ms, variant
+      shape: mu-CaC
+      example: מֻופַק mupaq
+    - slot: infinitive
+      shape: ʔa-CCāC-ā
+      example: אַפָקָא ʔappāqā
+
+- paradigm: Gt (Ithpeel) perfect, verbs I-n
+  reference: B.3
+  pattern: ʔitqǝtil
+  lemma: ʔitnǝseb, Gt perfect (I-n)
+  notes: The ʔit- prefix keeps the n safe, so all three radicals are here. Root nsb. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CǝCeC
+      example: אִתנְסֵיב ʔitnǝseb
+    - slot: 3mp
+      shape: ʔit-CǝCiC-u
+      example: אִתנְסִיבֻו ʔitnǝsíbu
+
+- paradigm: Gt (Ithpeel) imperfect, verbs I-n
+  reference: B.3
+  pattern: ʔitqǝtil
+  lemma: ʔitnǝseb, Gt imperfect (I-n)
+  notes: The ʔit- prefix keeps the n safe, so all three radicals are here. Root nsb. The theme vowel is not the same throughout — CǝCeC, CaCC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CǝCeC
+      example: יִתנְסֵיב yitnǝseb
+    - slot: 3mp
+      shape: yit-CaCC-un
+      example: יִתנַסבֻון yitnasbun
+
+- paradigm: Gt (Ithpeel) imperative, verbs I-n
+  reference: B.3
+  pattern: ʔitqǝtil
+  lemma: ʔitnǝseb, Gt imperative (I-n)
+  notes: The ʔit- prefix keeps the n safe, so all three radicals are here. Root nsb. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending that begins with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔit-CǝCeC
+      example: אִתנְסֵיב ʔitnǝseb
+    - slot: mp
+      shape: ʔit-CǝCiC-u
+      example: אִתנְסִיבֻו ʔitnǝsíbu
+
+- paradigm: Gt (Ithpeel) non-finite, verbs I-n
+  reference: B.3
+  pattern: ʔitqǝtil
+  lemma: ʔitnǝseb, Gt non-finite (I-n)
+  notes: The ʔit- prefix keeps the n safe, so all three radicals are here. Root nsb.
+  cells:
+    - slot: active participle ms
+      shape: mit-CǝCeC
+      example: מִתנְסֵיב mitnǝseb
+    - slot: active participle mp
+      shape: mit-CaCC-in
+      example: מִתנַסבִין mitnasbin
+    - slot: infinitive
+      shape: ʔit-CǝCāC-ā
+      example: אִתנְסָבָא ʔitnǝsābā
+
+- paradigm: Dt (Ithpaal) perfect, verbs I-n
+  reference: B.3
+  pattern: ʔitqattal
+  lemma: ʔitnaḥḥam, Dt perfect (I-n)
+  notes: "Like a sound verb's Ithpaal: the n survives behind ʔit-, and the second radical is doubled. Root nḥm."
+  cells:
+    - slot: 3ms
+      shape: ʔit-CaCCaC
+      example: אִתנַחַם ʔitnaḥḥam
+    - slot: 3mp
+      shape: ʔit-CaCCaC-u
+      example: אִתנַחַמֻו ʔitnaḥḥámu
+
+- paradigm: Dt (Ithpaal) imperfect, verbs I-n
+  reference: B.3
+  pattern: ʔitqattal
+  lemma: ʔitnaḥḥam, Dt imperfect (I-n)
+  notes: "Like a sound verb's Ithpaal: the n survives behind ʔit-, and the second radical is doubled. Root nḥm. The theme vowel is not the same throughout — CaCCaC, CaCCǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yit-CaCCaC
+      example: יִתנַחַם yitnaḥḥam
+    - slot: 3mp
+      shape: yit-CaCCǝC-un
+      example: יִתנַחְמֻון yitnaḥḥǝmun
+
+- paradigm: Dt (Ithpaal) imperative, verbs I-n
+  reference: B.3
+  pattern: ʔitqattal
+  lemma: ʔitnaḥḥam, Dt imperative (I-n)
+  notes: "Like a sound verb's Ithpaal: the n survives behind ʔit-, and the second radical is doubled. Root nḥm."
+  cells:
+    - slot: ms
+      shape: ʔit-CaCCaC
+      example: אִתנַחַם ʔitnaḥḥam
+    - slot: mp
+      shape: ʔit-CaCCaC-u
+      example: אִתנַחַמֻו ʔitnaḥḥámu
+
+- paradigm: Dt (Ithpaal) non-finite, verbs I-n
+  reference: B.3
+  pattern: ʔitqattal
+  lemma: ʔitnaḥḥam, Dt non-finite (I-n)
+  notes: "Like a sound verb's Ithpaal: the n survives behind ʔit-, and the second radical is doubled. Root nḥm. The paradigm prints the Ithpaal infinitive of B.2 in this column, so the form belonging here is missing from the source and no card is made for it."
+  cells:
+    - slot: active participle ms
+      shape: mit-CaCCaC
+      example: מִתנַחַם mitnaḥḥam
+    - slot: active participle mp
+      shape: mit-CaCCǝC-in
+      example: מִתנַחְמִין mitnaḥḥǝmin
+
+- paradigm: Ct (Ittaphal) perfect, verbs I-n
+  reference: B.3
+  pattern: ʔittaqtal
+  lemma: ʔittappaq, Ct perfect (I-n)
+  notes: "Two doublings at once — the t of the prefix, and the second radical from the assimilated n: ʔittappaq. Root npq."
+  cells:
+    - slot: 3ms
+      shape: ʔitta-CCaC
+      example: אִתַפַק ʔittappaq
+    - slot: 3mp
+      shape: ʔitta-CCaC-u
+      example: אִתַפַקֻו ʔittappáqu
+
+- paradigm: Ct (Ittaphal) imperfect, verbs I-n
+  reference: B.3
+  pattern: ʔittaqtal
+  lemma: ʔittappaq, Ct imperfect (I-n)
+  notes: "Two doublings at once — the t of the prefix, and the second radical from the assimilated n: ʔittappaq. Root npq. The theme vowel is not the same throughout — CCaC, CCǝC — it reduces before an ending that begins with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yitta-CCaC
+      example: יִתַפַק yittappaq
+    - slot: 3mp
+      shape: yitta-CCǝC-un
+      example: יִתַפְקֻון yittappǝqun
+
+- paradigm: Ct (Ittaphal) non-finite, verbs I-n
+  reference: B.3
+  pattern: ʔittaqtal
+  lemma: ʔittappaq, Ct non-finite (I-n)
+  notes: "Two doublings at once — the t of the prefix, and the second radical from the assimilated n: ʔittappaq. Root npq."
+  cells:
+    - slot: active participle ms
+      shape: mitta-CCaC
+      example: מִתַפַק mittappaq
+    - slot: active participle mp
+      shape: mitta-CCǝC-in
+      example: מִתַפְקִין mittappǝqin
+    - slot: infinitive
+      shape: ʔitta-CCāC-ā
+      example: אִתַפָקָא ʔittappāqā
+
+- paradigm: G (Peal) perfect, verbs I-y
+  reference: B.4
+  pattern: qǝtal
+  lemma: yǝhab, G perfect (verbs I-y)
+  notes: "The y holds as a radical in the perfect and the passive participle, but the imperative drops it outright, leaving two radicals: hab. Root yhb."
+  cells:
+    - slot: 3ms
+      shape: CǝCaC
+      example: יְהַב yǝhab
+    - slot: 3mp
+      shape: CǝCaC-u
+      example: יְהַבֻו yǝhábu
+
+- paradigm: G stative (Peal) perfect, verbs I-y
+  reference: B.4
+  pattern: qǝtel
+  lemma: yǝteb, G stative perfect (verbs I-y)
+  notes: The y assimilates in the imperfect (yitteb), is dropped in the imperative (tib), and contracts in the infinitive (mītab). Root ytb. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: CǝCeC
+      example: יְתֵיב yǝteb
+    - slot: 3mp
+      shape: CǝCiC-u
+      example: יְתִיבֻו yǝtíbu
+
+- paradigm: D (Pael) perfect, verbs I-y
+  reference: B.4
+  pattern: qattil
+  lemma: yaqqar, D perfect (verbs I-y)
+  notes: "A regular Pael: the y is safe inside the stem and the second radical is doubled. Root yqr."
+  cells:
+    - slot: 3ms
+      shape: CaCCaC
+      example: יַקַר yaqqar
+    - slot: 3mp
+      shape: CaCCaC-u
+      example: יַקַרֻו yaqqáru
+
+- paradigm: C (Aphel) perfect, verbs I-y
+  reference: B.4
+  pattern: ʔaqtil
+  lemma: ʔoteb, C perfect (verbs I-y)
+  notes: The prefix vowel and the y contract to ō throughout — ʔa- plus ytib gives ʔoteb — so the column reads ʔo-, yo-, mo- with one radical fewer. Root ytb. The theme vowel is not the same throughout — CeC, CiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔo-CeC
+      example: אֹותֵיב ʔoteb
+    - slot: 3mp
+      shape: ʔo-CiC-u
+      example: אֹותִיבֻו ʔotíbu
+
+- paradigm: Gt (Ithpeel) perfect, verbs I-y
+  reference: B.4
+  pattern: ʔitqǝtil
+  lemma: ʔityǝheb, Gt perfect (verbs I-y)
+  notes: Behind ʔit- the y survives, so all three radicals are here. Root yhb. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CǝCeC
+      example: אִתיְהֵיב ʔityǝheb
+    - slot: 3mp
+      shape: ʔit-CǝCiC-u
+      example: אִתיְהִיבֻו ʔityǝhíbu
+
+- paradigm: Dt (Ithpaal) perfect, verbs I-y
+  reference: B.4
+  pattern: ʔitqattal
+  lemma: ʔityaqqar, Dt perfect (verbs I-y)
+  notes: Like a sound verb's Ithpaal, with the second radical doubled. Root yqr.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CaCCaC
+      example: אִתיַקַר ʔityaqqar
+    - slot: 3mp
+      shape: ʔit-CaCCaC-u
+      example: אִתיַקַרֻו ʔityaqqáru
+
+- paradigm: Ct (Ittaphal) perfect, verbs I-y
+  reference: B.4
+  pattern: ʔittaqtal
+  lemma: ʔittotab, Ct perfect (verbs I-y)
+  notes: "The prefix t is doubled and the y contracts to ō at once: ʔittotab. Root ytb."
+  cells:
+    - slot: 3ms
+      shape: ʔitto-CaC
+      example: אִתֹותַב ʔittotab
+    - slot: 3mp
+      shape: ʔitto-CaC-u
+      example: אִתֹותַבֻו ʔittotábu
+
+- paradigm: G (Peal), assimilating imperfect, verbs I-y
+  reference: B.4
+  pattern: qǝtal
+  lemma: yikkol, G assim imperfect (verbs I-y)
+  notes: "One kind of I-y verb assimilates the y to the second radical and doubles it, so the imperfect reads like a sound verb's: yi- plus ykol gives yikkol. Root ykl. The theme vowel is not the same throughout — CCoC, CCǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yi-CCoC
+      example: יִכֹול yikkol
+    - slot: 3mp
+      shape: yi-CCǝC-un
+      example: יִכְלֻון yikkǝlun
+
+- paradigm: G (Peal), contracting imperfect, verbs I-y
+  reference: B.4
+  pattern: qǝtal
+  lemma: yerat, G contr imperfect (verbs I-y)
+  notes: "The other kind contracts the y with the prefix vowel into a long one, which leaves one radical fewer on the surface: yi- plus yrat gives yerat, mi- plus yrat gives mērat. Root yrt. The theme vowel is not the same throughout — CaC, CǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ye-CaC
+      example: יֵירַת yerat
+    - slot: 3mp
+      shape: ye-CǝC-un
+      example: יֵירְתֻון yerǝtun
+
+- paradigm: G stative (Peal) imperfect, verbs I-y
+  reference: B.4
+  pattern: qǝtel
+  lemma: yitteb, G stative imperfect (verbs I-y)
+  notes: The y assimilates in the imperfect (yitteb), is dropped in the imperative (tib), and contracts in the infinitive (mītab). Root ytb. The theme vowel is not the same throughout — CCeC, CCǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yi-CCeC
+      example: יִתֵיב yitteb
+    - slot: 3mp
+      shape: yi-CCǝC-un
+      example: יִתְבֻון yittǝbun
+
+- paradigm: D (Pael) imperfect, verbs I-y
+  reference: B.4
+  pattern: qattil
+  lemma: yǝyaqqar, D imperfect (verbs I-y)
+  notes: "A regular Pael: the y is safe inside the stem and the second radical is doubled. Root yqr. The theme vowel is not the same throughout — CaCCaC, CaCCǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yǝ-CaCCaC
+      example: יְיַקַר yǝyaqqar
+    - slot: 3mp
+      shape: yǝ-CaCCǝC-un
+      example: יְיַקְרֻון yǝyaqqǝrun
+
+- paradigm: C (Aphel) imperfect, verbs I-y
+  reference: B.4
+  pattern: ʔaqtil
+  lemma: yoteb, C imperfect (verbs I-y)
+  notes: The prefix vowel and the y contract to ō throughout — ʔa- plus ytib gives ʔoteb — so the column reads ʔo-, yo-, mo- with one radical fewer. Root ytb. The theme vowel is not the same throughout — CeC, CǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yo-CeC
+      example: יֹותֵיב yoteb
+    - slot: 3mp
+      shape: yo-CǝC-un
+      example: יֹותְבֻון yotǝbun
+
+- paradigm: Gt (Ithpeel) imperfect, verbs I-y
+  reference: B.4
+  pattern: ʔitqǝtil
+  lemma: yityǝheb, Gt imperfect (verbs I-y)
+  notes: Behind ʔit- the y survives, so all three radicals are here. Root yhb. The theme vowel is not the same throughout — CǝCeC, CaCC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CǝCeC
+      example: יִתיְהֵיב yityǝheb
+    - slot: 3mp
+      shape: yit-CaCC-un
+      example: יִתיַהבֻון yityahbun
+
+- paradigm: Dt (Ithpaal) imperfect, verbs I-y
+  reference: B.4
+  pattern: ʔitqattal
+  lemma: yityaqqar, Dt imperfect (verbs I-y)
+  notes: Like a sound verb's Ithpaal, with the second radical doubled. Root yqr. The theme vowel is not the same throughout — CaCCaC, CaCCǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CaCCaC
+      example: יִתיַקַר yityaqqar
+    - slot: 3mp
+      shape: yit-CaCCǝC-un
+      example: יִתיַקְרֻון yityaqqǝrun
+
+- paradigm: Ct (Ittaphal) imperfect, verbs I-y
+  reference: B.4
+  pattern: ʔittaqtal
+  lemma: yittotab, Ct imperfect (verbs I-y)
+  notes: "The prefix t is doubled and the y contracts to ō at once: ʔittotab. Root ytb. The theme vowel is not the same throughout — CaC, CǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yitto-CaC
+      example: יִתֹותַב yittotab
+    - slot: 3mp
+      shape: yitto-CǝC-un
+      example: יִתֹותְבֻון yittotǝbun
+
+- paradigm: G (Peal) imperative, verbs I-y
+  reference: B.4
+  pattern: qǝtal
+  lemma: hab, G imperative (verbs I-y)
+  notes: "The y holds as a radical in the perfect and the passive participle, but the imperative drops it outright, leaving two radicals: hab. Root yhb."
+  cells:
+    - slot: ms
+      shape: CaC
+      example: הַב hab
+    - slot: mp
+      shape: CaC-u
+      example: הַבֻו hábu
+
+- paradigm: G stative (Peal) imperative, verbs I-y
+  reference: B.4
+  pattern: qǝtel
+  lemma: tib, G stative imperative (verbs I-y)
+  notes: The y assimilates in the imperfect (yitteb), is dropped in the imperative (tib), and contracts in the infinitive (mītab). Root ytb.
+  cells:
+    - slot: ms
+      shape: CiC
+      example: תִיב tib
+    - slot: mp
+      shape: CiC-u
+      example: תִיבֻו tíbu
+
+- paradigm: D (Pael) imperative, verbs I-y
+  reference: B.4
+  pattern: qattil
+  lemma: yaqqar, D imperative (verbs I-y)
+  notes: "A regular Pael: the y is safe inside the stem and the second radical is doubled. Root yqr."
+  cells:
+    - slot: ms
+      shape: CaCCaC
+      example: יַקַר yaqqar
+    - slot: mp
+      shape: CaCCaC-u
+      example: יַקַרֻו yaqqáru
+
+- paradigm: C (Aphel) imperative, verbs I-y
+  reference: B.4
+  pattern: ʔaqtil
+  lemma: ʔoteb, C imperative (verbs I-y)
+  notes: The prefix vowel and the y contract to ō throughout — ʔa- plus ytib gives ʔoteb — so the column reads ʔo-, yo-, mo- with one radical fewer. Root ytb. The theme vowel is not the same throughout — CeC, CiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔo-CeC
+      example: אֹותֵיב ʔoteb
+    - slot: mp
+      shape: ʔo-CiC-u
+      example: אֹותִיבֻו ʔotíbu
+
+- paradigm: Gt (Ithpeel) imperative, verbs I-y
+  reference: B.4
+  pattern: ʔitqǝtil
+  lemma: ʔityǝheb, Gt imperative (verbs I-y)
+  notes: Behind ʔit- the y survives, so all three radicals are here. Root yhb. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔit-CǝCeC
+      example: אִתיְהֵיב ʔityǝheb
+    - slot: mp
+      shape: ʔit-CǝCiC-u
+      example: אִתיְהִיבֻו ʔityǝhíbu
+
+- paradigm: G (Peal) non-finite, verbs I-y
+  reference: B.4
+  pattern: qǝtal
+  lemma: yākel, G act non-finite (verbs I-y)
+  notes: The active participle keeps all three radicals behind its long ā. Root ykl.
+  cells:
+    - slot: active participle ms
+      shape: CāCeC
+      example: יָכֵיל yākel
+    - slot: active participle mp
+      shape: CāCǝC-in
+      example: יָכְלִין yākǝlin
+
+- paradigm: G stative (Peal) non-finite, verbs I-y
+  reference: B.4
+  pattern: qǝtel
+  lemma: yāteb, G stative non-finite (verbs I-y)
+  notes: The y assimilates in the imperfect (yitteb), is dropped in the imperative (tib), and contracts in the infinitive (mītab). Root ytb.
+  cells:
+    - slot: active participle ms
+      shape: CāCeC
+      example: יָתֵיב yāteb
+    - slot: active participle mp
+      shape: CāCǝC-in
+      example: יָתְבִין yātǝbin
+    - slot: infinitive
+      shape: mi-CCaC
+      example: מִיתַב mittab
+
+- paradigm: D (Pael) non-finite, verbs I-y
+  reference: B.4
+  pattern: qattil
+  lemma: mǝyaqqar, D non-finite (verbs I-y)
+  notes: "A regular Pael: the y is safe inside the stem and the second radical is doubled. Root yqr."
+  cells:
+    - slot: active participle ms, passive participle ms
+      shape: mǝ-CaCCaC
+      example: מְיַקַר mǝyaqqar
+    - slot: active participle mp
+      shape: mǝ-CaCCǝC-in
+      example: מְיַקְרִין mǝyaqqǝrin
+    - slot: infinitive
+      shape: CaCCāC-ā
+      example: יַקָרָא yaqqārā
+
+- paradigm: C (Aphel) non-finite, verbs I-y
+  reference: B.4
+  pattern: ʔaqtil
+  lemma: moteb, C non-finite (verbs I-y)
+  notes: The prefix vowel and the y contract to ō throughout — ʔa- plus ytib gives ʔoteb — so the column reads ʔo-, yo-, mo- with one radical fewer. Root ytb.
+  cells:
+    - slot: active participle ms
+      shape: mo-CeC
+      example: מֹותֵיב moteb
+    - slot: active participle mp
+      shape: mo-CǝC-in
+      example: מֹותְבִין motǝbin
+    - slot: infinitive
+      shape: ʔo-CāC-ā
+      example: אֹותָבָא ʔotābā
+
+- paradigm: Gt (Ithpeel) non-finite, verbs I-y
+  reference: B.4
+  pattern: ʔitqǝtil
+  lemma: mityǝheb, Gt non-finite (verbs I-y)
+  notes: Behind ʔit- the y survives, so all three radicals are here. Root yhb.
+  cells:
+    - slot: active participle ms
+      shape: mit-CǝCeC
+      example: מִתיְהֵיב mityǝheb
+    - slot: active participle mp
+      shape: mit-CaCC-in
+      example: מִתיַהבִין mityahbin
+    - slot: infinitive
+      shape: ʔit-CǝCāC-ā
+      example: אִתיְהָבָא ʔityǝhābā
+
+- paradigm: Dt (Ithpaal) non-finite, verbs I-y
+  reference: B.4
+  pattern: ʔitqattal
+  lemma: mityaqqar, Dt non-finite (verbs I-y)
+  notes: Like a sound verb's Ithpaal, with the second radical doubled. Root yqr.
+  cells:
+    - slot: active participle ms
+      shape: mit-CaCCaC
+      example: מִתיַקַר mityaqqar
+    - slot: active participle mp
+      shape: mit-CaCCǝC-in
+      example: מִתיַקְרִין mityaqqǝrin
+    - slot: infinitive
+      shape: ʔit-CaCCāC-ā
+      example: אִתיַקָרָא ʔityaqqārā
+
+- paradigm: Ct (Ittaphal) non-finite, verbs I-y
+  reference: B.4
+  pattern: ʔittaqtal
+  lemma: mittotab, Ct non-finite (verbs I-y)
+  notes: "The prefix t is doubled and the y contracts to ō at once: ʔittotab. Root ytb."
+  cells:
+    - slot: active participle ms
+      shape: mitto-CaC
+      example: מִתֹותַב mittotab
+    - slot: active participle mp
+      shape: mitto-CǝC-in
+      example: מִתֹותְבִין mittotǝbin
+    - slot: infinitive
+      shape: ʔitto-CāC-ā
+      example: אִתֹותָבָא ʔittotābā
+
+- paradigm: G (Peal) non-finite, verbs I-y
+  reference: B.4
+  pattern: qǝtal
+  lemma: yǝhib, G non-finite (verbs I-y)
+  notes: "The y holds as a radical in the perfect and the passive participle, but the imperative drops it outright, leaving two radicals: hab. Root yhb."
+  cells:
+    - slot: passive participle ms
+      shape: CǝCiC
+      example: יְהִיב yǝhib
+
+- paradigm: C (Aphel) non-finite, verbs I-y
+  reference: B.4
+  pattern: ʔaqtil
+  lemma: maddaʕ, C pass non-finite (verbs I-y)
+  notes: "The passive participle assimilates instead of contracting: ma- plus ydaʕ gives maddaʕ, the same shape as a sound verb's. Root ydʕ."
+  cells:
+    - slot: passive participle ms
+      shape: ma-CCaC
+      example: מַדַע maddaʕ
+    - slot: passive participle mp
+      shape: ma-CCǝC-in
+      example: מַדְעִין maddǝʕin
+
+- paradigm: G (Peal), contracting non-finite, verbs I-y
+  reference: B.4
+  pattern: qǝtal
+  lemma: merat, G contr non-finite (verbs I-y)
+  notes: "The other kind contracts the y with the prefix vowel into a long one, which leaves one radical fewer on the surface: yi- plus yrat gives yerat, mi- plus yrat gives mērat. Root yrt."
+  cells:
+    - slot: infinitive
+      shape: me-CaC
+      example: מֵירַת merat
+
+- paradigm: G (Peal) perfect, hollow verbs
+  reference: B.5
+  pattern: qǝtal
+  lemma: qām, G perfect (hollow verbs)
+  notes: The middle radical is not written. It leaves a long vowel in its place — qām, yǝqum, mǝqām — so two radicals stand where a sound verb has three; in the active participle it surfaces as ʔ (qāʔem) or y (qāyǝmin). Only the Peal perfect is given in full; where the table prints ‘etc.’ the regular endings apply. Root qwm. The theme vowel is not the same throughout — CāC, CaC, CaCt/CaCtā, CaC/CāC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: CāC
+      example: קָם qām
+    - slot: 3fs
+      shape: CaC-at
+      example: קַמַת qámat
+    - slot: 2ms
+      shape: CaCt/CaCtā
+      example: קַמת/קַמתָא qamt/qámtā
+    - slot: 2fs
+      shape: CaC-t
+      example: קַמת qamt
+    - slot: 1cs
+      shape: CaC-it
+      example: קַמִית qámit
+    - slot: 3mp
+      shape: CaC-u/CāC-u
+      example: קַמֻו/קָמֻו qámu/qā́mu
+    - slot: 3fp
+      shape: CaC-ā/CāC-ā
+      example: קַמָא/קָמָא qámā/qā́mā
+    - slot: 2mp
+      shape: CaC-tun
+      example: קַמתֻון qamtun
+    - slot: 2fp
+      shape: CaC-tin
+      example: קַמתִין qamtin
+    - slot: 1cp
+      shape: CaC-nā
+      example: קַמנָא qámnā
+
+- paradigm: G stative (Peal), swb perfect, hollow verbs
+  reference: B.5
+  pattern: qǝtel
+  lemma: seb, G stative swb perfect (hollow verbs)
+  notes: A stative hollow verb in e, beside mwt in i. Root swb.
+  cells:
+    - slot: 3ms
+      shape: CeC
+      example: סֵיב seb
+    - slot: 3fs
+      shape: CeC-at
+      example: סֵיבַת sébat
+    - slot: 1cs
+      shape: CeC-it
+      example: סֵיבִית sébit
+    - slot: 3mp
+      shape: CeC-u
+      example: סֵיבֻו sébu
+
+- paradigm: G stative (Peal), mwt perfect, hollow verbs
+  reference: B.5
+  pattern: qǝtel
+  lemma: mit, G stative mwt perfect (hollow verbs)
+  notes: A stative hollow verb in i, beside swb in e. Root mwt.
+  cells:
+    - slot: 3ms
+      shape: CiC
+      example: מִית mit
+    - slot: 3fs
+      shape: CiC-at
+      example: מִיתַת mítat
+    - slot: 3mp
+      shape: CiC-u
+      example: מִיתֻו mítu
+    - slot: 1cp
+      shape: CiC-nā
+      example: מִיתנָא mítnā
+
+- paradigm: D (Pael) perfect, hollow verbs
+  reference: B.5
+  pattern: qattil
+  lemma: qayyem, D perfect (hollow verbs)
+  notes: "The middle radical surfaces as y in the Pael and is doubled, which the script shows sometimes with one yod and sometimes with two: qayyem, qayyǝmun. So the Pael keeps all three radicals. Root qym. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: CaCCeC
+      example: קַיֵים qayyem
+    - slot: 3mp
+      shape: CaCCiC-u
+      example: קַיִימֻו qayyímu
+
+- paradigm: C (Aphel) perfect, hollow verbs
+  reference: B.5
+  pattern: ʔaqtil
+  lemma: ʔaqem/ʔǝqem, C perfect (hollow verbs)
+  notes: "The Aphel lengthens instead of doubling, and the paradigm offers three prefix vowels side by side: ʔāqem, ʔaqem, ʔǝqem. Root qwm. The theme vowel is not the same throughout — CeC, CiC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ʔǝ-CeC/ʔa-CeC
+      example: אְקֵים/אַקֵים ʔǝqem/ʔaqem
+    - slot: 3mp
+      shape: ʔǝ-CiC-u/ʔa-CiC-u
+      example: אְקִימֻו/אַקִימֻו ʔǝqímu/ʔaqímu
+
+- paradigm: Gt (Ithpeel) perfect, hollow verbs
+  reference: B.5
+  pattern: ʔitqǝtil
+  lemma: ʔittǝʕār/ʔittǝʕar, Gt perfect (hollow verbs)
+  notes: "The hollow stem is a single closed syllable, so its first radical cannot carry the connecting sheva; the sheva sits on the prefix t instead, and the t doubles to close the first syllable: ʔittǝʕār, three syllables, beside ʔittǝqām from q-w-m. Root ʕwr."
+  cells:
+    - slot: 3ms
+      shape: ʔittǝ-CaC/ʔittǝ-CāC
+      example: אִתְעַר/אִתְעָר ʔittǝʕar/ʔittǝʕār
+    - slot: 3mp
+      shape: ʔittǝ-CaC-u/ʔittǝ-CāC-u
+      example: אִתְעַרֻו/אִתְעָרֻו ʔittǝʕáru/ʔittǝʕā́ru
+
+- paradigm: Dt (Ithpaal) perfect, hollow verbs
+  reference: B.5
+  pattern: ʔitqattal
+  lemma: ʔitqayyam, Dt perfect (hollow verbs)
+  notes: The Pael's doubled y, behind ʔit-. Root qym.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CaCCaC
+      example: אִתקַיַם ʔitqayyam
+    - slot: 3mp
+      shape: ʔit-CaCCaC-u
+      example: אִתקַיַמֻו ʔitqayyámu
+
+- paradigm: Ct (Ittaphal) perfect, hollow verbs
+  reference: B.5
+  pattern: ʔittaqtal
+  lemma: ʔittāqam, Ct perfect (hollow verbs)
+  notes: "The prefix t is doubled and the lost radical leaves a long ā: ʔittāqam. Root qwm."
+  cells:
+    - slot: 3ms
+      shape: ʔittā-CaC
+      example: אִתָקַם ʔittāqam
+    - slot: 3mp
+      shape: ʔittā-CaC-u
+      example: אִתָקַמֻו ʔittāqámu
+
+- paradigm: G (Peal) imperfect, hollow verbs
+  reference: B.5
+  pattern: qǝtal
+  lemma: yǝqum, G imperfect (hollow verbs)
+  notes: The middle radical is not written. It leaves a long vowel in its place — qām, yǝqum, mǝqām — so two radicals stand where a sound verb has three; in the active participle it surfaces as ʔ (qāʔem) or y (qāyǝmin). Only the Peal perfect is given in full; where the table prints ‘etc.’ the regular endings apply. Root qwm.
+  cells:
+    - slot: 3ms
+      shape: yǝ-CuC
+      example: יְקֻום yǝqum
+    - slot: 3mp
+      shape: yǝ-CuC-un
+      example: יְקֻומֻון yǝqumun
+
+- paradigm: D (Pael) imperfect, hollow verbs
+  reference: B.5
+  pattern: qattil
+  lemma: yǝqayyem, D imperfect (hollow verbs)
+  notes: "The middle radical surfaces as y in the Pael and is doubled, which the script shows sometimes with one yod and sometimes with two: qayyem, qayyǝmun. So the Pael keeps all three radicals. Root qym. The theme vowel is not the same throughout — CaCCeC, CaCCǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yǝ-CaCCeC
+      example: יְקַיֵים yǝqayyem
+    - slot: 3mp
+      shape: yǝ-CaCCǝC-un
+      example: יְקַיְימֻון yǝqayyǝmun
+
+- paradigm: C (Aphel) imperfect, hollow verbs
+  reference: B.5
+  pattern: ʔaqtil
+  lemma: yāqim/yaqim/yǝqim, C imperfect (hollow verbs)
+  notes: "The Aphel lengthens instead of doubling, and the paradigm offers three prefix vowels side by side: ʔāqem, ʔaqem, ʔǝqem. Root qwm."
+  cells:
+    - slot: 3ms
+      shape: yǝ-CiC/ya-CiC/yā-CiC
+      example: יְקִים/יַקִים/יָקִים yǝqim/yaqim/yāqim
+    - slot: 3mp
+      shape: yǝ-CiC-u/ya-CiC-u/yā-CiC-u
+      example: יְקִימֻו/יַקִימֻו/יָקִימֻו yǝqimu/yaqimu/yāqimu
+
+- paradigm: Gt (Ithpeel) imperfect, hollow verbs
+  reference: B.5
+  pattern: ʔitqǝtil
+  lemma: yittǝʕār/yittǝʕar, Gt imperfect (hollow verbs)
+  notes: "The hollow stem is a single closed syllable, so its first radical cannot carry the connecting sheva; the sheva sits on the prefix t instead, and the t doubles to close the first syllable: ʔittǝʕār, three syllables, beside ʔittǝqām from q-w-m. Root ʕwr. The theme vowel is not the same throughout — CaC/CāC, CāC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yittǝ-CaC/yittǝ-CāC
+      example: יִתְעַר/יִתְעָר yittǝʕar/yittǝʕār
+    - slot: 3mp
+      shape: yittǝ-CāC-un
+      example: יִתְעָרֻון yittǝʕārun
+
+- paradigm: Dt (Ithpaal) imperfect, hollow verbs
+  reference: B.5
+  pattern: ʔitqattal
+  lemma: yitqayyam, Dt imperfect (hollow verbs)
+  notes: The Pael's doubled y, behind ʔit-. Root qym. The theme vowel is not the same throughout — CaCCaC, CaCCǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CaCCaC
+      example: יִתקַיַם yitqayyam
+    - slot: 3mp
+      shape: yit-CaCCǝC-un
+      example: יִתקַיְמֻון yitqayyǝmun
+
+- paradigm: Ct (Ittaphal) imperfect, hollow verbs
+  reference: B.5
+  pattern: ʔittaqtal
+  lemma: yittāqam, Ct imperfect (hollow verbs)
+  notes: "The prefix t is doubled and the lost radical leaves a long ā: ʔittāqam. Root qwm."
+  cells:
+    - slot: 3ms
+      shape: yittā-CaC
+      example: יִתָקַם yittāqam
+
+- paradigm: G (Peal) imperative, hollow verbs
+  reference: B.5
+  pattern: qǝtal
+  lemma: qum, G imperative (hollow verbs)
+  notes: The middle radical is not written. It leaves a long vowel in its place — qām, yǝqum, mǝqām — so two radicals stand where a sound verb has three; in the active participle it surfaces as ʔ (qāʔem) or y (qāyǝmin). Only the Peal perfect is given in full; where the table prints ‘etc.’ the regular endings apply. Root qwm.
+  cells:
+    - slot: ms
+      shape: CuC
+      example: קֻום qum
+    - slot: mp
+      shape: CuC-u
+      example: קֻומֻו qúmu
+
+- paradigm: D (Pael) imperative, hollow verbs
+  reference: B.5
+  pattern: qattil
+  lemma: qayyem, D imperative (hollow verbs)
+  notes: "The middle radical surfaces as y in the Pael and is doubled, which the script shows sometimes with one yod and sometimes with two: qayyem, qayyǝmun. So the Pael keeps all three radicals. Root qym. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: ms
+      shape: CaCCeC
+      example: קַיֵים qayyem
+    - slot: mp
+      shape: CaCCiC-u
+      example: קַיִימֻו qayyímu
+
+- paradigm: C (Aphel) imperative, hollow verbs
+  reference: B.5
+  pattern: ʔaqtil
+  lemma: ʔaqem/ʔǝqem, C imperative (hollow verbs)
+  notes: "The Aphel lengthens instead of doubling, and the paradigm offers three prefix vowels side by side: ʔāqem, ʔaqem, ʔǝqem. Root qwm. The theme vowel is not the same throughout — CeC, CiC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: ms
+      shape: ʔǝ-CeC/ʔa-CeC
+      example: אְקֵים/אַקֵים ʔǝqem/ʔaqem
+    - slot: mp
+      shape: ʔǝ-CiC-u/ʔa-CiC-u
+      example: אְקִימֻו/אַקִימֻו ʔǝqímu/ʔaqímu
+
+- paradigm: Dt (Ithpaal) imperative, hollow verbs
+  reference: B.5
+  pattern: ʔitqattal
+  lemma: ʔitqayyam, Dt imperative (hollow verbs)
+  notes: The Pael's doubled y, behind ʔit-. Root qym.
+  cells:
+    - slot: ms
+      shape: ʔit-CaCCaC
+      example: אִתקַיַם ʔitqayyam
+    - slot: mp
+      shape: ʔit-CaCCaC-u
+      example: אִתקַיַמֻו ʔitqayyámu
+
+- paradigm: G (Peal) non-finite, hollow verbs
+  reference: B.5
+  pattern: qǝtal
+  lemma: qāʔem, G non-finite (hollow verbs)
+  notes: The middle radical is not written. It leaves a long vowel in its place — qām, yǝqum, mǝqām — so two radicals stand where a sound verb has three; in the active participle it surfaces as ʔ (qāʔem) or y (qāyǝmin). Only the Peal perfect is given in full; where the table prints ‘etc.’ the regular endings apply. Root qwm.
+  cells:
+    - slot: active participle ms
+      shape: CāʔeC
+      example: קָאֵים qāʔem
+    - slot: active participle mp
+      shape: CāyǝC-in
+      example: קָיְמִין qāyǝmin
+    - slot: infinitive
+      shape: mǝ-CāC
+      example: מְקָם mǝqām
+
+- paradigm: G stative (Peal), mwt non-finite, hollow verbs
+  reference: B.5
+  pattern: qǝtel
+  lemma: māʔet, G stative mwt non-finite (hollow verbs)
+  notes: A stative hollow verb in i, beside swb in e. Root mwt.
+  cells:
+    - slot: active participle ms
+      shape: CāʔeC
+      example: מָאֵית māʔet
+    - slot: active participle mp
+      shape: CāyǝC-in
+      example: מָיְתִין māyǝtin
+    - slot: infinitive
+      shape: mǝ-CāC
+      example: מְמָת mǝmāt
+
+- paradigm: D (Pael) non-finite, hollow verbs
+  reference: B.5
+  pattern: qattil
+  lemma: mǝqayyem, D non-finite (hollow verbs)
+  notes: "The middle radical surfaces as y in the Pael and is doubled, which the script shows sometimes with one yod and sometimes with two: qayyem, qayyǝmun. So the Pael keeps all three radicals. Root qym."
+  cells:
+    - slot: active participle ms
+      shape: mǝ-CaCCeC
+      example: מְקַיֵים mǝqayyem
+    - slot: active participle mp
+      shape: mǝ-CaCCǝC-in
+      example: מְקַיְימִין mǝqayyǝmin
+    - slot: infinitive
+      shape: CaCCāC-ā
+      example: קַיָימָא qayyāmā
+
+- paradigm: C (Aphel) non-finite, hollow verbs
+  reference: B.5
+  pattern: ʔaqtil
+  lemma: māqim/maqim/mǝqim, C non-finite (hollow verbs)
+  notes: "The Aphel lengthens instead of doubling, and the paradigm offers three prefix vowels side by side: ʔāqem, ʔaqem, ʔǝqem. Root qwm."
+  cells:
+    - slot: active participle ms
+      shape: mǝ-CiC/ma-CiC/mā-CiC
+      example: מְקִים/מַקִים/מָקִים mǝqim/maqim/māqim
+    - slot: active participle mp
+      shape: mā-CiC-in
+      example: מָקִימִין māqimin
+    - slot: infinitive
+      shape: ʔā-CāC-ā
+      example: אָקָמָא ʔāqāmā
+
+- paradigm: Gt (Ithpeel) non-finite, hollow verbs
+  reference: B.5
+  pattern: ʔitqǝtil
+  lemma: mittǝʕār, Gt non-finite (hollow verbs)
+  notes: "The hollow stem is a single closed syllable, so its first radical cannot carry the connecting sheva; the sheva sits on the prefix t instead, and the t doubles to close the first syllable: ʔittǝʕār, three syllables, beside ʔittǝqām from q-w-m. Root ʕwr."
+  cells:
+    - slot: active participle ms
+      shape: mittǝ-CāC
+      example: מִתְעָר mittǝʕār
+    - slot: active participle mp
+      shape: mittǝ-CāC-in
+      example: מִתְעָרִין mittǝʕārin
+    - slot: infinitive
+      shape: ʔittǝ-CāC-ā
+      example: אִתְעָרָא ʔittǝʕārā
+
+- paradigm: Dt (Ithpaal) non-finite, hollow verbs
+  reference: B.5
+  pattern: ʔitqattal
+  lemma: mitqayyam, Dt non-finite (hollow verbs)
+  notes: The Pael's doubled y, behind ʔit-. Root qym.
+  cells:
+    - slot: active participle ms
+      shape: mit-CaCCaC
+      example: מִתקַיַם mitqayyam
+    - slot: active participle mp
+      shape: mit-CaCCǝC-in
+      example: מִתקַיְמִין mitqayyǝmin
+    - slot: infinitive
+      shape: ʔit-CaCCāC-ā
+      example: אִתקַיָמָא ʔitqayyāmā
+
+- paradigm: Ct (Ittaphal) non-finite, hollow verbs
+  reference: B.5
+  pattern: ʔittaqtal
+  lemma: mittāqam, Ct non-finite (hollow verbs)
+  notes: "The prefix t is doubled and the lost radical leaves a long ā: ʔittāqam. Root qwm."
+  cells:
+    - slot: active participle ms
+      shape: mittā-CaC
+      example: מִתָקַם mittāqam
+    - slot: active participle mp
+      shape: mittā-CǝC-in
+      example: מִתָקְמִין mittāqǝmin
+
+- paradigm: G (Peal) perfect, verbs III-weak
+  reference: B.6
+  pattern: qǝtal
+  lemma: bǝnā, G perfect (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. Two radicals show, and the vowel after them carries the person: bǝnā, bǝno, bǝnaʔā. Root bny. The theme vowel is not the same throughout — CǝCā, CǝCāt, CǝCet/CǝCetā, CǝCet, CǝCet/CǝCeti, CǝCo, CǝCaʔā, CǝCeton, CǝCeten, CǝCenā — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: CǝCā
+      example: בְנָא bǝnā
+    - slot: 3fs
+      shape: CǝCāt
+      example: בְנָת bǝnāt
+    - slot: 2ms
+      shape: CǝCet/CǝCetā
+      example: בְנֵית/בְנֵיתָא bǝnet/bǝnétā
+    - slot: 2fs
+      shape: CǝCet
+      example: בְנֵית bǝnet
+    - slot: 1cs
+      shape: CǝCet/CǝCeti
+      example: בְנֵית/בְנֵיתִי bǝnet/bǝnéti
+    - slot: 3mp
+      shape: CǝCo
+      example: בְנֹו bǝno
+    - slot: 3fp
+      shape: CǝCaʔā
+      example: בְנַאָה bǝnáʔā
+    - slot: 2mp
+      shape: CǝCeton
+      example: בְנֵיתֹון bǝneton
+    - slot: 2fp
+      shape: CǝCeten
+      example: בְנֵיתֵין bǝneten
+    - slot: 1cp
+      shape: CǝCenā
+      example: בְנֵינָא bǝnénā
+
+- paradigm: G stative (Peal) perfect, verbs III-weak
+  reference: B.6
+  pattern: qǝtel
+  lemma: ḥǝdi, G stative perfect (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The stative keeps i where the Peal has e: ḥǝdi beside bǝnā. Its perfect 3mp is missing from the paradigm as printed, so no card is made for it. Root ḥdy. The theme vowel is not the same throughout — CǝCi, CǝCiʔat, CǝCit/CǝCitā, CǝCit, CǝCit/CǝCiti, CǝCiʔā, CǝCitun, CǝCitin, CǝCinā — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: CǝCi
+      example: חְדִי ḥǝdi
+    - slot: 3fs
+      shape: CǝCiʔat
+      example: חְדִיאַת ḥǝdíʔat
+    - slot: 2ms
+      shape: CǝCit/CǝCitā
+      example: חְדִית/חְדִיתָא ḥǝdit/ḥǝdítā
+    - slot: 2fs
+      shape: CǝCit
+      example: חְדִית ḥǝdit
+    - slot: 1cs
+      shape: CǝCit/CǝCiti
+      example: חְדִית/חְדִיתִי ḥǝdit/ḥǝdíti
+    - slot: 3fp
+      shape: CǝCiʔā
+      example: חְדִיאָה ḥǝdíʔā
+    - slot: 2mp
+      shape: CǝCitun
+      example: חְדִיתֻון ḥǝditun
+    - slot: 2fp
+      shape: CǝCitin
+      example: חְדִיתִין ḥǝditin
+    - slot: 1cp
+      shape: CǝCinā
+      example: חְדִינָא ḥǝdínā
+
+- paradigm: D (Pael) perfect, verbs III-weak
+  reference: B.6
+  pattern: qattil
+  lemma: banni, D perfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The second radical is doubled, as the unreduced a before it shows, and the name Pael agrees. Root bny. The theme vowel is not the same throughout — CaCCi, CaCCiʔat, CaCCit/CaCCitā, CaCCit, CaCCit/CaCCiti, CaCCiʔu, CaCCiʔā, CaCCitun, CaCCitin, CaCCinā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: CaCCi
+      example: בַנִי banni
+    - slot: 3fs
+      shape: CaCCiʔat
+      example: בַנִיאַת banníʔat
+    - slot: 2ms
+      shape: CaCCit/CaCCitā
+      example: בַנִית/בַנִיתָא bannit/bannítā
+    - slot: 2fs
+      shape: CaCCit
+      example: בַנִית bannit
+    - slot: 1cs
+      shape: CaCCit/CaCCiti
+      example: בַנִית/בַנִיתִי bánnit/banníti
+    - slot: 3mp
+      shape: CaCCiʔu
+      example: בַנִיאֻו banníʔu
+    - slot: 3fp
+      shape: CaCCiʔā
+      example: בַנִיאָה banníʔā
+    - slot: 2mp
+      shape: CaCCitun
+      example: בַנִיתֻון bannitun
+    - slot: 2fp
+      shape: CaCCitin
+      example: בַנִיתִין bannitin
+    - slot: 1cp
+      shape: CaCCinā
+      example: בַנִינָא bannínā
+
+- paradigm: C (Aphel) perfect, verbs III-weak
+  reference: B.6
+  pattern: ʔaqtil
+  lemma: ʔabni, C perfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Aphel prefix ʔa- stands in a closed syllable, so nothing is doubled. This column prints a longer variant of the 2ms and of the 1cs beside the shorter one. Root bny. The theme vowel is not the same throughout — CCi, CCiʔat, CCit, CCitā, CCiti, CCiʔu, CCiʔā, CCitun, CCitin, CCinā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔa-CCi
+      example: אַבנִי ʔabni
+    - slot: 3fs
+      shape: ʔa-CCiʔat
+      example: אַבנִיאַת ʔabníʔat
+    - slot: 2ms, 2fs, 1cs
+      shape: ʔa-CCit
+      example: אַבנִית ʔabnit
+    - slot: 2ms, longer variant
+      shape: ʔa-CCitā
+      example: אַבנִיתָא ʔabnítā
+    - slot: 1cs, longer variant
+      shape: ʔa-CCiti
+      example: אַבנִיתִי ʔabníti
+    - slot: 3mp
+      shape: ʔa-CCiʔu
+      example: אַבנִיאֻו ʔabníʔu
+    - slot: 3fp
+      shape: ʔa-CCiʔā
+      example: אַבנִיאָה ʔabníʔā
+    - slot: 2mp
+      shape: ʔa-CCitun
+      example: אַבנִיתֻון ʔabnitun
+    - slot: 2fp
+      shape: ʔa-CCitin
+      example: אַבנִיתִין ʔabnitin
+    - slot: 1cp
+      shape: ʔa-CCinā
+      example: אַבנִינָא ʔabnínā
+
+- paradigm: Gt (Ithpeel) perfect, verbs III-weak
+  reference: B.6
+  pattern: ʔitqǝtil
+  lemma: ʔitbǝni, Gt perfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Peal behind ʔit-. Root bny. The theme vowel is not the same throughout — CǝCi, CǝCiʔat, CǝCit, CǝCitā, CǝCiti, CǝCiʔu, CǝCiʔā, CǝCitun, CǝCitin, CǝCinā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CǝCi
+      example: אִתבְנִי ʔitbǝni
+    - slot: 3fs
+      shape: ʔit-CǝCiʔat
+      example: אִתבְנִיאַת ʔitbǝníʔat
+    - slot: 2ms, 2fs, 1cs
+      shape: ʔit-CǝCit
+      example: אִתבְנִית ʔitbǝnit
+    - slot: 2ms, longer variant
+      shape: ʔit-CǝCitā
+      example: אִתבְנִיתָא ʔitbǝnítā
+    - slot: 1cs, longer variant
+      shape: ʔit-CǝCiti
+      example: אִתבְנִיתִי ʔitbǝníti
+    - slot: 3mp
+      shape: ʔit-CǝCiʔu
+      example: אִתבְנִיאֻו ʔitbǝníʔu
+    - slot: 3fp
+      shape: ʔit-CǝCiʔā
+      example: אִתבְנִיאָה ʔitbǝníʔā
+    - slot: 2mp
+      shape: ʔit-CǝCitun
+      example: אִתבְנִיתֻון ʔitbǝnitun
+    - slot: 2fp
+      shape: ʔit-CǝCitin
+      example: אִתבְנִיתִין ʔitbǝnitin
+    - slot: 1cp
+      shape: ʔit-CǝCinā
+      example: אִתבְנִינָא ʔitbǝnínā
+
+- paradigm: Dt (Ithpaal) perfect, verbs III-weak
+  reference: B.6
+  pattern: ʔitqattal
+  lemma: ʔitbanni, Dt perfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Pael behind ʔit-, second radical doubled. Root bny. The theme vowel is not the same throughout — CaCCi, CaCCiʔat, CaCCit, CaCCitā, CaCCiti, CaCCiʔu, CaCCiʔā, CaCCitun, CaCCitin, CaCCinā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CaCCi
+      example: אִתבַנִי ʔitbanni
+    - slot: 3fs
+      shape: ʔit-CaCCiʔat
+      example: אִתבַנִיאַת ʔitbanníʔat
+    - slot: 2ms, 2fs, 1cs
+      shape: ʔit-CaCCit
+      example: אִתבַנִית ʔitbannit
+    - slot: 2ms, longer variant
+      shape: ʔit-CaCCitā
+      example: אִתבַנִיתָא ʔitbannítā
+    - slot: 1cs, longer variant
+      shape: ʔit-CaCCiti
+      example: אִתבַנִיתִי ʔitbanníti
+    - slot: 3mp
+      shape: ʔit-CaCCiʔu
+      example: אִתבַנִיאֻו ʔitbanníʔu
+    - slot: 3fp
+      shape: ʔit-CaCCiʔā
+      example: אִתבַנִיאָה ʔitbanníʔā
+    - slot: 2mp
+      shape: ʔit-CaCCitun
+      example: אִתבַנִיתֻון ʔitbannitun
+    - slot: 2fp
+      shape: ʔit-CaCCitin
+      example: אִתבַנִיתִין ʔitbannitin
+    - slot: 1cp
+      shape: ʔit-CaCCinā
+      example: אִתבַנִינָא ʔitbannínā
+
+- paradigm: Ct (Ittaphal) perfect, verbs III-weak
+  reference: B.6
+  pattern: ʔittaqtal
+  lemma: ʔittabni, Ct perfect (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The prefix t is doubled: ʔittabni. Root bny. The theme vowel is not the same throughout — CCi, CCiʔat, CCit, CCitā, CCiti, CCiʔu, CCiʔā, CCitun, CCitin, CCinā — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ʔitta-CCi
+      example: אִתַבנִי ʔittabni
+    - slot: 3fs
+      shape: ʔitta-CCiʔat
+      example: אִתַבנִיאַת ʔittabníʔat
+    - slot: 2ms, 2fs, 1cs
+      shape: ʔitta-CCit
+      example: אִתַבנִית ʔittabnit
+    - slot: 2ms, longer variant
+      shape: ʔitta-CCitā
+      example: אִתַבנִיתָא ʔittabnítā
+    - slot: 1cs, longer variant
+      shape: ʔitta-CCiti
+      example: אִתַבנִיתִי ʔittabníti
+    - slot: 3mp
+      shape: ʔitta-CCiʔu
+      example: אִתַבנִיאֻו ʔittabníʔu
+    - slot: 3fp
+      shape: ʔitta-CCiʔā
+      example: אִתַבנִיאָה ʔittabníʔā
+    - slot: 2mp
+      shape: ʔitta-CCitun
+      example: אִתַבנִיתֻון ʔittabnitun
+    - slot: 2fp
+      shape: ʔitta-CCitin
+      example: אִתַבנִיתִין ʔittabnitin
+    - slot: 1cp
+      shape: ʔitta-CCinā
+      example: אִתַבנִינָא ʔittabnínā
+
+- paradigm: G (Peal) imperfect, verbs III-weak
+  reference: B.6
+  pattern: qǝtal
+  lemma: yibne, G imperfect (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. Two radicals show, and the vowel after them carries the person: bǝnā, bǝno, bǝnaʔā. Root bny. The theme vowel is not the same throughout — CCe, CCan, CCon, CCǝCān, CCun — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yi-CCe
+      example: יִבנֵי yibne
+    - slot: 3fs, 2ms
+      shape: ti-CCe
+      example: תִבנֵי tibne
+    - slot: 2fs
+      shape: ti-CCan
+      example: תִבנַן tibnan
+    - slot: 1cs
+      shape: ʔi-CCe
+      example: אִבנֵי ʔibne
+    - slot: 3mp
+      shape: yi-CCon
+      example: יִבנֹון yibnon
+    - slot: 3fp
+      shape: yi-CCǝCān
+      example: יִבנְיָן yibnǝyān
+    - slot: 2mp
+      shape: ti-CCun
+      example: תִבנֻון tibnun
+    - slot: 2fp
+      shape: ti-CCǝCān
+      example: תִבנְיָן tibnǝyān
+    - slot: 1cp
+      shape: ni-CCe
+      example: נִבנֵי nibne
+
+- paradigm: G stative (Peal) imperfect, verbs III-weak
+  reference: B.6
+  pattern: qǝtel
+  lemma: yiḥde, G stative imperfect (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The stative keeps i where the Peal has e: ḥǝdi beside bǝnā. Its perfect 3mp is missing from the paradigm as printed, so no card is made for it. Root ḥdy. The theme vowel is not the same throughout — CCe, CCan, CCon, CCǝCān — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yi-CCe
+      example: יִחדֵי yiḥde
+    - slot: 3fs, 2ms
+      shape: ti-CCe
+      example: תִחדֵי tiḥde
+    - slot: 2fs
+      shape: ti-CCan
+      example: תִחדַן tiḥdan
+    - slot: 1cs
+      shape: ʔi-CCe
+      example: אִחדֵי ʔiḥde
+    - slot: 3mp
+      shape: yi-CCon
+      example: יִחדֹון yiḥdon
+    - slot: 3fp
+      shape: yi-CCǝCān
+      example: יִחדְיָן yiḥdǝyān
+    - slot: 2mp
+      shape: ti-CCon
+      example: תִחדֹון tiḥdon
+    - slot: 2fp
+      shape: ti-CCǝCān
+      example: תִחדְיָן tiḥdǝyān
+    - slot: 1cp
+      shape: ni-CCe
+      example: נִחדֵי niḥde
+
+- paradigm: D (Pael) imperfect, verbs III-weak
+  reference: B.6
+  pattern: qattil
+  lemma: yǝbanne, D imperfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The second radical is doubled, as the unreduced a before it shows, and the name Pael agrees. Root bny. The theme vowel is not the same throughout — CaCCe, CaCCan, CaCCon, CaCCǝCān — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yǝ-CaCCe
+      example: יְבַנֵי yǝbanne
+    - slot: 3fs, 2ms
+      shape: tǝ-CaCCe
+      example: תְבַנֵי tǝbanne
+    - slot: 2fs
+      shape: tǝ-CaCCan
+      example: תְבַנַן tǝbannan
+    - slot: 1cs
+      shape: ʔǝ-CaCCe
+      example: אְבַנֵי ʔǝbanne
+    - slot: 3mp
+      shape: yǝ-CaCCon
+      example: יְבַנֹון yǝbannon
+    - slot: 3fp
+      shape: yǝ-CaCCǝCān
+      example: יְבַנְיָן yǝbannǝyān
+    - slot: 2mp
+      shape: tǝ-CaCCon
+      example: תְבַנֹון tǝbannon
+    - slot: 2fp
+      shape: tǝ-CaCCǝCān
+      example: תְבַנְיָן tǝbannǝyān
+    - slot: 1cp
+      shape: nǝ-CaCCe
+      example: נְבַנֵי nǝbanne
+
+- paradigm: C (Aphel) imperfect, verbs III-weak
+  reference: B.6
+  pattern: ʔaqtil
+  lemma: yabne, C imperfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Aphel prefix ʔa- stands in a closed syllable, so nothing is doubled. This column prints a longer variant of the 2ms and of the 1cs beside the shorter one. Root bny. The theme vowel is not the same throughout — CCe, CCan, CCon, CCǝCān — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ya-CCe
+      example: יַבנֵי yabne
+    - slot: 3fs, 2ms
+      shape: ta-CCe
+      example: תַבנֵי tabne
+    - slot: 2fs
+      shape: ta-CCan
+      example: תַבנַן tabnan
+    - slot: 1cs
+      shape: ʔa-CCe
+      example: אַבנֵי ʔabne
+    - slot: 3mp
+      shape: ya-CCon
+      example: יַבנֹון yabnon
+    - slot: 3fp
+      shape: ya-CCǝCān
+      example: יַבנְיָן yabnǝyān
+    - slot: 2mp
+      shape: ta-CCon
+      example: תַבנֹון tabnon
+    - slot: 2fp
+      shape: ta-CCǝCān
+      example: תַבנְיָן tabnǝyān
+    - slot: 1cp
+      shape: na-CCe
+      example: נַבנֵי nabne
+
+- paradigm: Gt (Ithpeel) imperfect, verbs III-weak
+  reference: B.6
+  pattern: ʔitqǝtil
+  lemma: yitbǝne, Gt imperfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Peal behind ʔit-. Root bny. The theme vowel is not the same throughout — CǝCe, CǝCan, CǝCon, CaCCān — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CǝCe
+      example: יִתבְנֵי yitbǝne
+    - slot: 3fs, 2ms
+      shape: tit-CǝCe
+      example: תִתבְנֵי titbǝne
+    - slot: 2fs
+      shape: tit-CǝCan
+      example: תִתבְנַן titbǝnan
+    - slot: 1cs
+      shape: ʔit-CǝCe
+      example: אִתבְנֵי ʔitbǝne
+    - slot: 3mp
+      shape: yit-CǝCon
+      example: יִתבְנֹון yitbǝnon
+    - slot: 3fp
+      shape: yit-CaCCān
+      example: יִתבַניָן yitbanyān
+    - slot: 2mp
+      shape: tit-CǝCon
+      example: תִתבְנֹון titbǝnon
+    - slot: 2fp
+      shape: tit-CaCCān
+      example: תִתבַניָן titbanyān
+    - slot: 1cp
+      shape: nit-CǝCe
+      example: נִתבְנֵי nitbǝne
+
+- paradigm: Dt (Ithpaal) imperfect, verbs III-weak
+  reference: B.6
+  pattern: ʔitqattal
+  lemma: yitbanne, Dt imperfect (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Pael behind ʔit-, second radical doubled. Root bny. The theme vowel is not the same throughout — CaCCe, CaCCan, CaCCon, CaCCǝCān — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CaCCe
+      example: יִתבַנֵי yitbanne
+    - slot: 3fs, 2ms
+      shape: tit-CaCCe
+      example: תִתבַנֵי titbanne
+    - slot: 2fs
+      shape: tit-CaCCan
+      example: תִתבַנַן titbannan
+    - slot: 1cs
+      shape: ʔit-CaCCe
+      example: אִתבַנֵי ʔitbanne
+    - slot: 3mp
+      shape: yit-CaCCon
+      example: יִתבַנֹון yitbannon
+    - slot: 3fp
+      shape: yit-CaCCǝCān
+      example: יִתבַנְיָן yitbannǝyān
+    - slot: 2mp
+      shape: tit-CaCCon
+      example: תִתבַנֹון titbannon
+    - slot: 2fp
+      shape: tit-CaCCǝCān
+      example: תִתבַנְיָן titbannǝyān
+    - slot: 1cp
+      shape: nit-CaCCe
+      example: נִתבַנֵי nitbanne
+
+- paradigm: Ct (Ittaphal) imperfect, verbs III-weak
+  reference: B.6
+  pattern: ʔittaqtal
+  lemma: yittabne, Ct imperfect (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The prefix t is doubled: ʔittabni. Root bny. The theme vowel is not the same throughout — CCe, CCan, CCon, CCǝCān — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yitta-CCe
+      example: יִתַבנֵי yittabne
+    - slot: 3fs, 2ms
+      shape: titta-CCe
+      example: תִתַבנֵי tittabne
+    - slot: 2fs
+      shape: titta-CCan
+      example: תִתַבנַן tittabnan
+    - slot: 1cs
+      shape: ʔitta-CCe
+      example: אִתַבנֵי ʔittabne
+    - slot: 3mp
+      shape: yitta-CCon
+      example: יִתַבנֹון yittabnon
+    - slot: 3fp
+      shape: yitta-CCǝCān
+      example: יִתַבנְיָן yittabnǝyān
+    - slot: 2mp
+      shape: titta-CCon
+      example: תִתַבנֹון tittabnon
+    - slot: 2fp
+      shape: titta-CCǝCān
+      example: תִתַבנְיָן tittabnǝyān
+    - slot: 1cp
+      shape: nitta-CCe
+      example: נִתַבנֵי nittabne
+
+- paradigm: G (Peal) imperative, verbs III-weak
+  reference: B.6
+  pattern: qǝtal
+  lemma: bne/bǝni, G imperative (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. Two radicals show, and the vowel after them carries the person: bǝnā, bǝno, bǝnaʔā. Root bny. The theme vowel is not the same throughout — CǝCi/CǝCe, CǝCa, CǝCo, CǝCaʔā — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: ms
+      shape: CǝCi/CǝCe
+      example: בְנִי/בְנֵי bǝni/bǝne
+    - slot: fs
+      shape: CǝCa
+      example: בְנַא bǝna
+    - slot: mp
+      shape: CǝCo
+      example: בְנֹו bǝno
+    - slot: fp
+      shape: CǝCaʔā
+      example: בְנַאָה bǝnáʔā
+
+- paradigm: G stative (Peal) imperative, verbs III-weak
+  reference: B.6
+  pattern: qǝtel
+  lemma: ḥǝdi, G stative imperative (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The stative keeps i where the Peal has e: ḥǝdi beside bǝnā. Its perfect 3mp is missing from the paradigm as printed, so no card is made for it. Root ḥdy. The theme vowel is not the same throughout — CǝCi, CǝCa, CǝCo, CǝCaʔā — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: ms
+      shape: CǝCi
+      example: חְדִי ḥǝdi
+    - slot: fs
+      shape: CǝCa
+      example: חְדַא ḥǝda
+    - slot: mp
+      shape: CǝCo
+      example: חְדֹו ḥǝdo
+    - slot: fp
+      shape: CǝCaʔā
+      example: חְדַאָה ḥǝdáʔā
+
+- paradigm: D (Pael) imperative, verbs III-weak
+  reference: B.6
+  pattern: qattil
+  lemma: banni, D imperative (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The second radical is doubled, as the unreduced a before it shows, and the name Pael agrees. Root bny. The theme vowel is not the same throughout — CaCCi, CaCCā, CaCCo, CaCCaʔā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: CaCCi
+      example: בַנִי banni
+    - slot: fs
+      shape: CaCCā
+      example: בַנָא bánnā
+    - slot: mp
+      shape: CaCCo
+      example: בַנֹו banno
+    - slot: fp
+      shape: CaCCaʔā
+      example: בַנַאָה bannáʔā
+
+- paradigm: C (Aphel) imperative, verbs III-weak
+  reference: B.6
+  pattern: ʔaqtil
+  lemma: ʔabni, C imperative (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Aphel prefix ʔa- stands in a closed syllable, so nothing is doubled. This column prints a longer variant of the 2ms and of the 1cs beside the shorter one. Root bny. The theme vowel is not the same throughout — CCi, CCa, CCo, CCaʔā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔa-CCi
+      example: אַבנִי ʔabni
+    - slot: fs
+      shape: ʔa-CCa
+      example: אַבנַא ʔabna
+    - slot: mp
+      shape: ʔa-CCo
+      example: אַבנֹו ʔabno
+    - slot: fp
+      shape: ʔa-CCaʔā
+      example: אַבנַאָה ʔabnáʔā
+
+- paradigm: Gt (Ithpeel) imperative, verbs III-weak
+  reference: B.6
+  pattern: ʔitqǝtil
+  lemma: ʔitbǝni, Gt imperative (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Peal behind ʔit-. Root bny. The theme vowel is not the same throughout — CǝCi, CǝCa, CǝCo, CǝCaʔā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔit-CǝCi
+      example: אִתבְנִי ʔitbǝni
+    - slot: fs
+      shape: ʔit-CǝCa
+      example: אִתבְנַא ʔitbǝna
+    - slot: mp
+      shape: ʔit-CǝCo
+      example: אִתבְנֹו ʔitbǝno
+    - slot: fp
+      shape: ʔit-CǝCaʔā
+      example: אִתבְנַאָה ʔitbǝnáʔā
+
+- paradigm: Dt (Ithpaal) imperative, verbs III-weak
+  reference: B.6
+  pattern: ʔitqattal
+  lemma: ʔitbanni, Dt imperative (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Pael behind ʔit-, second radical doubled. Root bny. The theme vowel is not the same throughout — CaCCi, CaCCa, CaCCo, CaCCaʔā — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔit-CaCCi
+      example: אִתבַנִי ʔitbanni
+    - slot: fs
+      shape: ʔit-CaCCa
+      example: אִתבַנַא ʔitbanna
+    - slot: mp
+      shape: ʔit-CaCCo
+      example: אִתבַנֹו ʔitbanno
+    - slot: fp
+      shape: ʔit-CaCCaʔā
+      example: אִתבַנַאָה ʔitbannáʔā
+
+- paradigm: Ct (Ittaphal) imperative, verbs III-weak
+  reference: B.6
+  pattern: ʔittaqtal
+  lemma: ʔittabni, Ct imperative (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The prefix t is doubled: ʔittabni. Root bny. The theme vowel is not the same throughout — CCi, CCa, CCo, CCaʔā — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: ms
+      shape: ʔitta-CCi
+      example: אִתַבנִי ʔittabni
+    - slot: fs
+      shape: ʔitta-CCa
+      example: אִתַבנַא ʔittabna
+    - slot: mp
+      shape: ʔitta-CCo
+      example: אִתַבנֹו ʔittabno
+    - slot: fp
+      shape: ʔitta-CCaʔā
+      example: אִתַבנַאָה ʔittabnáʔā
+
+- paradigm: G (Peal) non-finite, verbs III-weak
+  reference: B.6
+  pattern: qǝtal
+  lemma: bāne, G non-finite (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. Two radicals show, and the vowel after them carries the person: bǝnā, bǝno, bǝnaʔā. Root bny."
+  cells:
+    - slot: active participle ms
+      shape: CāCe
+      example: בָנֵי bāne
+    - slot: active participle mp
+      shape: CāCan
+      example: בָנַן bānan
+    - slot: passive participle ms
+      shape: CǝCe
+      example: בְנֵי bǝne
+    - slot: infinitive
+      shape: mi-CCe
+      example: מִבנֵי mibne
+
+- paradigm: D (Pael) non-finite, verbs III-weak
+  reference: B.6
+  pattern: qattil
+  lemma: mǝbanne, D non-finite (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The second radical is doubled, as the unreduced a before it shows, and the name Pael agrees. Root bny.
+  cells:
+    - slot: active participle ms
+      shape: mǝ-CaCCe
+      example: מְבַנֵי mǝbanne
+    - slot: active participle mp
+      shape: mǝ-CaCCan
+      example: מְבַנַן mǝbannan
+    - slot: passive participle ms
+      shape: mǝ-CuCCa
+      example: מְבֻונַא mǝbunna
+    - slot: infinitive
+      shape: CaCCāʔā
+      example: בַנָאָה bannāʔā
+
+- paradigm: C (Aphel) non-finite, verbs III-weak
+  reference: B.6
+  pattern: ʔaqtil
+  lemma: mabne, C non-finite (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Aphel prefix ʔa- stands in a closed syllable, so nothing is doubled. This column prints a longer variant of the 2ms and of the 1cs beside the shorter one. Root bny.
+  cells:
+    - slot: active participle ms
+      shape: ma-CCe
+      example: מַבנֵי mabne
+    - slot: active participle mp
+      shape: ma-CCan
+      example: מַבנַן mabnan
+    - slot: passive participle ms
+      shape: mu-CCa
+      example: מֻובנַא mubna
+    - slot: infinitive
+      shape: ʔa-CCāʔā
+      example: אַבנָאָה ʔabnāʔā
+
+- paradigm: Gt (Ithpeel) non-finite, verbs III-weak
+  reference: B.6
+  pattern: ʔitqǝtil
+  lemma: mitbǝne, Gt non-finite (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Peal behind ʔit-. Root bny.
+  cells:
+    - slot: active participle ms
+      shape: mit-CǝCe
+      example: מִתבְנֵי mitbǝne
+    - slot: active participle mp
+      shape: mit-CǝCan
+      example: מִתבְנַן mitbǝnan
+    - slot: infinitive
+      shape: ʔit-CǝCāʔā
+      example: אִתבְנָאָה ʔitbǝnāʔā
+
+- paradigm: Dt (Ithpaal) non-finite, verbs III-weak
+  reference: B.6
+  pattern: ʔitqattal
+  lemma: mitbanne, Dt non-finite (verbs III-weak)
+  notes: The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The Pael behind ʔit-, second radical doubled. Root bny.
+  cells:
+    - slot: active participle ms
+      shape: mit-CaCCe
+      example: מִתבַנֵי mitbanne
+    - slot: active participle mp
+      shape: mit-CaCCan
+      example: מִתבַנַן mitbannan
+    - slot: infinitive
+      shape: ʔit-CaCCāʔā
+      example: אִתבַנָאָה ʔitbannāʔā
+
+- paradigm: Ct (Ittaphal) non-finite, verbs III-weak
+  reference: B.6
+  pattern: ʔittaqtal
+  lemma: mittabne, Ct non-finite (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The prefix t is doubled: ʔittabni. Root bny."
+  cells:
+    - slot: active participle ms
+      shape: mitta-CCe
+      example: מִתַבנֵי mittabne
+    - slot: active participle mp
+      shape: mitta-CCan
+      example: מִתַבנַן mittabnan
+    - slot: infinitive
+      shape: ʔitta-CCāʔā
+      example: אִתַבנָאָה ʔittabnāʔā
+
+- paradigm: G stative (Peal) non-finite, verbs III-weak
+  reference: B.6
+  pattern: qǝtel
+  lemma: miḥde, G stative non-finite (verbs III-weak)
+  notes: "The third radical does not stand as a consonant; it fuses with whatever follows, so the person endings are not separable here and the shapes are given whole. The stative keeps i where the Peal has e: ḥǝdi beside bǝnā. Its perfect 3mp is missing from the paradigm as printed, so no card is made for it. Root ḥdy."
+  cells:
+    - slot: infinitive
+      shape: mi-CCe
+      example: מִחדֵי miḥde
+
+- paradigm: G (Peal) perfect, geminate verbs
+  reference: B.7
+  pattern: qǝtal
+  lemma: ʕāl, G perfect (geminate verbs)
+  notes: "The second and third radicals are the same letter and contract to one written copy. Where a vowel follows it the geminate surfaces — ʕallu, beside the ʕālu printed next to it — and where a consonant or the end of the word follows, it does not: ʕāl, ʕalt. Root ʕll. The base is not the same throughout — CaC/CāC, CaCC, CaC, CaCC/CāC — the geminate showing wherever a vowel follows it."
+  cells:
+    - slot: 3ms
+      shape: CaC/CāC
+      example: עַל/עָל ʕal/ʕāl
+    - slot: 3fs
+      shape: CaCC-at
+      example: עַלַת ʕállat
+    - slot: 2ms, longer variant
+      shape: CaC-tā
+      example: עַלתָא ʕáltā
+    - slot: 2ms, 2fs
+      shape: CaC-t
+      example: עַלת ʕalt
+    - slot: 1cs
+      shape: CaCC-it
+      example: עַלִית ʕállit
+    - slot: 3mp
+      shape: CaCC-u/CāC-u
+      example: עַלֻו/עָלֻו ʕállu/ʕā́lu
+    - slot: 3fp
+      shape: CaCC-ā/CāC-ā
+      example: עַלָא/עָלָא ʕállā/ʕā́lā
+    - slot: 2mp
+      shape: CaC-tun
+      example: עַלתֻון ʕaltun
+    - slot: 2fp
+      shape: CaC-tin
+      example: עַלתִין ʕaltin
+    - slot: 1cp
+      shape: CaC-nā
+      example: עַלנָא ʕálnā
+
+- paradigm: D (Pael) perfect, geminate verbs
+  reference: B.7
+  pattern: qattil
+  lemma: mallel, D perfect (geminate verbs)
+  notes: "The Pael writes both like radicals out and doubles the first, as the unreduced a in front of it shows: mallel. Root mll. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: CaCCeC
+      example: מַלֵיל mallel
+    - slot: 3mp
+      shape: CaCCiC-u
+      example: מַלִילֻו mallílu
+
+- paradigm: C (Aphel) perfect, geminate verbs
+  reference: B.7
+  pattern: ʔaqtil
+  lemma: ʔǝʕel, C perfect (geminate verbs)
+  notes: The second and third radicals are the same letter and contract to one written copy. The Aphel doubles the first radical — ʔammar, from m-r-r — but ʕ will not double, so ʔaʕel stands for it with nothing written. The prefix alef drops in the plural, printed as ʔaʕilu beside ʕǝlilu. Root ʕll. The theme vowel is not the same throughout — CeC, CiC/CǝCiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔa-CeC/ʔǝ-CeC
+      example: אַעֵיל/אְעֵיל ʔaʕel/ʔǝʕel
+    - slot: 3mp
+      shape: ʔa-CiC-u/CǝCiC-u
+      example: אַעִילֻו/עְלִילֻו ʔaʕílu/ʕǝlílu
+
+- paradigm: Gt (Ithpeel) perfect, geminate verbs
+  reference: B.7
+  pattern: ʔitqǝtil
+  lemma: ʔitbǝzez, Gt perfect (geminate verbs)
+  notes: The Peal behind ʔit-, with both like radicals written out. Root bzz. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CǝCeC
+      example: אִתבְזֵיז ʔitbǝzez
+    - slot: 3mp
+      shape: ʔit-CǝCiC-u
+      example: אִתבְזִיזֻו ʔitbǝzízu
+
+- paradigm: Dt (Ithpaal) perfect, geminate verbs
+  reference: B.7
+  pattern: ʔitqattal
+  lemma: ʔitmallal, Dt perfect (geminate verbs)
+  notes: The Pael behind ʔit-, the first of the like radicals doubled. Root mll.
+  cells:
+    - slot: 3ms
+      shape: ʔit-CaCCaC
+      example: אִתמַלַל ʔitmallal
+    - slot: 3mp
+      shape: ʔit-CaCCaC-u
+      example: אִתמַלַלֻו ʔitmallálu
+
+- paradigm: Ct (Ittaphal) perfect, geminate verbs
+  reference: B.7
+  pattern: ʔittaqtal
+  lemma: ʔittāʕal, Ct perfect (geminate verbs)
+  notes: "The second and third radicals are the same letter and contract to one written copy. The prefix t is doubled as well: ʔittāʕal. Root ʕll. The base is not the same throughout — CaC, CaCC — the geminate showing wherever a vowel follows it."
+  cells:
+    - slot: 3ms
+      shape: ʔittā-CaC
+      example: אִתָעַל ʔittāʕal
+    - slot: 3mp
+      shape: ʔittā-CaCC-u
+      example: אִתָעַלֻו ʔittāʕállu
+
+- paradigm: G (Peal) imperfect, geminate verbs
+  reference: B.7
+  pattern: qǝtal
+  lemma: yeʕul, G imperfect (geminate verbs)
+  notes: "The second and third radicals are the same letter and contract to one written copy. Where a vowel follows it the geminate surfaces — ʕallu, beside the ʕālu printed next to it — and where a consonant or the end of the word follows, it does not: ʕāl, ʕalt. Root ʕll. The theme vowel is not the same throughout — CuC, CǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: ye-CuC
+      example: יֵעֻול yeʕul
+    - slot: 3mp
+      shape: ye-CǝC-un
+      example: יֵעְלֻון yeʕǝlun
+
+- paradigm: G stative (Peal) imperfect, geminate verbs
+  reference: B.7
+  pattern: qǝtel
+  lemma: yeḥam, G stative imperfect (geminate verbs)
+  notes: The second and third radicals are the same letter and contract to one written copy. The stative is printed in the imperfect and the infinitive only, so those are the only cards for it. Root ḥmm. The theme vowel is not the same throughout — CaC, CǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ye-CaC
+      example: יֵיחַם yeḥam
+    - slot: 3mp
+      shape: ye-CǝC-u
+      example: יֵיחְמֻו yeḥǝmu
+
+- paradigm: D (Pael) imperfect, geminate verbs
+  reference: B.7
+  pattern: qattil
+  lemma: yǝmallel, D imperfect (geminate verbs)
+  notes: "The Pael writes both like radicals out and doubles the first, as the unreduced a in front of it shows: mallel. Root mll. The theme vowel is not the same throughout — CaCCeC, CaCCǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yǝ-CaCCeC
+      example: יְמַלֵיל yǝmallel
+    - slot: 3mp
+      shape: yǝ-CaCCǝC-un
+      example: יְמַלְלֻון yǝmallǝlun
+
+- paradigm: C (Aphel) imperfect, geminate verbs
+  reference: B.7
+  pattern: ʔaqtil
+  lemma: yǝʕel, C imperfect (geminate verbs)
+  notes: The second and third radicals are the same letter and contract to one written copy. The Aphel doubles the first radical — ʔammar, from m-r-r — but ʕ will not double, so ʔaʕel stands for it with nothing written. The prefix alef drops in the plural, printed as ʔaʕilu beside ʕǝlilu. Root ʕll. The theme vowel is not the same throughout — CeC, CǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: ya-CeC/yǝ-CeC
+      example: יַעֵיל/יְעֵיל yaʕel/yǝʕel
+    - slot: 3mp
+      shape: ya-CǝC-un
+      example: יַעְלֻון yaʕǝlun
+
+- paradigm: Gt (Ithpeel) imperfect, geminate verbs
+  reference: B.7
+  pattern: ʔitqǝtil
+  lemma: yitbǝzez, Gt imperfect (geminate verbs)
+  notes: The Peal behind ʔit-, with both like radicals written out. Root bzz. The theme vowel is not the same throughout — CǝCeC, CaCǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CǝCeC
+      example: יִתבְזֵיז yitbǝzez
+    - slot: 3mp
+      shape: yit-CaCǝC-un
+      example: יִתבַזְזֻון yitbazǝzun
+
+- paradigm: Dt (Ithpaal) imperfect, geminate verbs
+  reference: B.7
+  pattern: ʔitqattal
+  lemma: yitmallal, Dt imperfect (geminate verbs)
+  notes: The Pael behind ʔit-, the first of the like radicals doubled. Root mll. The theme vowel is not the same throughout — CaCCaC, CaCCǝC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: 3ms
+      shape: yit-CaCCaC
+      example: יִתמַלַל yitmallal
+    - slot: 3mp
+      shape: yit-CaCCǝC-un
+      example: יִתמַלְלֻון yitmallǝlun
+
+- paradigm: Ct (Ittaphal) imperfect, geminate verbs
+  reference: B.7
+  pattern: ʔittaqtal
+  lemma: yittāʕal, Ct imperfect (geminate verbs)
+  notes: "The second and third radicals are the same letter and contract to one written copy. The prefix t is doubled as well: ʔittāʕal. Root ʕll. The theme vowel is not the same throughout — CaC, CǝC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: 3ms
+      shape: yittā-CaC
+      example: יִתָעַל yittāʕal
+    - slot: 3mp
+      shape: yittā-CǝC-un
+      example: יִתָעְלֻון yittāʕǝlun
+
+- paradigm: G (Peal) imperative, geminate verbs
+  reference: B.7
+  pattern: qǝtal
+  lemma: ʕul, G imperative (geminate verbs)
+  notes: "The second and third radicals are the same letter and contract to one written copy. Where a vowel follows it the geminate surfaces — ʕallu, beside the ʕālu printed next to it — and where a consonant or the end of the word follows, it does not: ʕāl, ʕalt. Root ʕll."
+  cells:
+    - slot: ms
+      shape: CuC
+      example: עֻול ʕul
+    - slot: mp
+      shape: CuC-u
+      example: עֻולֻו ʕúlu
+
+- paradigm: D (Pael) imperative, geminate verbs
+  reference: B.7
+  pattern: qattil
+  lemma: mallel, D imperative (geminate verbs)
+  notes: "The Pael writes both like radicals out and doubles the first, as the unreduced a in front of it shows: mallel. Root mll. The theme vowel is not the same throughout — CaCCeC, CaCCiC — it reduces before an ending beginning with a vowel."
+  cells:
+    - slot: ms
+      shape: CaCCeC
+      example: מַלֵיל mallel
+    - slot: mp
+      shape: CaCCiC-u
+      example: מַלִילֻו mallílu
+
+- paradigm: C (Aphel) imperative, geminate verbs
+  reference: B.7
+  pattern: ʔaqtil
+  lemma: ʔǝʕel, C imperative (geminate verbs)
+  notes: The second and third radicals are the same letter and contract to one written copy. The Aphel doubles the first radical — ʔammar, from m-r-r — but ʕ will not double, so ʔaʕel stands for it with nothing written. The prefix alef drops in the plural, printed as ʔaʕilu beside ʕǝlilu. Root ʕll. The theme vowel is not the same throughout — CeC, CiC/CǝCiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔa-CeC/ʔǝ-CeC
+      example: אַעֵיל/אְעֵיל ʔaʕel/ʔǝʕel
+    - slot: mp
+      shape: ʔa-CiC-u/CǝCiC-u
+      example: אַעִילֻו/עְלִילֻו ʔaʕílu/ʕǝlílu
+
+- paradigm: Gt (Ithpeel) imperative, geminate verbs
+  reference: B.7
+  pattern: ʔitqǝtil
+  lemma: ʔitbǝzez, Gt imperative (geminate verbs)
+  notes: The Peal behind ʔit-, with both like radicals written out. Root bzz. The theme vowel is not the same throughout — CǝCeC, CǝCiC — it reduces before an ending beginning with a vowel.
+  cells:
+    - slot: ms
+      shape: ʔit-CǝCeC
+      example: אִתבְזֵיז ʔitbǝzez
+    - slot: mp
+      shape: ʔit-CǝCiC-u
+      example: אִתבְזִיזֻו ʔitbǝzízu
+
+- paradigm: G (Peal) non-finite, geminate verbs
+  reference: B.7
+  pattern: qǝtal
+  lemma: ʕāʔel, G non-finite (geminate verbs)
+  notes: "The second and third radicals are the same letter and contract to one written copy. Where a vowel follows it the geminate surfaces — ʕallu, beside the ʕālu printed next to it — and where a consonant or the end of the word follows, it does not: ʕāl, ʕalt. Root ʕll."
+  cells:
+    - slot: active participle ms
+      shape: CāCeC/CāʔeC
+      example: עָלֵיל/עָאֵיל ʕālel/ʕāʔel
+    - slot: active participle mp
+      shape: CāCC-in
+      example: עָלִין ʕāllin
+    - slot: passive participle ms
+      shape: CǝCiC
+      example: עְלִיל ʕǝlil
+    - slot: infinitive
+      shape: me-CaC
+      example: מֵיעַל meʕal
+
+- paradigm: D (Pael) non-finite, geminate verbs
+  reference: B.7
+  pattern: qattil
+  lemma: mǝmallel, D non-finite (geminate verbs)
+  notes: "The Pael writes both like radicals out and doubles the first, as the unreduced a in front of it shows: mallel. Root mll."
+  cells:
+    - slot: active participle ms
+      shape: mǝ-CaCCeC
+      example: מְמַלֵיל mǝmallel
+    - slot: active participle mp
+      shape: mǝ-CaCCǝC-in
+      example: מְמַלְלִין mǝmallǝlin
+    - slot: passive participle ms
+      shape: mǝ-CaCCaC
+      example: מְמַלַל mǝmallal
+    - slot: passive participle ms, variant
+      shape: mǝ-CuCaC
+      example: מְמֻולַל mǝmulal
+    - slot: infinitive
+      shape: CaCCāC-ā
+      example: מַלָלָא mallālā
+
+- paradigm: C (Aphel) non-finite, geminate verbs
+  reference: B.7
+  pattern: ʔaqtil
+  lemma: maʕel, C non-finite (geminate verbs)
+  notes: The second and third radicals are the same letter and contract to one written copy. The Aphel doubles the first radical — ʔammar, from m-r-r — but ʕ will not double, so ʔaʕel stands for it with nothing written. The prefix alef drops in the plural, printed as ʔaʕilu beside ʕǝlilu. Root ʕll.
+  cells:
+    - slot: active participle ms
+      shape: ma-CeC
+      example: מַעֵיל maʕel
+    - slot: active participle mp
+      shape: ma-CǝC-in
+      example: מַעְלִין maʕǝlin
+    - slot: infinitive
+      shape: ʔa-CāC-ā/ʔǝ-CāC-ā
+      example: אַעָלָא/אְעָלָא ʔaʕālā/ʔǝʕālā
+
+- paradigm: Gt (Ithpeel) non-finite, geminate verbs
+  reference: B.7
+  pattern: ʔitqǝtil
+  lemma: mitbǝzez, Gt non-finite (geminate verbs)
+  notes: The Peal behind ʔit-, with both like radicals written out. Root bzz.
+  cells:
+    - slot: active participle ms
+      shape: mit-CǝCeC
+      example: מִתבְזֵיז mitbǝzez
+    - slot: active participle mp
+      shape: mit-CaCǝC-in
+      example: מִתבַזְזִין mitbazǝzin
+    - slot: infinitive
+      shape: ʔit-CǝCāC-ā
+      example: אִתבְזָזָא ʔitbǝzāzā
+
+- paradigm: Dt (Ithpaal) non-finite, geminate verbs
+  reference: B.7
+  pattern: ʔitqattal
+  lemma: mitmallel, Dt non-finite (geminate verbs)
+  notes: The Pael behind ʔit-, the first of the like radicals doubled. Root mll.
+  cells:
+    - slot: active participle ms
+      shape: mit-CaCCeC
+      example: מִתמַלֵיל mitmallel
+    - slot: active participle mp
+      shape: mit-CaCCǝC-in
+      example: מִתמַלְלִין mitmallǝlin
+
+- paradigm: Ct (Ittaphal) non-finite, geminate verbs
+  reference: B.7
+  pattern: ʔittaqtal
+  lemma: mittāʕal, Ct non-finite (geminate verbs)
+  notes: "The second and third radicals are the same letter and contract to one written copy. The prefix t is doubled as well: ʔittāʕal. Root ʕll."
+  cells:
+    - slot: active participle ms
+      shape: mittā-CaC
+      example: מִתָעַל mittāʕal
+    - slot: active participle mp
+      shape: mittā-CǝC-in
+      example: מִתָעְלִין mittāʕǝlin
+
+- paradigm: G stative (Peal) non-finite, geminate verbs
+  reference: B.7
+  pattern: qǝtel
+  lemma: meḥam, G stative non-finite (geminate verbs)
+  notes: The second and third radicals are the same letter and contract to one written copy. The stative is printed in the imperfect and the infinitive only, so those are the only cards for it. Root ḥmm.
+  cells:
+    - slot: infinitive
+      shape: me-CaC
+      example: מֵיחַם meḥam

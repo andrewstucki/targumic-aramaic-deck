@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Check the vocabulary over.
+"""Check the vocabulary and the paradigms over.
 
 Glosses first: a gloss has to be unique within its chapter, or the card that
 asks for the word from its meaning cannot be answered. Then the spelling
-against the transliteration, two ways. The vowels: the Hebrew carries one Tiberian mark per transliterated
+against the transliteration, two ways. Then nouns.yaml is loaded, which
+validates it and re-derives every shape from the example beside it. The vowels: the Hebrew carries one Tiberian mark per transliterated
 vowel, in the same order, so a disagreement means a mark is missing, doubled or
 wrong. The letters: each transliterated consonant appears as its letter, in
 order, allowing the two things the orthography requires -- a doubled consonant
@@ -18,6 +19,7 @@ import sys
 import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import paradigms
 import vocab
 
 POINT = {"ַ": "a", "ֶ": "a", "ֲ": "a", "ֱ": "a",
@@ -168,6 +170,136 @@ def duplicate_glosses(number, entries):
     return {g: v for g, v in seen.items() if len(v) > 1}
 
 
+# the transliteration letters a shape writes as C
+RADICALS = set("ʔbgdhwzḥṭyklmnsʕpṣqrśštṯḵ")
+
+
+def unaccented(word):
+    """word without its stress mark, which no shape writes.
+
+    Only the acute is taken off; a macron is left to recompose, so that the
+    long ā of kǝtábā does not come back as a short a.
+    """
+    return unicodedata.normalize(
+        "NFC", "".join(c for c in unicodedata.normalize("NFD", word)
+                       if c not in "\u0301\u0300"))
+
+
+def skeleton_fits(shape, word):
+    """Whether `word` is an instance of `shape`.
+
+    A shape is read against the word position by position: C stands for any
+    one consonant, and every other character has to be itself. That checks
+    each vowel and each spelled-out affix, while leaving the shape free to
+    write a consonant literally where it is not a radical -- the ʔ or y a
+    hollow verb puts in place of its middle radical, say.
+    """
+    word = unaccented(word)
+    template = shape.replace("-", "")
+    if len(template) != len(word):
+        return False
+    for t, c in zip(template, word):
+        if t == "C":
+            if c not in RADICALS:
+                return False
+        elif t != c:
+            return False
+    return True
+
+
+# The book marks stress only where it is not on the last syllable, and that
+# happens before an inflectional ending that is unstressed itself. -at, -it,
+# -nā and -tā are endings wherever they stand in a perfect, so they are
+# enough on their own -- note that bǝnāt ends in -āt and is not one of them.
+# A bare -u, -i or -ā is not enough, since the same letter can belong to a
+# III-weak root: the -i of the perfect banni carries the stress while the -i
+# of the imperative kǝtúbi does not, so there the slot decides. Nothing
+# outside the perfect and the imperative is marked, because the imperfect's
+# -un, -in and -ān and the participles' nominal endings take the stress.
+# An ending retracts the stress when it adds a syllable of its own, so -t
+# does not and -tā does, even though the syllable it leaves in front is
+# closed either way: bārékt(ā) beside bārekt. Each is tied to the slots that
+# can carry it, because the same letters are stem elsewhere -- the -it of
+# mannit is the fused i of manni plus a consonantal -t, and man-nit is
+# stressed on its last syllable like manni itself, so only a 1cs may take it.
+# -tun and -tin add a syllable but are stressed themselves, which the book
+# states outright, so they are left out.
+STRESS_ENDINGS = {"at": lambda s: "3fs" in s,
+                  "it": lambda s: s in ("1cs", "1cs, longer variant"),
+                  "nā": lambda s: "1cp" in s,
+                  "tā": lambda s: "2ms" in s}
+STRESS_SLOTS = {"3mp", "3fp", "1cs", "1cs, longer variant", "fs", "mp", "fp"}
+STRESS_MOODS = ("perfect", "imperative")
+VOWELS = "aāeēiīoōuūǝ"
+
+
+def expected_stress(word, paradigm, slot):
+    """`word` with the mark the book would put on it, if any."""
+    plain = unaccented(word)
+    if paradigms.mood(paradigm) not in STRESS_MOODS:
+        return plain
+    if not (any(plain.endswith(e) and fits(slot)
+                for e, fits in STRESS_ENDINGS.items())
+            or (slot in STRESS_SLOTS and plain.endswith(("u", "i", "ā")))):
+        return plain
+    at = [i for i, c in enumerate(plain) if c in VOWELS]
+    if len(at) < 2 or plain[at[-2]] == "ǝ":   # a reduced vowel cannot take it
+        return plain
+    i = at[-2]
+    return unicodedata.normalize("NFC", plain[:i + 1] + "\u0301"
+                                 + plain[i + 1:])
+
+
+def check_stress():
+    """Every verb form carries the mark its ending and mood call for."""
+    bad = 0
+    verbs = os.path.join(paradigms.ROOT, "verbs.yaml")
+    for group in paradigms.load(verbs):
+        for cell in group["cells"]:
+            for word in cell["example"].split()[-1].split("/"):
+                want = expected_stress(word, group["paradigm"], cell["slot"])
+                if word != want:
+                    bad += 1
+                    print(f"  {paradigms.title(group)} {cell['slot']}: "
+                          f"{word} should be stressed {want}")
+    return bad
+
+
+def check_paradigms():
+    """Every shape has to fit the example it sits beside, and the other way.
+
+    A verb example carries the pointed Aramaic as well, since the tables print
+    no transliteration; the transliteration is the part without Hebrew letters.
+    """
+    bad = 0
+    try:
+        groups = paradigms.load_all()
+    except ValueError as exc:          # a malformed file, not a wrong shape
+        print(f"  {exc}")
+        return 1
+    for group in groups:
+        for cell in group["cells"]:
+            shapes = cell["shape"].split("/")
+            words = []
+            for example in cell["example"].split("/"):
+                plain = [w for w in example.split()
+                         if not any("\u05d0" <= c <= "\u05ea" for c in w)]
+                words.extend(plain[-1:] if plain else [])
+            if not words:
+                continue
+            for shape in shapes:
+                if not any(skeleton_fits(shape, w) for w in words):
+                    bad += 1
+                    print(f"  {paradigms.title(group)}: no example fits "
+                          f"{shape} ({cell['example']})")
+            for word in words:
+                if not any(skeleton_fits(s, word) for s in shapes):
+                    bad += 1
+                    print(f"  {paradigms.title(group)}: {word} fits no shape "
+                          f"({cell['shape']})")
+    return bad
+
+
 def main():
     bad = 0
     for number, entries in vocab.load():
@@ -194,6 +326,8 @@ def main():
                     print(f"  {vocab.deck_name(number)} entry {i}: {t} "
                           f"letters={''.join(letters(h))}")
                     print(f"        {h}")
+    bad += check_paradigms()
+    bad += check_stress()
     print(f"{bad} problems")
     return 1 if bad else 0
 

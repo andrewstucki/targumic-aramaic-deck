@@ -1,0 +1,468 @@
+# Noun and adjective paradigms, Appendix A of Lambdin and Huehnergard's
+# The Aramaic of Targum Onqelos.
+#
+# A shape is written with C for each root consonant, the vowels spelled out,
+# and a hyphen before the ending, so šappirǝtā is CaCCiC-ǝtā. Every shape is
+# derived from the example beside it rather than transcribed. pattern names
+# the base with the q-t-l dummy root, the convention the grammars use, so a
+# type can be looked up.
+#
+# Where one shape fills more than one slot its card says so, since that
+# syncretism is itself worth knowing. See README.md for the fields.
+
+- paradigm: Unchanging base
+  reference: A.1
+  pattern: qattil
+  lemma: šappir ‘beautiful’
+  notes: The base never changes; only the ending does. Note that the masculine singular emphatic and the feminine singular absolute are the same shape.
+  cells:
+    - slot: masculine singular absolute, masculine singular construct
+      shape: CaCCiC
+      example: šappir
+    - slot: masculine singular emphatic, feminine singular absolute
+      shape: CaCCiC-ā
+      example: šappirā
+    - slot: masculine plural absolute
+      shape: CaCCiC-in
+      example: šappirin
+    - slot: masculine plural construct
+      shape: CaCCiC-e
+      example: šappire
+    - slot: masculine plural emphatic
+      shape: CaCCiC-ayyā
+      example: šappirayyā
+    - slot: feminine singular construct
+      shape: CaCCiC-at
+      example: šappirat
+    - slot: feminine singular emphatic
+      shape: CaCCiC-ǝtā
+      example: šappirǝtā
+    - slot: feminine plural absolute
+      shape: CaCCiC-ān
+      example: šappirān
+    - slot: feminine plural construct
+      shape: CaCCiC-āt
+      example: šappirāt
+    - slot: feminine plural emphatic
+      shape: CaCCiC-ātā
+      example: šappirātā
+
+- paradigm: Adjective with final -y
+  reference: A.4a
+  pattern: qatly
+  lemma: qǝše ‘hard, difficult’
+  notes: Also the G passive participle of verbs III-Weak. The third radical is y, which surfaces before a vowel and is lost before a consonant.
+  cells:
+    - slot: masculine singular absolute
+      shape: CǝC-e/CǝC-i
+      example: qǝše/qǝši
+    - slot: masculine singular construct
+      shape: CǝC-e
+      example: qǝše
+    - slot: masculine singular emphatic, feminine singular absolute
+      shape: CaCC-ā
+      example: qašyā
+    - slot: masculine plural absolute
+      shape: CǝC-an
+      example: qǝšan
+    - slot: masculine plural construct
+      shape: CǝC-e/CaCC-e
+      example: qǝše/qašye
+    - slot: masculine plural emphatic
+      shape: CǝC-ayyā
+      example: qǝšayyā
+    - slot: feminine singular construct
+      shape: CaCC-at/CǝC-it
+      example: qašyat/qǝšit
+    - slot: feminine singular emphatic
+      shape: CaCC-ǝtā/CǝC-itā
+      example: qašyǝtā/qǝšitā
+    - slot: feminine plural absolute
+      shape: CaCC-ān
+      example: qašyān
+    - slot: feminine plural construct
+      shape: CaCC-āt
+      example: qašyāt
+    - slot: feminine plural emphatic
+      shape: CaCC-ātā
+      example: qašyātā
+
+- paradigm: G active participle with final -y
+  reference: A.4a
+  pattern: qātil
+  lemma: bāne ‘building’
+  notes: The G active participle of verbs III-Weak.
+  cells:
+    - slot: masculine singular absolute, masculine singular construct, masculine plural construct
+      shape: CāC-e
+      example: bāne
+    - slot: masculine singular emphatic, feminine singular absolute
+      shape: CāCǝC-ā
+      example: bānǝyā
+    - slot: masculine plural absolute
+      shape: CāC-an
+      example: bānan
+    - slot: masculine plural emphatic
+      shape: CāC-ayyā
+      example: bānayyā
+    - slot: feminine singular construct
+      shape: CāC-ǝyat/CāC-it
+      example: bānǝyat/bānit
+    - slot: feminine singular emphatic
+      shape: CāC-itā
+      example: bānitā
+    - slot: feminine plural absolute
+      shape: CāC-ǝyān
+      example: bānǝyān
+    - slot: feminine plural construct
+      shape: CāC-ǝyāt
+      example: bānǝyāt
+    - slot: feminine plural emphatic
+      shape: CāC-ǝyātā
+      example: bānǝyātā
+
+- paradigm: Feminine -vCtā, -a- syncopated
+  reference: A.2a
+  pattern: qatal+t
+  lemma: ʕǝgaltā ‘heifer’
+  notes: In this type the -a- of the base drops in the absolute and construct, and the first vowel fills out in its place.
+  cells:
+    - slot: feminine singular absolute
+      shape: CaCC-ā
+      example: ʕaglā
+    - slot: feminine singular construct
+      shape: CaCC-at
+      example: ʕaglat
+    - slot: feminine singular emphatic
+      shape: CǝCaC-tā
+      example: ʕǝgaltā
+    - slot: feminine plural emphatic
+      shape: CaCC-ātā
+      example: ʕaglātā
+
+- paradigm: Feminine -vCtā, -a- syncopated
+  reference: A.2a
+  pattern: qatal+t
+  lemma: nǝdabtā ‘free-will offering’
+  notes: In this type the -a- of the base drops in the absolute and construct, and the first vowel fills out in its place.
+  cells:
+    - slot: feminine singular absolute
+      shape: CiCC-ā
+      example: nidbā
+    - slot: feminine singular construct
+      shape: CiCC-at
+      example: nidbat
+    - slot: feminine singular emphatic
+      shape: CǝCaC-tā
+      example: nǝdabtā
+    - slot: feminine plural emphatic
+      shape: CiCC-ātā
+      example: nidbātā
+
+- paradigm: Feminine -vCtā, geminate root
+  reference: A.2a
+  pattern: qatal+t
+  lemma: ʕǝlaltā ‘produce’
+  notes: In this type a root whose second and third radicals are the same cannot syncopate, so a sheva stands where the vowel dropped.
+  cells:
+    - slot: feminine singular absolute
+      shape: CaCǝC-ā
+      example: ʕalǝlā
+    - slot: feminine singular construct
+      shape: CaCǝC-at
+      example: ʕalǝlat
+    - slot: feminine singular emphatic
+      shape: CǝCaC-tā
+      example: ʕǝlaltā
+    - slot: feminine plural emphatic
+      shape: CaCǝC-ātā
+      example: ʕalǝlātā
+
+- paradigm: Feminine -vCtā, -i- or -e-
+  reference: A.2b
+  pattern: qatil+t
+  lemma: kǝništā ‘congregation’
+  notes: In this type -i- and -e- are reduced in some nouns and kept in others, and one noun may do both in different states.
+  cells:
+    - slot: feminine singular absolute
+      shape: CiCC-ā
+      example: kinšā
+    - slot: feminine singular construct
+      shape: CiCC-at
+      example: kinšat
+    - slot: feminine singular emphatic
+      shape: CǝCiC-tā
+      example: kǝništā
+
+- paradigm: Feminine -vCtā, -i- or -e-
+  reference: A.2b
+  pattern: qatil+t
+  lemma: nǝbiltā ‘corpse’
+  notes: In this type -i- and -e- are reduced in some nouns and kept in others, and one noun may do both in different states.
+  cells:
+    - slot: feminine singular absolute
+      shape: CǝCiC-ā
+      example: nǝbilā
+    - slot: feminine singular construct
+      shape: CiCC-at
+      example: niblat
+    - slot: feminine singular emphatic
+      shape: CǝCiC-tā
+      example: nǝbiltā
+
+- paradigm: Feminine -vCtā, -i- or -e-
+  reference: A.2b
+  pattern: qatil+t
+  lemma: gǝzertā ‘decree’
+  notes: In this type -i- and -e- are reduced in some nouns and kept in others, and one noun may do both in different states.
+  cells:
+    - slot: feminine singular absolute
+      shape: CǝCeC-ā
+      example: gǝzerā
+    - slot: feminine singular construct
+      shape: CǝCeC-at
+      example: gǝzerat
+    - slot: feminine singular emphatic
+      shape: CǝCeC-tā
+      example: gǝzertā
+
+- paradigm: Feminine G active participle
+  reference: A.2b
+  pattern: qātil+t
+  lemma: kātebtā ‘writing’
+  notes: In this type the feminine of the G active participle.
+  cells:
+    - slot: feminine singular absolute
+      shape: CāCǝC-ā
+      example: kātǝbā
+    - slot: feminine singular construct
+      shape: CāCǝC-at
+      example: kātǝbat
+    - slot: feminine singular emphatic
+      shape: CāCeC-tā
+      example: kātebtā
+    - slot: feminine plural emphatic
+      shape: CāCǝC-ātā
+      example: kātǝbātā
+
+- paradigm: Feminine -vCtā, -ā- or -u-
+  reference: A.2c
+  pattern: qatāl+t / qatul+t
+  lemma: šǝyārtā ‘caravan’
+  notes: In this type -ā- and -u- are long, and are normally not reduced at all.
+  cells:
+    - slot: feminine singular absolute
+      shape: CǝCāC-ā
+      example: šǝyārā
+    - slot: feminine singular construct
+      shape: CǝCāC-at
+      example: šǝyārat
+    - slot: feminine singular emphatic
+      shape: CǝCāC-tā
+      example: šǝyārtā
+    - slot: feminine plural emphatic
+      shape: CǝCāC-ātā
+      example: šǝyārātā
+
+- paradigm: Feminine -vCtā, -ā- or -u-
+  reference: A.2c
+  pattern: qatāl+t / qatul+t
+  lemma: gǝnubtā ‘theft’
+  notes: In this type -ā- and -u- are long, and are normally not reduced at all.
+  cells:
+    - slot: feminine singular absolute
+      shape: CǝCuC-ā
+      example: gǝnubā
+    - slot: feminine singular construct
+      shape: CǝCuC-at
+      example: gǝnubat
+    - slot: feminine singular emphatic
+      shape: CǝCuC-tā
+      example: gǝnubtā
+    - slot: feminine plural emphatic
+      shape: CǝCuC-ātā
+      example: gǝnubātā
+
+- paradigm: Abstract nouns in -itā and -utā
+  reference: A.3a
+  pattern: qatl+it / qatl+ut
+  lemma: zarʕitā ‘descendant’
+  notes: In this type -it and -ut are suffixes forming abstract nouns, and the base keeps its own shape throughout.
+  cells:
+    - slot: feminine singular absolute
+      shape: CaCC-i
+      example: zarʕi
+    - slot: feminine singular construct
+      shape: CaCC-it
+      example: zarʕit
+    - slot: feminine singular emphatic
+      shape: CaCC-itā
+      example: zarʕitā
+    - slot: feminine plural emphatic
+      shape: CaCC-ǝyātā
+      example: zarʕǝyātā
+
+- paradigm: Abstract nouns in -itā and -utā
+  reference: A.3a
+  pattern: qatl+it / qatl+ut
+  lemma: malḵutā ‘kingdom’
+  notes: In this type -it and -ut are suffixes forming abstract nouns, and the base keeps its own shape throughout.
+  cells:
+    - slot: feminine singular absolute
+      shape: CaCC-u
+      example: malḵu
+    - slot: feminine singular construct
+      shape: CaCC-ut
+      example: malḵut
+    - slot: feminine singular emphatic
+      shape: CaCC-utā
+      example: malḵutā
+    - slot: feminine plural emphatic
+      shape: CaCC-ǝwātā
+      example: malḵǝwātā
+
+- paradigm: Nouns in -itā and -utā from III-w/y roots
+  reference: A.3b
+  pattern: qatl+ut
+  lemma: kǝsutā ‘garment’
+  notes: In this type here -it and -ut come from y or w as the third radical. Some follow the abstract nouns above; others keep traces of the older form, the radical reappearing in the absolute or the plural.
+  cells:
+    - slot: feminine singular absolute
+      shape: CǝC-u
+      example: kǝsu
+    - slot: feminine singular construct
+      shape: CǝC-ut
+      example: kǝsut
+    - slot: feminine singular emphatic
+      shape: CǝC-utā
+      example: kǝsutā
+
+- paradigm: Nouns in -itā and -utā from III-w/y roots
+  reference: A.3b
+  pattern: qatl+ut
+  lemma: rǝʕutā ‘will, desire’
+  notes: In this type here -it and -ut come from y or w as the third radical. Some follow the abstract nouns above; others keep traces of the older form, the radical reappearing in the absolute or the plural.
+  cells:
+    - slot: feminine singular absolute
+      shape: CaCC-ā
+      example: raʕwā
+    - slot: feminine singular construct
+      shape: CǝC-ut
+      example: rǝʕut
+    - slot: feminine singular emphatic
+      shape: CǝC-utā
+      example: rǝʕutā
+    - slot: feminine plural emphatic
+      shape: CaCC-ātā
+      example: raʕwātā
+
+- paradigm: Nouns in -itā and -utā from III-w/y roots
+  reference: A.3b
+  pattern: qatl+ut
+  lemma: ʕǝritā ‘nakedness’
+  notes: In this type here -it and -ut come from y or w as the third radical. Some follow the abstract nouns above; others keep traces of the older form, the radical reappearing in the absolute or the plural.
+  cells:
+    - slot: feminine singular absolute
+      shape: CaCC-ā
+      example: ʕaryā
+    - slot: feminine singular construct
+      shape: CaCC-at
+      example: ʕaryat
+    - slot: feminine singular emphatic
+      shape: CǝC-itā/CaCC-ǝtā
+      example: ʕǝritā/ʕaryǝtā
+
+- paradigm: Nouns in -itā and -utā from III-w/y roots
+  reference: A.3b
+  pattern: qatl+ut
+  lemma: ṣǝlotā ‘prayer’
+  notes: In this type here -it and -ut come from y or w as the third radical. Some follow the abstract nouns above; others keep traces of the older form, the radical reappearing in the absolute or the plural.
+  cells:
+    - slot: feminine singular absolute
+      shape: CǝC-o
+      example: ṣǝlo
+    - slot: feminine singular construct
+      shape: CǝC-ot
+      example: ṣǝlot
+    - slot: feminine singular emphatic
+      shape: CǝC-otā
+      example: ṣǝlotā
+    - slot: feminine plural emphatic
+      shape: CaCC-ātā
+      example: ṣalwātā
+
+- paradigm: Noun with final -y
+  reference: A.4b
+  pattern: qatl+y
+  lemma: gadyā ‘kid’
+  notes: "The third radical is y or w: it surfaces before a vowel and is lost before a consonant, where a long vowel stands instead."
+  cells:
+    - slot: masculine singular absolute, masculine singular construct
+      shape: CǝC-i
+      example: gǝdi
+    - slot: masculine singular emphatic
+      shape: CaCC-ā
+      example: gadyā
+    - slot: masculine plural absolute
+      shape: CaCC-in/CǝC-in
+      example: gadyin/gǝdin
+    - slot: masculine plural construct
+      shape: CaCC-e/CǝC-e
+      example: gadye/gǝde
+    - slot: masculine plural emphatic
+      shape: CǝC-ayyā
+      example: gǝdayyā
+
+- paradigm: Noun with final -y
+  reference: A.4b
+  pattern: qatl+y
+  lemma: ʔaryā ‘lion’
+  notes: "The third radical is y or w: it surfaces before a vowel and is lost before a consonant, where a long vowel stands instead."
+  cells:
+    - slot: masculine singular absolute, masculine singular construct
+      shape: CǝC-i
+      example: ʔǝri
+    - slot: masculine singular emphatic
+      shape: CaCC-ā
+      example: ʔaryā
+    - slot: masculine plural absolute
+      shape: CaCC-āwān
+      example: ʔaryāwān
+    - slot: masculine plural construct
+      shape: CaCC-āwāt
+      example: ʔaryāwāt
+    - slot: masculine plural emphatic
+      shape: CaCC-āwātā
+      example: ʔaryāwātā
+
+- paradigm: Noun with final -w
+  reference: A.4b
+  pattern: qatl+w
+  lemma: ḥadwā ‘joy’
+  notes: "The third radical is y or w: it surfaces before a vowel and is lost before a consonant, where a long vowel stands instead."
+  cells:
+    - slot: masculine singular absolute, masculine singular construct
+      shape: CeC-u
+      example: ḥedu
+    - slot: masculine singular emphatic
+      shape: CaCC-ā
+      example: ḥadwā
+
+- paradigm: Noun with final -w
+  reference: A.4b
+  pattern: qatl+w
+  lemma: ḥizwā ‘appearance’
+  notes: "The third radical is y or w: it surfaces before a vowel and is lost before a consonant, where a long vowel stands instead."
+  cells:
+    - slot: masculine singular absolute, masculine singular construct
+      shape: CeC-u
+      example: ḥezu
+    - slot: masculine singular emphatic
+      shape: CiCC-ā
+      example: ḥizwā
+    - slot: masculine plural absolute
+      shape: CiCC-in
+      example: ḥizwin
+    - slot: masculine plural emphatic
+      shape: CiCC-ayyā
+      example: ḥizwayyā

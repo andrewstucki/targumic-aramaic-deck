@@ -8,3 +8,8 @@ onqelos-sheet.svg
 SILEOT.ttf
 EzraSIL-Licenses.txt
 vocab-proof.pdf
+# The textbook and the lesson text pasted out of it: the source the yaml was
+# built from, not redistributable, and deliberately not checked in.
+*.pdf
+*.txt
+!requirements.txt

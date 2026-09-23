@@ -1,0 +1,358 @@
+# The pronominal suffixes, which attach to both nouns and verbs and so
+# belong to neither paradigm appendix. Read by scripts/paradigms.py in the
+# same format as nouns.yaml and verbs.yaml; reference is the lesson section.
+
+- paradigm: Pronominal suffixes on a singular noun
+  reference: "6.1"
+  pattern: qatl-
+  lemma: malkā ‘king’ with suffixes
+  notes: "The suffixes of §3.1 attach straight to a noun. The stem is what is left when the -ā of the lexical form is dropped: malkā gives malk-. Before -kon, -ken, -hon and -hen a stem ending in two consonants, or in a full vowel and one consonant, inserts ǝ — betā gives bet-ǝkon — while a stem ending in -ǝC- restores a full vowel there, almost always a: hekǝlā gives hekal-kon. The book marks that k as spirantized, hekal-ḵon; this deck marks no spirantization anywhere."
+  cells:
+    - slot: 1cs
+      shape: CaCC-i
+      example: מַלכִי malki
+    - slot: 2ms
+      shape: CaCC-āk
+      example: מַלכָך malkāk
+    - slot: 2fs
+      shape: CaCC-ik
+      example: מַלכִיך malkik
+    - slot: 3ms
+      shape: CaCC-eh
+      example: מַלכֵיה malkeh
+    - slot: 3fs
+      shape: CaCC-ah
+      example: מַלכַה malkah
+    - slot: 1cp
+      shape: CaCC-anā
+      example: מַלכַנָא malkánā
+    - slot: 2mp
+      shape: CaCC-ǝkon
+      example: מַלכְכֹון malkǝkon
+    - slot: 2fp
+      shape: CaCC-ǝken
+      example: מַלכְכֵין malkǝken
+    - slot: 3mp
+      shape: CaCC-ǝhon
+      example: מַלכְהֹון malkǝhon
+    - slot: 3fp
+      shape: CaCC-ǝhen
+      example: מַלכְהֵין malkǝhen
+
+- paradigm: Pronominal suffixes on a feminine noun in -ǝtā
+  reference: "6.1"
+  pattern: qatlǝt-
+  lemma: malkǝtā ‘queen’ with suffixes
+  notes: The suffixes of §3.1 attach straight to a noun. A feminine noun in -ǝtā keeps its ǝ before the ordinary suffixes and restores a before -kon, -ken, -hon and -hen, where the vowel is invariably a.
+  cells:
+    - slot: 1cs
+      shape: CaCCǝt-i
+      example: מַלכְתִי malkǝti
+    - slot: 2ms
+      shape: CaCCǝt-āk
+      example: מַלכְתָך malkǝtāk
+    - slot: 2mp
+      shape: CaCCat-kon
+      example: מַלכַתכֹון malkatkon
+
+- paradigm: Pronominal suffixes on a plural in -ātā
+  reference: "8.2"
+  pattern: qǝtāl-
+  lemma: bǝnātā ‘daughters’ with suffixes
+  notes: A plural in -ātā drops its final -ā and takes the same suffixes as a singular noun. The 1cs, 3ms and 3fs also turn up with the plural-base suffixes instead, which is what the three occasional forms here are.
+  cells:
+    - slot: 1cs
+      shape: CǝCāC-i
+      example: בְנָתִי bǝnāti
+    - slot: 2ms
+      shape: CǝCāC-āk
+      example: בְנָתָך bǝnātāk
+    - slot: 2fs
+      shape: CǝCāC-ik
+      example: בְנָתִיך bǝnātik
+    - slot: 3ms
+      shape: CǝCāC-eh
+      example: בְנָתֵיה bǝnāteh
+    - slot: 3fs
+      shape: CǝCāC-ah
+      example: בְנָתַה bǝnātah
+    - slot: 1cp
+      shape: CǝCāC-anā
+      example: בְנָתַנָא bǝnātánā
+    - slot: 2mp
+      shape: CǝCāC-ǝkon
+      example: בְנָתְכֹון bǝnātǝkon
+    - slot: 2fp
+      shape: CǝCāC-ǝken
+      example: בְנָתְכֵין bǝnātǝken
+    - slot: 3mp
+      shape: CǝCāC-ǝhon
+      example: בְנָתְהֹון bǝnātǝhon
+    - slot: 3fp
+      shape: CǝCāC-ǝhen
+      example: בְנָתְהֵין bǝnātǝhen
+    - slot: 1cs, occasional
+      shape: CǝCāC-ay
+      example: בְנָתַי bǝnātay
+    - slot: 3ms, occasional
+      shape: CǝCāC-ohi
+      example: בְנָתֹוהִי bǝnātóhi
+    - slot: 3fs, occasional
+      shape: CǝCāC-ahā
+      example: בְנָתַהָא bǝnātáhā
+
+- paradigm: Pronominal suffixes on a plural in -ayyā
+  reference: "8.2"
+  pattern: qǝt-
+  lemma: bǝnayyā ‘sons’ with suffixes
+  notes: "A plural in -ayyā drops the whole -ayyā and takes the suffix set the prepositions use. The 2ms is -āk with ā where the 2fs is -ak, or -áki, so a noun can read the same in the singular and the plural in the 2ms and the 1cp: pitgāmāk is both your word and your words."
+  cells:
+    - slot: 1cs
+      shape: CǝC-ay
+      example: בְנַי bǝnay
+    - slot: 2ms
+      shape: CǝC-āk
+      example: בְנָך bǝnāk
+    - slot: 2fs
+      shape: CǝC-ak
+      example: בְנַך bǝnak
+    - slot: 2fs, longer variant
+      shape: CǝC-aki
+      example: בְנַכִי bǝnáki
+    - slot: 3ms
+      shape: CǝC-ohi
+      example: בְנֹוהִי bǝnóhi
+    - slot: 3fs
+      shape: CǝC-ahā
+      example: בְנַהָא bǝnáhā
+    - slot: 1cp
+      shape: CǝC-anā
+      example: בְנַנָא bǝnánā
+    - slot: 2mp
+      shape: CǝC-ekon
+      example: בְנֵיכֹון bǝnekon
+    - slot: 2fp
+      shape: CǝC-eken
+      example: בְנֵיכֵין bǝneken
+    - slot: 3mp
+      shape: CǝC-ehon
+      example: בְנֵיהֹון bǝnehon
+    - slot: 3fp
+      shape: CǝC-ehen
+      example: בְנֵיהֵין bǝnehen
+
+- paradigm: Perfect 3ms with object suffixes
+  reference: "24.1"
+  pattern: qǝtal
+  lemma: kǝtab, 3ms perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 3ms kǝtab."
+  cells:
+    - slot: 1cs
+      shape: CaCC-ani
+      example: כַתבַנִי katbáni
+    - slot: 2ms
+      shape: CaCC-āk
+      example: כַתבָך katbāk
+    - slot: 2fs
+      shape: CaCC-ik
+      example: כַתבִיך katbik
+    - slot: 3ms
+      shape: CaCC-eh
+      example: כַתבֵיה katbeh
+    - slot: 3fs
+      shape: CaCC-ah
+      example: כַתבַה katbah
+    - slot: 1cp
+      shape: CaCC-anā
+      example: כַתבַנָא katbánā
+    - slot: 3mp
+      shape: CǝCaC-innun
+      example: כְתַבִינֻון kǝtabinnun
+    - slot: 3fp
+      shape: CǝCaC-innin
+      example: כְתַבִינִין kǝtabinnin
+
+- paradigm: Perfect 3fs with object suffixes
+  reference: "24.1"
+  pattern: qǝtalat
+  lemma: kǝtabat, 3fs perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 3fs kǝtabat."
+  cells:
+    - slot: 1cs
+      shape: CǝCaCat-ni
+      example: כְתַבַתנִי kǝtabátni
+    - slot: 2ms
+      shape: CǝCaCt-āk
+      example: כְתַבתָך kǝtabtāk
+    - slot: 2fs
+      shape: CǝCaCt-ik
+      example: כְתַבתִיך kǝtabtik
+    - slot: 3ms
+      shape: CǝCaCt-eh
+      example: כְתַבתֵיה kǝtabteh
+    - slot: 3fs
+      shape: CǝCaCt-ah
+      example: כְתַבתַה kǝtabtah
+    - slot: 1cp
+      shape: CǝCaCat-nā
+      example: כְתַבַתנָא kǝtabátnā
+    - slot: 3mp
+      shape: CǝCaCat-nun
+      example: כְתַבַתנֻון kǝtabatnun
+
+- paradigm: Perfect 2ms with object suffixes
+  reference: "24.1"
+  pattern: qǝtalt
+  lemma: kǝtabt, 2ms perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 2ms kǝtabt."
+  cells:
+    - slot: 1cs
+      shape: CǝCaCt-ani
+      example: כְתַבתַנִי kǝtabtáni
+    - slot: 3ms
+      shape: CǝCaCt-āhi
+      example: כְתַבתָהִי kǝtabtā́hi
+    - slot: 3fs
+      shape: CǝCaCt-ah
+      example: כְתַבתַה kǝtabtah
+    - slot: 1cp
+      shape: CǝCaCt-anā
+      example: כְתַבתַנָא kǝtabtánā
+    - slot: 3mp
+      shape: CǝCaCt-innun
+      example: כְתַבתִינֻון kǝtabtinnun
+
+- paradigm: Perfect 2fs with object suffixes
+  reference: "24.1"
+  pattern: qǝtalt
+  lemma: kǝtabt, 2fs perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 2fs kǝtabt."
+  cells:
+    - slot: 1cs
+      shape: CǝCaCt-ini
+      example: כְתַבתִינִי kǝtabtíni
+    - slot: 3ms
+      shape: CǝCaCt-ihi
+      example: כְתַבתִיהִי kǝtabtíhi
+    - slot: 3fs
+      shape: CǝCaCt-ihā
+      example: כְתַבתִיהָא kǝtabtíhā
+    - slot: 1cp
+      shape: CǝCaCt-inā
+      example: כְתַבתִינָא kǝtabtínā
+    - slot: 3mp
+      shape: CǝCaCt-innun
+      example: כְתַבתִינֻון kǝtabtinnun
+
+- paradigm: Perfect 1cs with object suffixes
+  reference: "24.1"
+  pattern: qǝtalit
+  lemma: kǝtabit, 1cs perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 1cs kǝtabit."
+  cells:
+    - slot: 2ms
+      shape: CǝCaCt-āk
+      example: כְתַבתָך kǝtabtāk
+    - slot: 2fs
+      shape: CǝCaCt-ik
+      example: כְתַבתִיך kǝtabtik
+    - slot: 3ms
+      shape: CǝCaCt-eh
+      example: כְתַבתֵיה kǝtabteh
+    - slot: 3fs
+      shape: CǝCaCt-ah
+      example: כְתַבתַה kǝtabtah
+    - slot: 3mp
+      shape: CǝCaCt-innun
+      example: כְתַבתִינֻון kǝtabtinnun
+
+- paradigm: Perfect 3mp with object suffixes
+  reference: "24.1"
+  pattern: qǝtalu
+  lemma: kǝtabu, 3mp perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 3mp kǝtabu."
+  cells:
+    - slot: 1cs
+      shape: CaCC-uni
+      example: כַתבֻונִי katbúni
+    - slot: 2ms
+      shape: CaCC-uk
+      example: כַתבֻוך katbuk
+    - slot: 3ms
+      shape: CaCC-uhi
+      example: כַתבֻוהִי katbúhi
+    - slot: 3fs
+      shape: CaCC-uhā
+      example: כַתבֻוהָא katbúhā
+    - slot: 1cp
+      shape: CaCC-unā
+      example: כַתבֻונָא katbúnā
+    - slot: 3mp
+      shape: CǝCaCu-nnun
+      example: כְתַבֻונֻון kǝtabunnun
+
+- paradigm: Perfect 3fp with object suffixes
+  reference: "24.1"
+  pattern: qǝtalā
+  lemma: kǝtabā, 3fp perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 3fp kǝtabā."
+  cells:
+    - slot: 1cs
+      shape: CaCC-ani
+      example: כַתבַנִי katbáni
+    - slot: 2ms
+      shape: CaCC-āk
+      example: כַתבָך katbāk
+    - slot: 3ms
+      shape: CaCC-āhi
+      example: כַתבָהִי katbā́hi
+    - slot: 3fs
+      shape: CaCC-ah
+      example: כַתבַה katbah
+    - slot: 1cp
+      shape: CaCC-anā
+      example: כַתבַנָא katbánā
+    - slot: 3mp
+      shape: CaCC-ānnun
+      example: כַתבָנֻון katbānnun
+
+- paradigm: Perfect 2mp with object suffixes
+  reference: "24.1"
+  pattern: qǝtaltun
+  lemma: kǝtabtun, 2mp perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 2mp kǝtabtun."
+  cells:
+    - slot: 1cs
+      shape: CǝCaCt-uni
+      example: כְתַבתֻונִי kǝtabtúni
+    - slot: 3ms
+      shape: CǝCaCt-uhi
+      example: כְתַבתֻוהִי kǝtabtúhi
+    - slot: 3fs
+      shape: CǝCaCt-uhā
+      example: כְתַבתֻוהָא kǝtabtúhā
+    - slot: 1cp
+      shape: CǝCaCt-unā
+      example: כְתַבתֻונָא kǝtabtúnā
+    - slot: 3mp
+      shape: CǝCaCtu-nnun
+      example: כְתַבתֻונֻון kǝtabtunnun
+
+- paradigm: Perfect 1cp with object suffixes
+  reference: "24.1"
+  pattern: qǝtalnā
+  lemma: kǝtabnā, 1cp perfect with object suffixes
+  notes: "A pronominal direct object may be suffixed to the verb instead of standing after yāt. Before a suffix beginning with a vowel the stem reduces: kǝtab gives katb-. The 3mp and 3fp suffixes are the exception, keeping the unreduced stem and doubling their n without writing it, as kǝtab-innun. The object is added here to the 1cp kǝtabnā."
+  cells:
+    - slot: 2ms
+      shape: CǝCaCn-āk
+      example: כְתַבנָך kǝtabnāk
+    - slot: 3ms
+      shape: CǝCaCn-āhi
+      example: כְתַבנָהִי kǝtabnā́hi
+    - slot: 3fs
+      shape: CǝCaCn-ah
+      example: כְתַבנַה kǝtabnah
+    - slot: 3mp
+      shape: CǝCaCnā-nnun
+      example: כְתַבנָנֻון kǝtabnānnun

@@ -2,7 +2,7 @@
 #
 #   make           the font and the deck
 #   make proof     the vocabulary as a PDF to read or check
-#   make check     verify the glosses and the spellings
+#   make check     verify the glosses, the spellings and the paradigms
 #   make clean     drop everything generated (keeps .venv and the base font)
 
 # Dependencies install into a local .venv, created on demand. Override
@@ -17,7 +17,7 @@ endif
 FONT  := Onqelos-Regular.ttf
 DECK  := targumic-aramaic.apkg
 PROOF := vocab-proof.pdf
-VOCAB := vocabulary.yaml
+VOCAB := vocabulary.yaml nouns.yaml verbs.yaml suffixes.yaml
 
 # Written by scripts/build_font.py alongside the .ttf.
 FONT_ARTIFACTS := $(FONT) Onqelos-Regular.woff2 onqelos.fea onqelos-sheet.svg
@@ -47,7 +47,8 @@ deck: $(DECK)
 
 # The deck sets its cards in the font and ships it inside the .apkg, so the
 # font has to exist first.
-$(DECK): scripts/build_deck.py scripts/vocab.py $(FONT) $(VOCAB) $(DEPS)
+$(DECK): scripts/build_deck.py scripts/vocab.py scripts/paradigms.py \
+        $(FONT) $(VOCAB) $(DEPS)
 	$(PYTHON) scripts/build_deck.py
 
 proof: $(PROOF)
@@ -72,7 +73,7 @@ help:
 	@echo 'make font      $(FONT) (+ woff2, fea, coverage svg)'
 	@echo 'make deck      $(DECK)'
 	@echo 'make proof     $(PROOF)'
-	@echo 'make check     verify the glosses and the spellings'
+	@echo 'make check     verify the glosses, spellings and paradigms'
 	@echo 'make venv      just the .venv, from requirements.txt'
 	@echo 'make clean     remove generated files'
 	@echo 'make distclean also remove the downloaded base font'
