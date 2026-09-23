@@ -28,11 +28,14 @@ import vocab
 ROOT = Path(__file__).resolve().parent.parent
 
 # Shipped inside the deck, so cards render on a device without it installed.
-# The leading underscore stops Anki's "check media" offering to delete it as
-# unused, since only the @font-face rule names it. TTF over the smaller woff2
-# because every Anki client handles TTF and 14KB is not worth the risk.
-FONT_SRC = ROOT / "Onqelos-Regular.ttf"
-FONT_MEDIA = "_Onqelos-Regular.ttf"
+# The leading underscore stops Anki's "check media" offering to delete these
+# as unused, since only the @font-face rule names them. Both formats ship and
+# both are named as sources: desktop Anki takes either, but iOS WebKit is
+# stricter about what it will accept, and giving it a second format to try
+# costs 6KB. The woff2 goes first so that clients happy with it fetch the
+# smaller file.
+FONTS = ((ROOT / "Onqelos-Regular.woff2", "_Onqelos-Regular.woff2"),
+         (ROOT / "Onqelos-Regular.ttf", "_Onqelos-Regular.ttf"))
 
 # Stable ids so re-importing an updated deck updates existing cards
 # instead of creating duplicates.
@@ -74,10 +77,38 @@ def subdeck(group):
         raise ValueError(f"no mood in {group['paradigm']!r}")
     return f"Verbs::{found[1]} ({found[2]})::{mood}"
 
+# Anki ships 20 new cards a day, which would take months to get through 2548
+# of them. The review limit is raised with it because in current Anki it caps
+# the day's cards rather than its reviews alone, so leaving it at genanki's
+# 100 would hold the new cards back to that same 100.
+NEW_PER_DAY = 100
+REV_PER_DAY = 9999
+
+
+def set_daily_limits():
+    """Raise the daily limits in the deck options genanki writes.
+
+    genanki hard-codes them into the collection it builds, so they are edited
+    on the way past. The review limit goes first: raising the new limit to 100
+    would otherwise make the review limit's own 100 ambiguous. Each edit is
+    asserted, so a genanki upgrade that moves them fails here rather than
+    quietly shipping the defaults.
+    """
+    import genanki.package
+    col = genanki.package.APKG_COL
+    for old, new in (('"perDay": 100', f'"perDay": {REV_PER_DAY}'),
+                     ('"perDay": 20', f'"perDay": {NEW_PER_DAY}')):
+        assert col.count(old) == 1, f"genanki deck options changed: {old}"
+        col = col.replace(old, new)
+    genanki.package.APKG_COL = col
+
+
 CSS = """
 @font-face {
   font-family: "Onqelos";
-  src: url("_Onqelos-Regular.ttf");
+  src: url("_Onqelos-Regular.woff2") format("woff2"),
+       url("_Onqelos-Regular.ttf") format("truetype");
+  font-display: block;
 }
 
 /* The word set in the embedded font: Tiberian codepoints in, Babylonian
@@ -481,9 +512,11 @@ def paradigm_decks():
 
 def main():
     out_path = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "targumic-aramaic.apkg"
-    if not FONT_SRC.exists():
-        raise SystemExit(
-            f"{FONT_SRC} is missing; run python3 scripts/build_font.py")
+    for source, _ in FONTS:
+        if not source.exists():
+            raise SystemExit(
+                f"{source} is missing; run python3 scripts/build_font.py")
+    set_daily_limits()
 
     decks, total = [], 0
 
@@ -516,10 +549,13 @@ def main():
     # genanki names media by basename, so the file has to exist under the name
     # @font-face asks for. Staged in a temp dir to leave nothing behind.
     with tempfile.TemporaryDirectory() as staging:
-        staged = Path(staging) / FONT_MEDIA
-        shutil.copyfile(FONT_SRC, staged)
+        staged = []
+        for source, name in FONTS:
+            path = Path(staging) / name
+            shutil.copyfile(source, path)
+            staged.append(str(path))
         package = genanki.Package(decks)
-        package.media_files = [str(staged)]
+        package.media_files = staged
         package.write_to_file(out_path)
 
     cards = total * len(MODEL.templates) + cells * len(PARADIGM_MODEL.templates)

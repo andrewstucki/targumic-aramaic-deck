@@ -131,6 +131,15 @@ Note that drilling one leaf tells you most of the answer — in
 `Verbs::D (Pael)::perfect` every card answers `D perfect` and something. The
 parent decks are where the recall is real.
 
+The package sets its own daily limits — 100 new cards and an unlimited review
+count, against Anki's 20 and 100 — since 20 a day would take months to reach
+the end of 2548 cards. The review limit is raised alongside it because current
+Anki treats it as a cap on the day's cards rather than on its reviews alone,
+so 100 there would have held the new cards to the same 100. Note that deck
+options travel with the file only for decks the import has to create: a deck
+you already have keeps whatever preset you have given it, so on an existing
+collection these are a matter for Deck Options rather than the build.
+
 Each paradigm note is also tagged with where it sits: `paradigm::verbs`, and
 for a verb `stem::d-pael` and `mood::perfect` as two separate dimensions. The
 deck tree has to nest in one order, stem then mood; tags do not, so
@@ -248,3 +257,12 @@ writes SIL's copyright notice and the license reference into the font's own
 name table, which is where §2 accepts them, and keeps the full text alongside
 as `EzraSIL-Licenses.txt`. `targumic-aramaic.apkg` embeds the font, so that
 applies to the deck as well.
+
+The package ships both the TTF and the WOFF2 and names them both as `src`, in
+that order of preference. Desktop Anki takes either; iOS WebKit is stricter
+about what it will load, and a second format to fall back on costs 6KB. If the
+pointing shows in a substitute font on a device, the font is not reaching it —
+the file is valid (its checksums, `cmap` and name table all check out), so the
+cause is on the delivery side: run Tools → Check Media on the desktop to
+confirm neither `_Onqelos-Regular.*` is missing, then let a media sync finish,
+which travels separately from the collection and can lag well behind it.
