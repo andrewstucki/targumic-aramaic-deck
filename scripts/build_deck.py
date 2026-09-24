@@ -118,31 +118,80 @@ CSS = """
    off a phone screen; it inherits the card color, so night mode needs no
    special handling the way an image did. */
 .aramaic {
+  font-size: 2.75em;
   font-family: "Onqelos", serif;
   direction: rtl;
   unicode-bidi: isolate;
-  font-size: 64px;
-  font-size: clamp(38px, 12vw, 76px);
   line-height: 1.5;
   margin: 30px auto 0;
 }
 
+/* The one size the card is built on. Everything else is an em multiple of
+   it, so a single number moves the whole layout.
+
+   Phones are told apart by the class Anki puts on the document, which is
+   what the manual documents for this: .mobile, with .iphone, .ipad and
+   .android beside it. Those sit on the <html> element while .card sits on
+   the <body>, so the selector has to be a descendant one -- .card.mobile
+   would never match. It is the class and not a width that decides, because
+   a narrow desktop window is not a phone and should not be treated as one.
+
+   Width queries do work here: AnkiMobile's wrapper carries
+   <meta name="viewport" content="width=device-width;">, so the viewport is
+   the screen. One is used below, but only to tell a tablet from a phone --
+   Anki calls both of them .mobile. */
 .card {
   font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  font-size: 20px;
+  /* WebKit's own text autosizing, off. It would inflate text on a small
+     screen by a factor of its own choosing -- not uniform, lifting small
+     text more than large -- and the phone size below is set to fill the
+     screen to within a small margin of where the longest word would be cut
+     off. That margin only holds if the size is the one that was asked for,
+     so the multiplier has to go. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: clamp(16px, 4.6vw, 24px);
   text-align: center;
   color: #1a1a1a;
   background: #fbfaf7;
-  padding: 8px 4px;
+  padding: 12px 14px;
+}
+
+/* THE MOBILE KNOB. Written both ways on purpose: the manual's own examples
+   use the platform class as an ancestor (".mobile .example") and on the card
+   element itself (".card.nightMode"), and which it is has moved between
+   versions. Only one of the two can match, and it costs nothing to have
+   both. */
+.card.mobile, .mobile .card {
+  /* 6vw fills the screen to about 91% of the width the longest single word
+     needs. The ceiling on that is 6.3vw, worked out from the font metrics:
+     across every screen width the binding item is the same one, the widest
+     vocabulary entry, and it wants 5.09px of width for every px of font.
+     Anything past 6.3vw cuts it off. */
+  font-size: clamp(18px, 6vw, 26px);
+  padding: 10px 12px;
+}
+
+/* A tablet is .mobile as well, and 13px is meant for a phone. This is what
+   a width query is actually good for here. */
+@media (min-width: 640px) {
+  .card.mobile, .mobile .card {
+    /* A tablet is .mobile as well, and the ceiling above is a phone's: on a
+       1024px screen it leaves the type proportionally small. The coefficient
+       drops because there is far more width to multiply, and the ceiling
+       rises to a little above the desktop's, a tablet being held closer. */
+    font-size: clamp(20px, 3.2vw, 24px);
+    padding: 12px 14px;
+  }
 }
 .night_mode .card, .nightMode .card { color: #e8e6e3; background: #2b2b2b; }
 
 /* Vocalization, tucked in the corner for reference. */
 .vocalization {
+  font-size: 0.85em;
   position: absolute;
   top: 10px;
   right: 14px;
-  font-size: 15px;
   letter-spacing: .02em;
   color: #8a8579;
   font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Times New Roman", serif;
@@ -157,19 +206,19 @@ hr#answer {
 }
 .night_mode hr#answer, .nightMode hr#answer { background: #4a4a4a; }
 
-.gloss { font-size: 26px; line-height: 1.35; }
+.gloss { font-size: 1.3em; line-height: 1.35; }
 .pos {
+  font-size: 0.85em;
   margin-top: 8px;
-  font-size: 15px;
   font-style: italic;
   letter-spacing: .06em;
   text-transform: lowercase;
   color: #8a8579;
 }
 .notes {
+  font-size: 0.92em;
   margin: 16px auto 4px;
   max-width: 32em;
-  font-size: 16px;
   line-height: 1.45;
   color: #5c5a54;
 }
@@ -179,10 +228,9 @@ hr#answer {
    because it can run to a clause or two, and it is the prompt rather than the
    reward. */
 .prompt {
+  font-size: 1.45em;
   margin: 26px auto 0;
   max-width: 26em;
-  font-size: 30px;
-  font-size: clamp(22px, 6vw, 30px);
   line-height: 1.3;
 }
 
@@ -190,10 +238,10 @@ hr#answer {
    card gives the transliteration. A meaning like "darkness" is answered by a
    different word in different chapters, so the recall card has to say which. */
 .chapter {
+  font-size: 0.8em;
   position: absolute;
   top: 10px;
   left: 14px;
-  font-size: 13px;
   letter-spacing: .04em;
   color: #a9a49a;
 }
@@ -202,8 +250,8 @@ hr#answer {
 /* On the recall card the transliteration is part of the answer, so it sits
    under the word instead of in the corner. */
 .answer-vocalization {
+  font-size: 1.0em;
   margin-top: 10px;
-  font-size: 19px;
   letter-spacing: .02em;
   color: #6e6a60;
   font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Times New Roman", serif;
@@ -216,30 +264,28 @@ hr#answer {
    monospaced so the consonant slots line up between one shape and the next,
    which is most of the point of writing them this way. */
 .shape {
+  font-size: 1.55em;
   margin: 26px auto 0;
   font-family: "SF Mono", Menlo, Consolas, monospace;
-  font-size: 40px;
-  font-size: clamp(26px, 8vw, 40px);
   letter-spacing: .02em;
 }
 
 /* The grammatical slot a shape fills, or the slots it fills when it is
    syncretic. */
 .slot {
+  font-size: 1.15em;
   margin: 26px auto 0;
   max-width: 24em;
-  font-size: 26px;
-  font-size: clamp(20px, 5.5vw, 26px);
   line-height: 1.35;
 }
 
 /* Which table this is, in the corner the vocabulary card gives the chapter. */
 .paradigm {
+  font-size: 0.8em;
   position: absolute;
   top: 10px;
   left: 14px;
   right: 14px;
-  font-size: 13px;
   letter-spacing: .04em;
   color: #a9a49a;
 }
@@ -248,8 +294,8 @@ hr#answer {
 /* The real word the shape was taken from: the pointed Aramaic and then its
    reading, or for the noun tables the reading alone. */
 .example {
+  font-size: 1.0em;
   margin-top: 14px;
-  font-size: 20px;
   color: #6e6a60;
   font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Times New Roman", serif;
 }
@@ -263,24 +309,66 @@ hr#answer {
    Sized to sit level with the shape above it, which is smaller in points than
    it looks because Hebrew letterforms are shorter than Latin ones. */
 .example .aramaic {
+  font-size: 2.0em;
   display: block;
-  font-size: 46px;
-  font-size: clamp(30px, 11vw, 48px);
   line-height: 1.4;
   margin: 0;
 }
 
 .example .reading {
+  font-size: 0.92em;
   display: block;
   margin-top: 2px;
-  font-size: 18px;
   letter-spacing: .01em;
 }
+
+/* Nothing may push the card sideways. Only bites on a genuine overflow, so
+   it is a backstop to the sizes below rather than part of the layout. */
+.shape, .slot, .prompt, .gloss, .example, .notes,
+.paradigm, .vocalization, .chapter, .answer-vocalization {
+  overflow-wrap: break-word;
+}
+
+/* The pointed word included. Breaking it mid-word strands a letter with its
+   marks on the next line, which is ugly, but forbidding the break was worse:
+   with nowhere to break it ran off both edges of the screen and the last
+   letter was simply lost. A wrapped word can still be read. */
+.aramaic { overflow-wrap: break-word; }
+
+/* A cell can hold more than one spelling or pattern. They are alternatives,
+   not a phrase, so each gets its own line: run together they make the
+   longest cell 26 characters wide, which no size that keeps the pointing
+   legible will fit on a phone, and stacked the widest is 14. Being one
+   alternative each, they are then short enough to sit on one line at the
+   sizes below without being forbidden to wrap. Forbidding it was worse than
+   the problem: one item too wide to fit could not break, so the page grew a
+   horizontal scroll, which threw the whole card off centre and ran it past
+   the edge. Wrapping is the graceful failure; overflow is not. */
+.variant { display: block; }
+
+/* On a phone the corner labels flow with the document instead. Pinned, they
+   overlap the word beneath them the moment they wrap, which a long paradigm
+   title does at that width. */
+.card.mobile .vocalization, .mobile .vocalization,
+.card.mobile .chapter, .mobile .chapter,
+.card.mobile .paradigm, .mobile .paradigm {
+  position: static;
+  margin: 0 auto 4px;
+  text-align: center;
+}
+
 """
 
-FRONT = """<div class="aramaic">{{Aramaic}}</div>"""
+# Anki wraps the card HTML in a body of its own, and if that happens inside
+# an iframe the outer viewport declaration does not reach it. A meta in the
+# body is not valid HTML, but WebKit honours one wherever it finds it, and a
+# card template has nowhere else to put it. Without it a width query has no
+# screen width to match against.
+VIEWPORT = ('<meta name="viewport" '
+            'content="width=device-width, initial-scale=1">\n')
+FRONT = VIEWPORT + """<div class="aramaic">{{Aramaic}}</div>"""
 
-BACK = """<div class="vocalization">{{Vocalization}}</div>
+BACK = VIEWPORT + """<div class="vocalization">{{Vocalization}}</div>
 <div class="aramaic">{{Aramaic}}</div>
 
 <hr id="answer">
@@ -294,11 +382,11 @@ BACK = """<div class="vocalization">{{Vocalization}}</div>
 # comes along to narrow it down, but the vocalization and the notes are held
 # back — the vocalization is the answer, and the notes quote forms and idioms
 # that would give it away.
-REVERSE_FRONT = """<div class="chapter">{{Chapter}}</div>
+REVERSE_FRONT = VIEWPORT + """<div class="chapter">{{Chapter}}</div>
 <div class="prompt">{{Gloss}}</div>
 {{#POS}}<div class="pos">{{POS}}</div>{{/POS}}"""
 
-REVERSE_BACK = """<div class="chapter">{{Chapter}}</div>
+REVERSE_BACK = VIEWPORT + """<div class="chapter">{{Chapter}}</div>
 <div class="prompt">{{Gloss}}</div>
 {{#POS}}<div class="pos">{{POS}}</div>{{/POS}}
 
@@ -339,10 +427,10 @@ MODEL = genanki.Model(
 # waits on the back, where knowing whether a verb was sound or hollow is
 # worth having. The other direction has to keep it in front, since a name
 # like "G perfect 3ms" belongs to all seven tables at once.
-PARADIGM_FRONT = """<div class="shape">{{Shape}}</div>
+PARADIGM_FRONT = VIEWPORT + """<div class="shape">{{Shape}}</div>
 <div class="example">{{Example}}</div>"""
 
-PARADIGM_BACK = """<div class="shape">{{Shape}}</div>
+PARADIGM_BACK = VIEWPORT + """<div class="shape">{{Shape}}</div>
 <div class="example">{{Example}}</div>
 
 <hr id="answer">
@@ -352,10 +440,10 @@ PARADIGM_BACK = """<div class="shape">{{Shape}}</div>
 {{#Notes}}<div class="notes">{{Notes}}</div>{{/Notes}}
 """
 
-PARADIGM_REVERSE_FRONT = """<div class="paradigm">{{Paradigm}}</div>
+PARADIGM_REVERSE_FRONT = VIEWPORT + """<div class="paradigm">{{Paradigm}}</div>
 <div class="slot">{{Slot}}</div>"""
 
-PARADIGM_REVERSE_BACK = """<div class="paradigm">{{Paradigm}}</div>
+PARADIGM_REVERSE_BACK = VIEWPORT + """<div class="paradigm">{{Paradigm}}</div>
 <div class="slot">{{Slot}}</div>
 
 <hr id="answer">
@@ -425,6 +513,16 @@ def verb_card(group, slot):
 HEBREW = re.compile(r"[\u0590-\u05ff]")
 
 
+def stack(text):
+    """Alternatives one to a line, each forbidden to wrap.
+
+    Every value goes through this, not just the ones with alternatives, so
+    that a single long pattern is held to one line as well.
+    """
+    return "".join(f'<span class="variant">{p}</span>'
+                   for p in text.split("/"))
+
+
 def example_html(example):
     """The example with its pointed half set in the deck's own font.
 
@@ -433,10 +531,10 @@ def example_html(example):
     """
     word, _, reading = example.partition(" ")
     if not HEBREW.search(word):
-        return example                      # a noun table, reading only
-    out = f'<span class="aramaic">{word}</span>'
+        return stack(example)               # a noun table, reading only
+    out = f'<span class="aramaic">{stack(word)}</span>'
     if reading:
-        out += f'<span class="reading">{reading}</span>'
+        out += f'<span class="reading">{stack(reading)}</span>'
     return out
 
 
@@ -493,7 +591,7 @@ def paradigm_decks():
             deck.add_note(
                 genanki.Note(
                     model=PARADIGM_MODEL,
-                    fields=[cell["shape"], name, context,
+                    fields=[stack(cell["shape"]), name, context,
                             example_html(cell["example"]), body],
                     # the lemma and the shape pin the cell; the reference
                     # would shift if the appendix were renumbered, and the
@@ -530,7 +628,7 @@ def main():
             deck.add_note(
                 genanki.Note(
                     model=MODEL,
-                    fields=["/".join(entry["aramaic"]),
+                    fields=[stack("/".join(entry["aramaic"])),
                             " / ".join(entry["vocalization"]),
                             entry["gloss"], entry["pos"],
                             vocab.notes_text(entry),

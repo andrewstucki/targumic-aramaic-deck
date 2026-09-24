@@ -257,12 +257,3 @@ writes SIL's copyright notice and the license reference into the font's own
 name table, which is where §2 accepts them, and keeps the full text alongside
 as `EzraSIL-Licenses.txt`. `targumic-aramaic.apkg` embeds the font, so that
 applies to the deck as well.
-
-The package ships both the TTF and the WOFF2 and names them both as `src`, in
-that order of preference. Desktop Anki takes either; iOS WebKit is stricter
-about what it will load, and a second format to fall back on costs 6KB. If the
-pointing shows in a substitute font on a device, the font is not reaching it —
-the file is valid (its checksums, `cmap` and name table all check out), so the
-cause is on the delivery side: run Tools → Check Media on the desktop to
-confirm neither `_Onqelos-Regular.*` is missing, then let a media sync finish,
-which travels separately from the collection and can lag well behind it.
